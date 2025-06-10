@@ -47,7 +47,7 @@ const DashboardLink = ({
           )}
         </Link>
       </li>
-      {subMenu.length > 0 && (
+      {subMenu.length > 0 && ( 
         <div className={`flex-col gap-1 ${isSubMenOpen ? "flex" : "hidden"}`}>
           {subMenu.map((item, index) => (
             <Link
