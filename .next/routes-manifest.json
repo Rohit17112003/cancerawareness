@@ -1,0 +1,103 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "dynamicRoutes": [],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/blog-management",
+      "regex": "^/blog\\-management(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/blog\\-management(?:/)?$"
+    },
+    {
+      "page": "/doctor-management",
+      "regex": "^/doctor\\-management(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/doctor\\-management(?:/)?$"
+    },
+    {
+      "page": "/doctor-management-form",
+      "regex": "^/doctor\\-management\\-form(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/doctor\\-management\\-form(?:/)?$"
+    },
+    {
+      "page": "/hospital-management",
+      "regex": "^/hospital\\-management(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/hospital\\-management(?:/)?$"
+    },
+    {
+      "page": "/hospital-management-form",
+      "regex": "^/hospital\\-management\\-form(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/hospital\\-management\\-form(?:/)?$"
+    },
+    {
+      "page": "/lab-management",
+      "regex": "^/lab\\-management(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/lab\\-management(?:/)?$"
+    },
+    {
+      "page": "/service-management",
+      "regex": "^/service\\-management(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/service\\-management(?:/)?$"
+    },
+    {
+      "page": "/user-management",
+      "regex": "^/user\\-management(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/user\\-management(?:/)?$"
+    },
+    {
+      "page": "/user-management-form",
+      "regex": "^/user\\-management\\-form(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/user\\-management\\-form(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "RSC",
+    "varyHeader": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+    "prefetchHeader": "Next-Router-Prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "Next-Router-Segment-Prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  },
+  "rewrites": []
+}

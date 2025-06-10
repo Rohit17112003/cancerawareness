@@ -1,0 +1,13 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/doctor-management-form/page": "/doctor-management-form",
+  "/blog-management/page": "/blog-management",
+  "/doctor-management/page": "/doctor-management",
+  "/hospital-management-form/page": "/hospital-management-form",
+  "/lab-management/page": "/lab-management",
+  "/page": "/",
+  "/user-management-form/page": "/user-management-form",
+  "/user-management/page": "/user-management",
+  "/service-management/page": "/service-management",
+  "/hospital-management/page": "/hospital-management"
+}

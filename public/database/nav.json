@@ -1,0 +1,61 @@
+{
+  "navigation": [
+    {
+      "icon": "ri-speed-up-line",
+      "route": "/",
+      "label": "dashboard"
+    },
+    {
+      "icon": "ri-user-line",
+      "route": "/user-management",
+      "label": "User Management"
+    },
+    {
+      "icon": "ri-blogger-line",
+      "route": "/blog-management",
+      "label": "Blog Management"
+    },
+    {
+      "icon": "ri-stethoscope-line",
+      "route": "/doctor-management",
+      "label": "Doctor Management"
+    },
+    {
+      "icon": "ri-hospital-line",
+      "route": "/hospital-management",
+      "label": "Hospital Management"
+    },
+     {
+      "icon": "ri-recycle-line",
+      "route": "/lab-management",
+      "label": "Lab Management"
+    },
+     {
+      "icon": "ri-service-line",
+      "route": "/service-management",
+      "label": "Service Management"
+    }
+  ],
+  "stats": [
+    {
+      "icon": "ri-shopping-cart-fill",
+      "title": "No of Auction Product",
+      "value": "20"
+    },
+    {
+      "icon": "ri-auction-fill",
+      "title": "No of Successful Auction",
+      "value": "30"
+    },
+    {
+      "icon": "ri-sort-number-desc",
+      "title": "Value of auction sale",
+      "value": "20, 000"
+    },
+    {
+      "icon": "ri-scales-fill",
+      "title": "Balance no of auction",
+      "value": "20"
+    }
+  ]
+}
