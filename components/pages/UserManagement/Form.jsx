@@ -123,29 +123,34 @@ const AddUserForm = () => {
               )}
             </span>
           </div>
-        
-          <select
-            name="role"
-            value={formData.role}
-            onChange={handleChange}
-            className="w-full rounded-md border border-gray-300 px-4 py-2 outline-0"
-          >
-            <option value="Volunteer">Volunteer</option>
-            <option value="Admin">Admin</option>
-            <option value="Oncologist">Oncologist</option>
-            <option value="Donor">Donor</option>
-          </select>
 
+          <div>
+            <label className="font-medium pb-1">Role</label>
+            <select
+              name="role"
+              value={formData.role}
+              onChange={handleChange}
+              className="w-full rounded-md border border-gray-300 px-4 py-2 outline-0"
+            >
+              <option value="Volunteer">Volunteer</option>
+              <option value="Admin">Admin</option>
+              <option value="Oncologist">Oncologist</option>
+              <option value="Donor">Donor</option>
+            </select>
+          </div>
 
-          <select
-            name="status"
-            value={formData.status}
-            onChange={handleChange}
-            className="w-full rounded-md border border-gray-300 px-4 py-2 outline-0"
-          >
-            <option value="Active">Active</option>
-            <option value="Inactive">Inactive</option>
-          </select>
+          <div>
+            <label className="font-medium pb-1">Status</label>
+            <select
+              name="status"
+              value={formData.status}
+              onChange={handleChange}
+              className="w-full rounded-md border border-gray-300 px-4 py-2 outline-0"
+            >
+              <option value="Active">Active</option>
+              <option value="Inactive">Inactive</option>
+            </select>
+          </div>
         </div>
 
         <div>
