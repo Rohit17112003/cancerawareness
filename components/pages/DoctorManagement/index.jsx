@@ -42,7 +42,7 @@ const DoctorManagement = () => {
 
   return (
     <>
-      <div className="mb-6 flex items-center justify-between">
+      <div className="mb-6 flex gap-1 items-center justify-between">
         <span className="rounded-full border border-gray-300 px-4 text-sm flex items-center gap-2">
           <i className="ri-search-line text-pink-400"></i>
           <input
@@ -54,7 +54,7 @@ const DoctorManagement = () => {
 
         <button
           onClick={handleAddDoctorClick}
-          className="cursor-pointer rounded-lg bg-blue-500 px-4 py-2 text-white transition hover:bg-blue-600"
+          className="cursor-pointer rounded-lg bg-blue-500 md:px-4 px-3 py-2 text-white transition hover:bg-blue-600"
         >
         <span><i className="ri-add-fill pr-1"></i></span>
           Add New Doctor
