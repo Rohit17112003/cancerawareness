@@ -62,8 +62,23 @@ const BlogManagement = ()=>{
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         className: "cursor-pointer rounded-lg bg-blue-600 px-4 py-2 text-white font-medium hover:bg-blue-700",
-                        children: "Add New Blog"
-                    }, void 0, false, {
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                    className: "ri-add-line pr-1"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/pages/BlogManagement/index.jsx",
+                                    lineNumber: 38,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/components/pages/BlogManagement/index.jsx",
+                                lineNumber: 38,
+                                columnNumber: 9
+                            }, this),
+                            "Add New Blog"
+                        ]
+                    }, void 0, true, {
                         fileName: "[project]/components/pages/BlogManagement/index.jsx",
                         lineNumber: 37,
                         columnNumber: 9
@@ -88,7 +103,7 @@ const BlogManagement = ()=>{
                                         children: "Thumbnail"
                                     }, void 0, false, {
                                         fileName: "[project]/components/pages/BlogManagement/index.jsx",
-                                        lineNumber: 46,
+                                        lineNumber: 47,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -96,7 +111,7 @@ const BlogManagement = ()=>{
                                         children: "Title"
                                     }, void 0, false, {
                                         fileName: "[project]/components/pages/BlogManagement/index.jsx",
-                                        lineNumber: 47,
+                                        lineNumber: 48,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -104,7 +119,7 @@ const BlogManagement = ()=>{
                                         children: "Description"
                                     }, void 0, false, {
                                         fileName: "[project]/components/pages/BlogManagement/index.jsx",
-                                        lineNumber: 48,
+                                        lineNumber: 49,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -112,7 +127,7 @@ const BlogManagement = ()=>{
                                         children: "Excerpt"
                                     }, void 0, false, {
                                         fileName: "[project]/components/pages/BlogManagement/index.jsx",
-                                        lineNumber: 49,
+                                        lineNumber: 50,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -120,7 +135,7 @@ const BlogManagement = ()=>{
                                         children: "Author"
                                     }, void 0, false, {
                                         fileName: "[project]/components/pages/BlogManagement/index.jsx",
-                                        lineNumber: 50,
+                                        lineNumber: 51,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -128,7 +143,7 @@ const BlogManagement = ()=>{
                                         children: "Category"
                                     }, void 0, false, {
                                         fileName: "[project]/components/pages/BlogManagement/index.jsx",
-                                        lineNumber: 51,
+                                        lineNumber: 52,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -136,18 +151,18 @@ const BlogManagement = ()=>{
                                         children: "Actions"
                                     }, void 0, false, {
                                         fileName: "[project]/components/pages/BlogManagement/index.jsx",
-                                        lineNumber: 52,
+                                        lineNumber: 53,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/pages/BlogManagement/index.jsx",
-                                lineNumber: 45,
+                                lineNumber: 46,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/pages/BlogManagement/index.jsx",
-                            lineNumber: 44,
+                            lineNumber: 45,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
@@ -162,12 +177,12 @@ const BlogManagement = ()=>{
                                                 className: "h-14 w-14 rounded object-cover"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/pages/BlogManagement/index.jsx",
-                                                lineNumber: 59,
+                                                lineNumber: 60,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/BlogManagement/index.jsx",
-                                            lineNumber: 58,
+                                            lineNumber: 59,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -175,7 +190,7 @@ const BlogManagement = ()=>{
                                             children: item.title
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/BlogManagement/index.jsx",
-                                            lineNumber: 65,
+                                            lineNumber: 66,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -183,7 +198,7 @@ const BlogManagement = ()=>{
                                             children: item.description
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/BlogManagement/index.jsx",
-                                            lineNumber: 68,
+                                            lineNumber: 69,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -191,7 +206,7 @@ const BlogManagement = ()=>{
                                             children: item.content
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/BlogManagement/index.jsx",
-                                            lineNumber: 69,
+                                            lineNumber: 70,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -199,7 +214,7 @@ const BlogManagement = ()=>{
                                             children: item.author
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/BlogManagement/index.jsx",
-                                            lineNumber: 70,
+                                            lineNumber: 71,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -207,7 +222,7 @@ const BlogManagement = ()=>{
                                             children: item.type
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/BlogManagement/index.jsx",
-                                            lineNumber: 71,
+                                            lineNumber: 72,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -219,47 +234,47 @@ const BlogManagement = ()=>{
                                                         className: "ri-edit-box-line text-blue-600 cursor-pointer text-lg"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/pages/BlogManagement/index.jsx",
-                                                        lineNumber: 74,
+                                                        lineNumber: 75,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
                                                         className: "ri-delete-bin-line text-red-500 cursor-pointer text-lg"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/pages/BlogManagement/index.jsx",
-                                                        lineNumber: 75,
+                                                        lineNumber: 76,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/pages/BlogManagement/index.jsx",
-                                                lineNumber: 73,
+                                                lineNumber: 74,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/BlogManagement/index.jsx",
-                                            lineNumber: 72,
+                                            lineNumber: 73,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, idx, true, {
                                     fileName: "[project]/components/pages/BlogManagement/index.jsx",
-                                    lineNumber: 57,
+                                    lineNumber: 58,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/components/pages/BlogManagement/index.jsx",
-                            lineNumber: 55,
+                            lineNumber: 56,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/pages/BlogManagement/index.jsx",
-                    lineNumber: 43,
+                    lineNumber: 44,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/pages/BlogManagement/index.jsx",
-                lineNumber: 42,
+                lineNumber: 43,
                 columnNumber: 7
             }, this)
         ]

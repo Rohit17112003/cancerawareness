@@ -5,6 +5,112 @@
 
 var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
+// "use client";
+// import { useState } from "react";
+// import { useRouter } from "next/navigation";
+// const AddDoctorForm = () => {
+//   const [formData, setFormData] = useState({
+//     name: "",
+//     avatar: "",
+//     designation: "",
+//     speciality: "",
+//     experience: "",
+//     review: "",
+//     rating: "",
+//   });
+//   const router = useRouter();
+//   const handleChange = (e) => {
+//     setFormData({ ...formData, [e.target.name]: e.target.value });
+//   };
+//   const handleSubmit = (e) => {
+//     e.preventDefault();
+//     console.log("Doctor added:", formData);
+//     alert("Doctor added successfully!");
+//     router.push("/doctor-management"); // Move after adding
+//   };
+//   return (
+//     <div className="mx-auto max-w-2xl p-6">
+//       <div className="mb-6 rounded-xl border border-gray-200 bg-white p-6 shadow-md">
+//         <h2 className="mb-4 text-2xl font-semibold text-gray-800">Add New Doctor</h2>
+//         <form onSubmit={handleSubmit} className="space-y-4">
+//           <input
+//             type="text"
+//             name="name"
+//             placeholder="Doctor's Name"
+//             value={formData.name}
+//             onChange={handleChange}
+//             required
+//             className="w-full rounded-md outline-0 border border-gray-300 px-4 py-2"
+//           />
+//           <input
+//             type="file"
+//             name="avatar"
+//             accept="image/*"
+//             placeholder="Avatar Image URL"
+//             value={formData.avatar}
+//             onChange={handleChange}
+//             required
+//             className="w-full rounded-md outline-0 border border-gray-300 px-4 py-2"
+//           />
+//           <input
+//             type="text"
+//             name="designation"
+//             placeholder="Designation"
+//             value={formData.designation}
+//             onChange={handleChange}
+//             required
+//             className="w-full rounded-md outline-0 border border-gray-300 px-4 py-2"
+//           />
+//           <input
+//             type="text"
+//             name="speciality"
+//             placeholder="Speciality"
+//             value={formData.speciality}
+//             onChange={handleChange}
+//             required
+//             className="w-full rounded-md outline-0 border border-gray-300 px-4 py-2"
+//           />
+//           <input
+//             type="number"
+//             name="experience"
+//             placeholder="Experience (in years)"
+//             value={formData.experience}
+//             onChange={handleChange}
+//             required
+//             className="w-full rounded-md outline-0 border border-gray-300 px-4 py-2"
+//           />
+//           <input
+//             type="text"
+//             name="review"
+//             placeholder="Review Summary"
+//             value={formData.review}
+//             onChange={handleChange}
+//             required
+//             className="w-full rounded-md outline-0 border border-gray-300 px-4 py-2"
+//           />
+//           <input
+//             type="number"
+//             name="rating"
+//             placeholder="Rating (1 to 5)"
+//             min="1"
+//             max="5"
+//             value={formData.rating}
+//             onChange={handleChange}
+//             required
+//             className="w-full rounded-md outline-0 border border-gray-300 px-4 py-2"
+//           />
+//           <button
+//             type="submit"
+//             className="w-full rounded-md bg-blue-600 py-2 text-white transition hover:bg-blue-700"
+//           >
+//             Add Doctor
+//           </button>
+//         </form>
+//       </div>
+//     </div>
+//   );
+// };
+// export default AddDoctorForm;
 __turbopack_context__.s({
     "default": (()=>__TURBOPACK__default__export__)
 });
@@ -29,28 +135,60 @@ const AddDoctorForm = ()=>{
     });
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
     const handleChange = (e)=>{
-        setFormData({
-            ...formData,
-            [e.target.name]: e.target.value
-        });
+        const { name, value, files } = e.target;
+        if (name === "avatar") {
+            setFormData({
+                ...formData,
+                avatar: files[0]
+            });
+        } else {
+            setFormData({
+                ...formData,
+                [name]: value
+            });
+        }
     };
     const handleSubmit = (e)=>{
         e.preventDefault();
         console.log("Doctor added:", formData);
         alert("Doctor added successfully!");
-        router.push("/doctor-management"); // Move after adding
+        router.push("/doctor-management");
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "mx-auto max-w-2xl p-6",
+        className: "mx-auto md:max-w-2xl py-6",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "mb-6 rounded-xl border border-gray-200 bg-white p-6 shadow-md",
             children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                    onClick: ()=>router.back(),
+                    className: "mb-4 rounded-md bg-gray-200 px-4 py-2 text-sm text-gray-800 hover:bg-gray-300 cursor-pointer font-semibold",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                className: "ri-arrow-left-line"
+                            }, void 0, false, {
+                                fileName: "[project]/components/pages/DoctorManagement/Form.jsx",
+                                lineNumber: 166,
+                                columnNumber: 17
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/components/pages/DoctorManagement/Form.jsx",
+                            lineNumber: 166,
+                            columnNumber: 11
+                        }, this),
+                        " Back"
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/components/pages/DoctorManagement/Form.jsx",
+                    lineNumber: 162,
+                    columnNumber: 9
+                }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                     className: "mb-4 text-2xl font-semibold text-gray-800",
                     children: "Add New Doctor"
                 }, void 0, false, {
                     fileName: "[project]/components/pages/DoctorManagement/Form.jsx",
-                    lineNumber: 35,
+                    lineNumber: 169,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -64,24 +202,22 @@ const AddDoctorForm = ()=>{
                             value: formData.name,
                             onChange: handleChange,
                             required: true,
-                            className: "w-full rounded-md outline-0 border border-gray-300 px-4 py-2"
+                            className: "w-full rounded-md border border-gray-300 px-4 py-2 outline-0"
                         }, void 0, false, {
                             fileName: "[project]/components/pages/DoctorManagement/Form.jsx",
-                            lineNumber: 38,
+                            lineNumber: 172,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                             type: "file",
                             name: "avatar",
                             accept: "image/*",
-                            placeholder: "Avatar Image URL",
-                            value: formData.avatar,
                             onChange: handleChange,
                             required: true,
-                            className: "w-full rounded-md outline-0 border border-gray-300 px-4 py-2"
+                            className: "w-full rounded-md border border-gray-300 px-4 py-2 outline-0"
                         }, void 0, false, {
                             fileName: "[project]/components/pages/DoctorManagement/Form.jsx",
-                            lineNumber: 48,
+                            lineNumber: 182,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -91,10 +227,10 @@ const AddDoctorForm = ()=>{
                             value: formData.designation,
                             onChange: handleChange,
                             required: true,
-                            className: "w-full rounded-md outline-0 border border-gray-300 px-4 py-2"
+                            className: "w-full rounded-md border border-gray-300 px-4 py-2 outline-0"
                         }, void 0, false, {
                             fileName: "[project]/components/pages/DoctorManagement/Form.jsx",
-                            lineNumber: 59,
+                            lineNumber: 191,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -104,10 +240,10 @@ const AddDoctorForm = ()=>{
                             value: formData.speciality,
                             onChange: handleChange,
                             required: true,
-                            className: "w-full rounded-md outline-0 border border-gray-300 px-4 py-2"
+                            className: "w-full rounded-md border border-gray-300 px-4 py-2 outline-0"
                         }, void 0, false, {
                             fileName: "[project]/components/pages/DoctorManagement/Form.jsx",
-                            lineNumber: 69,
+                            lineNumber: 201,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -117,10 +253,10 @@ const AddDoctorForm = ()=>{
                             value: formData.experience,
                             onChange: handleChange,
                             required: true,
-                            className: "w-full rounded-md outline-0 border border-gray-300 px-4 py-2"
+                            className: "w-full rounded-md border border-gray-300 px-4 py-2 outline-0"
                         }, void 0, false, {
                             fileName: "[project]/components/pages/DoctorManagement/Form.jsx",
-                            lineNumber: 79,
+                            lineNumber: 211,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -130,10 +266,10 @@ const AddDoctorForm = ()=>{
                             value: formData.review,
                             onChange: handleChange,
                             required: true,
-                            className: "w-full rounded-md outline-0 border border-gray-300 px-4 py-2"
+                            className: "w-full rounded-md border border-gray-300 px-4 py-2 outline-0"
                         }, void 0, false, {
                             fileName: "[project]/components/pages/DoctorManagement/Form.jsx",
-                            lineNumber: 89,
+                            lineNumber: 221,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -145,36 +281,36 @@ const AddDoctorForm = ()=>{
                             value: formData.rating,
                             onChange: handleChange,
                             required: true,
-                            className: "w-full rounded-md outline-0 border border-gray-300 px-4 py-2"
+                            className: "w-full rounded-md border border-gray-300 px-4 py-2 outline-0"
                         }, void 0, false, {
                             fileName: "[project]/components/pages/DoctorManagement/Form.jsx",
-                            lineNumber: 99,
+                            lineNumber: 231,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                             type: "submit",
-                            className: "w-full rounded-md bg-blue-600 py-2 text-white transition hover:bg-blue-700",
+                            className: "w-full rounded-md bg-blue-600 py-2 text-white transition hover:bg-blue-700 cursor-pointer",
                             children: "Add Doctor"
                         }, void 0, false, {
                             fileName: "[project]/components/pages/DoctorManagement/Form.jsx",
-                            lineNumber: 111,
+                            lineNumber: 243,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/pages/DoctorManagement/Form.jsx",
-                    lineNumber: 37,
+                    lineNumber: 171,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/pages/DoctorManagement/Form.jsx",
-            lineNumber: 34,
+            lineNumber: 160,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/pages/DoctorManagement/Form.jsx",
-        lineNumber: 33,
+        lineNumber: 159,
         columnNumber: 5
     }, this);
 };

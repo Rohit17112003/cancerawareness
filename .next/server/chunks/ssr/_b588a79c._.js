@@ -23,14 +23,21 @@ const AddBlogForm = ()=>{
         content: "",
         author: "",
         category: "Awareness",
-        thumbnail: ""
+        thumbnail: null
     });
     const handleChange = (e)=>{
-        const { name, value } = e.target;
-        setFormData((prev)=>({
-                ...prev,
-                [name]: value
-            }));
+        const { name, value, files } = e.target;
+        if (name === "thumbnail") {
+            setFormData((prev)=>({
+                    ...prev,
+                    thumbnail: files[0]
+                }));
+        } else {
+            setFormData((prev)=>({
+                    ...prev,
+                    [name]: value
+                }));
+        }
     };
     const handleSubmit = (e)=>{
         e.preventDefault();
@@ -39,139 +46,174 @@ const AddBlogForm = ()=>{
             alert("Please fill all fields.");
             return;
         }
-        // You can handle API call here or route to BlogManagement
+        // You can upload thumbnail via API here
         router.push("/blog-management");
     };
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
-        onSubmit: handleSubmit,
-        className: "max-w-2xl mx-auto mt-6 bg-white p-6 rounded-lg shadow space-y-5",
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                className: "text-2xl font-bold text-gray-800 mb-2",
-                children: "Add New Blog"
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "mx-auto max-w-2xl mt-4",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                    onClick: ()=>router.back(),
+                    className: "mb-4 rounded-md bg-gray-200 px-4 py-2 text-sm text-gray-800 hover:bg-gray-300 cursor-pointer",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                class: "ri-arrow-left-line"
+                            }, void 0, false, {
+                                fileName: "[project]/components/pages/BlogManagement/Form.jsx",
+                                lineNumber: 52,
+                                columnNumber: 17
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/components/pages/BlogManagement/Form.jsx",
+                            lineNumber: 52,
+                            columnNumber: 11
+                        }, this),
+                        " Back"
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/components/pages/BlogManagement/Form.jsx",
+                    lineNumber: 48,
+                    columnNumber: 9
+                }, this)
             }, void 0, false, {
                 fileName: "[project]/components/pages/BlogManagement/Form.jsx",
-                lineNumber: 42,
+                lineNumber: 47,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                type: "text",
-                name: "title",
-                value: formData.title,
-                onChange: handleChange,
-                placeholder: "Blog Title",
-                className: "w-full border border-gray-300 px-4 py-2 rounded-md focus:outline-blue-500"
-            }, void 0, false, {
-                fileName: "[project]/components/pages/BlogManagement/Form.jsx",
-                lineNumber: 44,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                type: "text",
-                name: "description",
-                value: formData.description,
-                onChange: handleChange,
-                placeholder: "Short Description",
-                className: "w-full border border-gray-300 px-4 py-2 rounded-md focus:outline-blue-500"
-            }, void 0, false, {
-                fileName: "[project]/components/pages/BlogManagement/Form.jsx",
-                lineNumber: 53,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
-                name: "content",
-                value: formData.content,
-                onChange: handleChange,
-                placeholder: "Content / Summary",
-                rows: 4,
-                className: "w-full border border-gray-300 px-4 py-2 rounded-md focus:outline-blue-500"
-            }, void 0, false, {
-                fileName: "[project]/components/pages/BlogManagement/Form.jsx",
-                lineNumber: 62,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                type: "text",
-                name: "author",
-                value: formData.author,
-                onChange: handleChange,
-                placeholder: "Author Name",
-                className: "w-full border border-gray-300 px-4 py-2 rounded-md focus:outline-blue-500"
-            }, void 0, false, {
-                fileName: "[project]/components/pages/BlogManagement/Form.jsx",
-                lineNumber: 71,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
-                name: "category",
-                value: formData.category,
-                onChange: handleChange,
-                className: "w-full border border-gray-300 px-4 py-2 rounded-md",
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
+                onSubmit: handleSubmit,
+                className: "max-w-2xl mx-auto  bg-white p-6 rounded-lg shadow space-y-5",
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                        value: "Awareness",
-                        children: "Awareness"
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                        className: "text-2xl font-bold text-gray-800 mb-2 ",
+                        children: "Add New Blog"
                     }, void 0, false, {
                         fileName: "[project]/components/pages/BlogManagement/Form.jsx",
-                        lineNumber: 86,
-                        columnNumber: 9
+                        lineNumber: 60,
+                        columnNumber: 7
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                        value: "Treatment",
-                        children: "Treatment"
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                        type: "text",
+                        name: "title",
+                        value: formData.title,
+                        onChange: handleChange,
+                        placeholder: "Blog Title",
+                        className: "w-full border border-gray-300 px-4 py-2 rounded-md outline-0"
                     }, void 0, false, {
                         fileName: "[project]/components/pages/BlogManagement/Form.jsx",
-                        lineNumber: 87,
-                        columnNumber: 9
+                        lineNumber: 62,
+                        columnNumber: 7
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                        value: "Health Tips",
-                        children: "Health Tips"
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                        type: "text",
+                        name: "description",
+                        value: formData.description,
+                        onChange: handleChange,
+                        placeholder: "Short Description",
+                        className: "w-full border border-gray-300 px-4 py-2 rounded-md outline-0"
                     }, void 0, false, {
                         fileName: "[project]/components/pages/BlogManagement/Form.jsx",
-                        lineNumber: 88,
-                        columnNumber: 9
+                        lineNumber: 71,
+                        columnNumber: 7
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                        value: "Survivor Stories",
-                        children: "Survivor Stories"
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
+                        name: "content",
+                        value: formData.content,
+                        onChange: handleChange,
+                        placeholder: "Content / Summary",
+                        rows: 4,
+                        className: "w-full border border-gray-300 px-4 py-2 rounded-md outline-0"
+                    }, void 0, false, {
+                        fileName: "[project]/components/pages/BlogManagement/Form.jsx",
+                        lineNumber: 80,
+                        columnNumber: 7
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                        type: "text",
+                        name: "author",
+                        value: formData.author,
+                        onChange: handleChange,
+                        placeholder: "Author Name",
+                        className: "w-full border border-gray-300 px-4 py-2 rounded-md outline-0"
                     }, void 0, false, {
                         fileName: "[project]/components/pages/BlogManagement/Form.jsx",
                         lineNumber: 89,
-                        columnNumber: 9
+                        columnNumber: 7
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
+                        name: "category",
+                        value: formData.category,
+                        onChange: handleChange,
+                        className: "w-full border border-gray-300 px-4 py-2 rounded-md outline-0",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                value: "Awareness",
+                                children: "Awareness"
+                            }, void 0, false, {
+                                fileName: "[project]/components/pages/BlogManagement/Form.jsx",
+                                lineNumber: 104,
+                                columnNumber: 9
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                value: "Treatment",
+                                children: "Treatment"
+                            }, void 0, false, {
+                                fileName: "[project]/components/pages/BlogManagement/Form.jsx",
+                                lineNumber: 105,
+                                columnNumber: 9
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                value: "Health Tips",
+                                children: "Health Tips"
+                            }, void 0, false, {
+                                fileName: "[project]/components/pages/BlogManagement/Form.jsx",
+                                lineNumber: 106,
+                                columnNumber: 9
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                value: "Survivor Stories",
+                                children: "Survivor Stories"
+                            }, void 0, false, {
+                                fileName: "[project]/components/pages/BlogManagement/Form.jsx",
+                                lineNumber: 107,
+                                columnNumber: 9
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/pages/BlogManagement/Form.jsx",
+                        lineNumber: 98,
+                        columnNumber: 7
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                        type: "file",
+                        name: "thumbnail",
+                        accept: "image/*",
+                        onChange: handleChange,
+                        className: "w-full px-4 py-2 border border-gray-300 outline-0 rounded-md"
+                    }, void 0, false, {
+                        fileName: "[project]/components/pages/BlogManagement/Form.jsx",
+                        lineNumber: 110,
+                        columnNumber: 7
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        type: "submit",
+                        className: "w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 cursor-pointer",
+                        children: "Submit Blog"
+                    }, void 0, false, {
+                        fileName: "[project]/components/pages/BlogManagement/Form.jsx",
+                        lineNumber: 118,
+                        columnNumber: 7
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/pages/BlogManagement/Form.jsx",
-                lineNumber: 80,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                type: "file",
-                name: "avatar",
-                accept: "image/*",
-                onChange: handleChange,
-                className: "w-full px-4 py-2 border border-gray-300 outline-0 rounded-md"
-            }, void 0, false, {
-                fileName: "[project]/components/pages/BlogManagement/Form.jsx",
-                lineNumber: 92,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                type: "submit",
-                className: "w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700",
-                children: "Submit Blog"
-            }, void 0, false, {
-                fileName: "[project]/components/pages/BlogManagement/Form.jsx",
-                lineNumber: 100,
-                columnNumber: 7
+                lineNumber: 55,
+                columnNumber: 5
             }, this)
         ]
-    }, void 0, true, {
-        fileName: "[project]/components/pages/BlogManagement/Form.jsx",
-        lineNumber: 38,
-        columnNumber: 5
-    }, this);
+    }, void 0, true);
 };
 const __TURBOPACK__default__export__ = AddBlogForm;
 }}),

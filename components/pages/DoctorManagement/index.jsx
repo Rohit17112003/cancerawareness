@@ -56,6 +56,7 @@ const DoctorManagement = () => {
           onClick={handleAddDoctorClick}
           className="cursor-pointer rounded-lg bg-blue-500 px-4 py-2 text-white transition hover:bg-blue-600"
         >
+        <span><i className="ri-add-fill pr-1"></i></span>
           Add New Doctor
         </button>
       </div>

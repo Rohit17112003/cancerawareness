@@ -1,4 +1,5 @@
 
+
 "use client";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
@@ -47,17 +48,31 @@ const AddUserForm = () => {
       return;
     }
 
-    // You can handle avatar upload and saving here
+    // Handle user submission here (API call etc.)
 
     router.push("/user-management");
   };
 
   return (
+
+    <>
+       {/* Back Button */}
+      <div className="mx-auto max-w-2xl mt-4">
+        <button
+          onClick={() => router.back()}
+          className="mb-4 rounded-md bg-gray-200 px-4 py-2 text-sm text-gray-800 hover:bg-gray-300 cursor-pointer"
+        >
+          <span><i class="ri-arrow-left-line"></i></span> Back
+        </button>
+      </div>
     <form
       onSubmit={handleSubmit}
-      className="max-w-2xl mx-auto mt-8 p-6 bg-white rounded-xl shadow space-y-6"
+      className="max-w-2xl mx-auto  p-6 bg-white rounded-xl shadow space-y-6"
     >
-      <h2 className="text-2xl font-bold text-gray-800">Add New User</h2>
+
+      <h2 className="text-2xl font-bold text-gray-800 ">
+      
+      Add New User</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <input
@@ -142,13 +157,15 @@ const AddUserForm = () => {
 
       <button
         type="submit"
-        className="w-full bg-blue-600 text-white font-semibold py-2 rounded-md hover:bg-blue-700"
+        className="w-full bg-blue-600 text-white font-semibold py-2 rounded-md hover:bg-blue-700 cursor-pointer"
       >
         Add User
       </button>
     </form>
+    </>
   );
 };
 
 export default AddUserForm;
+
 

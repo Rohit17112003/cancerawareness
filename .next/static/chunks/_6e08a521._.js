@@ -5,136 +5,17 @@
 
 var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
-// "use client";
-// import { useState } from "react";
-// import { RiEdit2Line, RiDeleteBinLine, RiAddLine } from "react-icons/ri";
-// const initialServices = [
-//   {
-//     id: 1,
-//     name: "Cancer Screening",
-//     description: "Early detection through regular screening tests.",
-//     duration: "30 mins",
-//   },
-//   {
-//     id: 2,
-//     name: "Counseling",
-//     description: "Support and guidance for patients and families.",
-//     duration: "45 mins",
-//   },
-//   {
-//     id: 3,
-//     name: "Awareness Programs",
-//     description: "Community education and preventive measures.",
-//     duration: "Varies",
-//   },
-// ];
-// const ServiceManagement = () => {
-//   const [services, setServices] = useState(initialServices);
-//   const [searchTerm, setSearchTerm] = useState("");
-//   // Filter services based on search term
-//   const filteredServices = services.filter((service) =>
-//     service.name.toLowerCase().includes(searchTerm.toLowerCase())
-//   );
-//   // Delete service handler
-//   const handleDelete = (id) => {
-//     if (confirm("Are you sure you want to delete this service?")) {
-//       setServices(services.filter((service) => service.id !== id));
-//     }
-//   };
-//   return (
-//     <>
-//       <div className="mx-auto max-w-5xl p-6">
-//       <header className="mb-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-//         <div>
-//           <h1 className="text-3xl font-bold text-pink-700">Manage Services</h1>
-//           <p className="text-gray-600 mt-1">
-//             Add, update, or remove cancer awareness services
-//           </p>
-//         </div>
-//         <div className="flex gap-4 items-center">
-//           <input
-//             type="text"
-//             placeholder="Search services..."
-//             className="rounded-lg border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-pink-400"
-//             value={searchTerm}
-//             onChange={(e) => setSearchTerm(e.target.value)}
-//           />
-//           <button
-//             className="flex items-center gap-1 rounded-lg bg-pink-600 md:px-4 py-2 px-2 text-white transition hover:bg-pink-700"
-//             // onClick={() => open your add form modal/page}
-//           >
-//             <RiAddLine size={20} />
-//             Add New Service
-//           </button>
-//         </div>
-//       </header>
-//       <div className="overflow-x-auto rounded-lg shadow-md border border-gray-200">
-//         <table className="w-full text-left text-sm bg-white">
-//           <thead className="bg-pink-100 text-pink-700">
-//             <tr>
-//               <th className="px-5 py-3 rounded-tl-lg">Service Name</th>
-//               <th className="px-5 py-3">Description</th>
-//               <th className="px-5 py-3">Duration</th>
-//               <th className="px-5 py-3 rounded-tr-lg">Actions</th>
-//             </tr>
-//           </thead>
-//           <tbody>
-//             {filteredServices.length > 0 ? (
-//               filteredServices.map(({ id, name, description, duration }) => (
-//                 <tr
-//                   key={id}
-//                   className="border-b border-gray-200 hover:bg-pink-50 transition"
-//                 >
-//                   <td className="px-5 py-3 font-medium">{name}</td>
-//                   <td className="px-5 py-3">{description}</td>
-//                   <td className="px-5 py-3">{duration}</td>
-//                   <td className="px-5 py-3">
-//                     <div className="flex gap-3 text-lg text-pink-600">
-//                       <button
-//                         title="Edit Service"
-//                         className="hover:text-pink-800"
-//                         // onClick={() => open edit modal/page with id}
-//                       >
-//                         <RiEdit2Line />
-//                       </button>
-//                       <button
-//                         title="Delete Service"
-//                         className="hover:text-red-600"
-//                         onClick={() => handleDelete(id)}
-//                       >
-//                         <RiDeleteBinLine />
-//                       </button>
-//                     </div>
-//                   </td>
-//                 </tr>
-//               ))
-//             ) : (
-//               <tr>
-//                 <td
-//                   colSpan="4"
-//                   className="text-center py-8 text-gray-500 italic"
-//                 >
-//                   No services found.
-//                 </td>
-//               </tr>
-//             )}
-//           </tbody>
-//         </table>
-//       </div>
-//     </div>
-//     </>
-//   );
-// };
-// export default ServiceManagement;
 __turbopack_context__.s({
     "default": (()=>__TURBOPACK__default__export__)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$ri$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-icons/ri/index.mjs [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
+;
 ;
 ;
 const initialServices = [
@@ -169,6 +50,10 @@ const ServiceManagement = ()=>{
             setServices(services.filter((service)=>service.id !== id));
         }
     };
+    const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
+    const handleClick = ()=>{
+        router.push("/service-management-form");
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "mx-auto py-6",
         children: [
@@ -182,7 +67,7 @@ const ServiceManagement = ()=>{
                                 children: "Manage Services"
                             }, void 0, false, {
                                 fileName: "[project]/components/pages/ServiceManagement/index.jsx",
-                                lineNumber: 181,
+                                lineNumber: 54,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -190,13 +75,13 @@ const ServiceManagement = ()=>{
                                 children: "Add, update, or remove cancer awareness services"
                             }, void 0, false, {
                                 fileName: "[project]/components/pages/ServiceManagement/index.jsx",
-                                lineNumber: 182,
+                                lineNumber: 55,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/pages/ServiceManagement/index.jsx",
-                        lineNumber: 180,
+                        lineNumber: 53,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -210,7 +95,7 @@ const ServiceManagement = ()=>{
                                         size: 16
                                     }, void 0, false, {
                                         fileName: "[project]/components/pages/ServiceManagement/index.jsx",
-                                        lineNumber: 189,
+                                        lineNumber: 62,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -221,46 +106,47 @@ const ServiceManagement = ()=>{
                                         onChange: (e)=>setSearchTerm(e.target.value)
                                     }, void 0, false, {
                                         fileName: "[project]/components/pages/ServiceManagement/index.jsx",
-                                        lineNumber: 190,
+                                        lineNumber: 63,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/pages/ServiceManagement/index.jsx",
-                                lineNumber: 188,
+                                lineNumber: 61,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                onClick: handleClick,
                                 className: "flex items-center gap-1 rounded-md bg-pink-600 md:px-4 text-sm md:text-md py-2 px-2 text-white transition hover:bg-pink-700 cursor-pointer",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$ri$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["RiAddLine"], {
                                         size: 18
                                     }, void 0, false, {
                                         fileName: "[project]/components/pages/ServiceManagement/index.jsx",
-                                        lineNumber: 203,
+                                        lineNumber: 76,
                                         columnNumber: 13
                                     }, this),
                                     "Add New Service"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/pages/ServiceManagement/index.jsx",
-                                lineNumber: 199,
+                                lineNumber: 72,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/pages/ServiceManagement/index.jsx",
-                        lineNumber: 187,
+                        lineNumber: 60,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/pages/ServiceManagement/index.jsx",
-                lineNumber: 179,
+                lineNumber: 52,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "overflow-x-auto rounded-lg shadow-md border border-gray-200",
+                className: "overflow-x-auto rounded-lg shadow-sm border border-gray-200",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("table", {
                     className: "w-full text-left text-sm bg-white",
                     children: [
@@ -273,7 +159,7 @@ const ServiceManagement = ()=>{
                                         children: "Service Name"
                                     }, void 0, false, {
                                         fileName: "[project]/components/pages/ServiceManagement/index.jsx",
-                                        lineNumber: 213,
+                                        lineNumber: 86,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -281,7 +167,7 @@ const ServiceManagement = ()=>{
                                         children: "Description"
                                     }, void 0, false, {
                                         fileName: "[project]/components/pages/ServiceManagement/index.jsx",
-                                        lineNumber: 214,
+                                        lineNumber: 87,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -289,7 +175,7 @@ const ServiceManagement = ()=>{
                                         children: "Duration"
                                     }, void 0, false, {
                                         fileName: "[project]/components/pages/ServiceManagement/index.jsx",
-                                        lineNumber: 215,
+                                        lineNumber: 88,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -297,18 +183,18 @@ const ServiceManagement = ()=>{
                                         children: "Actions"
                                     }, void 0, false, {
                                         fileName: "[project]/components/pages/ServiceManagement/index.jsx",
-                                        lineNumber: 216,
+                                        lineNumber: 89,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/pages/ServiceManagement/index.jsx",
-                                lineNumber: 212,
+                                lineNumber: 85,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/pages/ServiceManagement/index.jsx",
-                            lineNumber: 211,
+                            lineNumber: 84,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
@@ -320,7 +206,7 @@ const ServiceManagement = ()=>{
                                             children: name
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/ServiceManagement/index.jsx",
-                                            lineNumber: 226,
+                                            lineNumber: 99,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -328,7 +214,7 @@ const ServiceManagement = ()=>{
                                             children: description
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/ServiceManagement/index.jsx",
-                                            lineNumber: 227,
+                                            lineNumber: 100,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -336,7 +222,7 @@ const ServiceManagement = ()=>{
                                             children: duration
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/ServiceManagement/index.jsx",
-                                            lineNumber: 228,
+                                            lineNumber: 101,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -349,12 +235,12 @@ const ServiceManagement = ()=>{
                                                         className: "hover:text-pink-900 text-green-800 cursor-pointer",
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$ri$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["RiEdit2Line"], {}, void 0, false, {
                                                             fileName: "[project]/components/pages/ServiceManagement/index.jsx",
-                                                            lineNumber: 236,
+                                                            lineNumber: 109,
                                                             columnNumber: 25
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/pages/ServiceManagement/index.jsx",
-                                                        lineNumber: 231,
+                                                        lineNumber: 104,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -363,29 +249,29 @@ const ServiceManagement = ()=>{
                                                         onClick: ()=>handleDelete(id),
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$ri$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["RiDeleteBinLine"], {}, void 0, false, {
                                                             fileName: "[project]/components/pages/ServiceManagement/index.jsx",
-                                                            lineNumber: 243,
+                                                            lineNumber: 116,
                                                             columnNumber: 25
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/pages/ServiceManagement/index.jsx",
-                                                        lineNumber: 238,
+                                                        lineNumber: 111,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/pages/ServiceManagement/index.jsx",
-                                                lineNumber: 230,
+                                                lineNumber: 103,
                                                 columnNumber: 21
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/ServiceManagement/index.jsx",
-                                            lineNumber: 229,
+                                            lineNumber: 102,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, id, true, {
                                     fileName: "[project]/components/pages/ServiceManagement/index.jsx",
-                                    lineNumber: 222,
+                                    lineNumber: 95,
                                     columnNumber: 17
                                 }, this)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -394,38 +280,42 @@ const ServiceManagement = ()=>{
                                     children: "No services found."
                                 }, void 0, false, {
                                     fileName: "[project]/components/pages/ServiceManagement/index.jsx",
-                                    lineNumber: 251,
+                                    lineNumber: 124,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/pages/ServiceManagement/index.jsx",
-                                lineNumber: 250,
+                                lineNumber: 123,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/pages/ServiceManagement/index.jsx",
-                            lineNumber: 219,
+                            lineNumber: 92,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/pages/ServiceManagement/index.jsx",
-                    lineNumber: 210,
+                    lineNumber: 83,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/pages/ServiceManagement/index.jsx",
-                lineNumber: 209,
+                lineNumber: 82,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/pages/ServiceManagement/index.jsx",
-        lineNumber: 178,
+        lineNumber: 51,
         columnNumber: 5
     }, this);
 };
-_s(ServiceManagement, "hdtzCoV4QQyRIPtD9NXYP3Bgu6Q=");
+_s(ServiceManagement, "QL4KVd8bSv4gG8Gn1mlYG0pkSqY=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]
+    ];
+});
 _c = ServiceManagement;
 const __TURBOPACK__default__export__ = ServiceManagement;
 var _c;

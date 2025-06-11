@@ -22,16 +22,16 @@ const AddServiceForm = () => {
     e.preventDefault();
     console.log("New Service Added:", formData);
     alert("Service Added Successfully!");
-    router.push("/services"); // replace with your actual route
+    router.push("/service-management"); // replace with your actual route
   };
 
   return (
     <div className="max-w-2xl mx-auto p-6 bg-white shadow-md rounded-xl border border-gray-200 mt-8">
       <button
         onClick={() => router.back()}
-        className="mb-4 flex items-center text-sm text-pink-600 hover:underline"
+        className="mb-4 flex items-center text-sm text-black hover:bg-gray-300 bg-gray-200 px-3 py-2 rounded-md cursor-pointer"
       >
-        <RiArrowLeftLine className="mr-1" /> Back to Services
+        <RiArrowLeftLine className="mr-1" /> Back 
       </button>
 
       <h2 className="text-2xl font-bold text-pink-700 mb-4">Add New Service</h2>

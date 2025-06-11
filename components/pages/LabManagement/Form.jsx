@@ -27,6 +27,14 @@ const AddLabForm = () => {
 
   return (
     <>
+    <div className="mx-auto mt-4 max-w-xl">
+        <button
+          onClick={() => router.back()}
+          className="mb-4 rounded-md bg-gray-200 px-4 py-2 text-sm text-gray-800 hover:bg-gray-300 cursor-pointer"
+        >
+          <span><i class="ri-arrow-left-line"></i></span> Back
+        </button>
+      </div>
       {/* Top Header Card */}
       <div className="mx-auto flex max-w-xl items-center gap-4 rounded-2xl bg-[#fdf8f5] p-5 shadow-md">
         <div className="flex h-20 w-20 items-center justify-center rounded-full bg-pink-100">
@@ -87,7 +95,7 @@ const AddLabForm = () => {
 
         <button
           type="submit"
-          className="w-full rounded-lg bg-pink-600 py-2 text-white transition hover:bg-pink-700"
+          className="w-full rounded-lg bg-pink-600 py-2 text-white transition hover:bg-pink-700 cursor-pointer"
         >
           Add Lab
         </button>

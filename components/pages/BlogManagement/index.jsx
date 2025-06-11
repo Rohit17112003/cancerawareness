@@ -1,6 +1,5 @@
-
-
 "use client";
+import { useRouter } from "next/navigation";
 
 const seriesData = [
   {
@@ -21,20 +20,30 @@ const seriesData = [
   },
 ];
 
+
+
 const BlogManagement = () => {
+  const router = useRouter();
+const handleClick = () => {
+  router.push("/blog-management-form");
+};  
+
   return (
     <>
       <div className="mb-6 flex items-center justify-between">
-        <div className="flex items-center space-x-2 border border-gray-300 rounded-full px-4 py-1">
+        <div className="flex items-center space-x-2 rounded-full border border-gray-300 px-4 py-1">
           <i className="ri-search-line text-pink-400"></i>
           <input
             type="text"
             placeholder="Search blog..."
-            className="w-[150px] md:w-[250px] rounded-lg px-1 py-1 focus:outline-none"
+            className="w-[150px] rounded-lg px-1 py-1 focus:outline-none md:w-[250px]"
           />
         </div>
 
-        <button className="cursor-pointer rounded-lg bg-blue-600 px-4 py-2 text-white font-medium hover:bg-blue-700">
+        <button onClick={handleClick} className="cursor-pointer rounded-lg bg-blue-600 px-4 py-2 font-medium text-white hover:bg-blue-700">
+          <span>
+            <i className="ri-add-line pr-1"></i>
+          </span>
           Add New Blog
         </button>
       </div>
@@ -54,7 +63,10 @@ const BlogManagement = () => {
           </thead>
           <tbody>
             {seriesData.map((item, idx) => (
-              <tr key={idx} className="border-b border-gray-200 hover:bg-gray-50">
+              <tr
+                key={idx}
+                className="border-b border-gray-200 hover:bg-gray-50"
+              >
                 <td className="px-4 py-2">
                   <img
                     src={item.thumbnails}
@@ -71,8 +83,8 @@ const BlogManagement = () => {
                 <td className="px-4 py-2">{item.type}</td>
                 <td className="px-4 py-2">
                   <div className="flex items-center gap-3">
-                    <i className="ri-edit-box-line text-blue-600 cursor-pointer text-lg"></i>
-                    <i className="ri-delete-bin-line text-red-500 cursor-pointer text-lg"></i>
+                    <i className="ri-edit-box-line cursor-pointer text-lg text-blue-600"></i>
+                    <i className="ri-delete-bin-line cursor-pointer text-lg text-red-500"></i>
                   </div>
                 </td>
               </tr>

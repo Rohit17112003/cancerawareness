@@ -45,6 +45,7 @@ const UserManagement = () => {
           className="cursor-pointer rounded-lg bg-blue-500 px-4 py-2 text-white transition hover:bg-blue-600"
           onClick={handleAddUserClick}
         >
+        <span><i className="ri-add-line pr-1"></i></span>
           Add New User
         </button>
       </div>

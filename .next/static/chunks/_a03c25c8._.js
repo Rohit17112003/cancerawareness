@@ -37,14 +37,14 @@ const AddServiceForm = ()=>{
         e.preventDefault();
         console.log("New Service Added:", formData);
         alert("Service Added Successfully!");
-        router.push("/services"); // replace with your actual route
+        router.push("/service-management"); // replace with your actual route
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "max-w-2xl mx-auto p-6 bg-white shadow-md rounded-xl border border-gray-200 mt-8",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                 onClick: ()=>router.back(),
-                className: "mb-4 flex items-center text-sm text-pink-600 hover:underline",
+                className: "mb-4 flex items-center text-sm text-black hover:bg-gray-300 bg-gray-200 px-3 py-2 rounded-md cursor-pointer",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$ri$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["RiArrowLeftLine"], {
                         className: "mr-1"
@@ -53,7 +53,7 @@ const AddServiceForm = ()=>{
                         lineNumber: 34,
                         columnNumber: 9
                     }, this),
-                    " Back to Services"
+                    " Back"
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/pages/ServiceManagement/Form.jsx",

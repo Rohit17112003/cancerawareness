@@ -1,8 +1,6 @@
 
-
-
-
 "use client";
+import { useRouter } from "next/navigation";
 import { RiSearchLine, RiEditBoxLine, RiDeleteBin5Line } from "react-icons/ri";
 import { AiFillStar } from "react-icons/ai";
 
@@ -28,6 +26,10 @@ const renderStars = (count) => {
 };
 
 const LabManagement = () => {
+  const router= useRouter();
+  const handleClick=() =>{
+    router.push("/lab-management-form")
+  }
   return (
     <>
       <div className="mb-6 flex items-center justify-between">
@@ -40,8 +42,8 @@ const LabManagement = () => {
           />
         </span>
 
-        <button className="cursor-pointer rounded-lg bg-blue-500 px-4 py-2 text-white shadow hover:bg-blue-600">
-          Add New Lab
+        <button onClick={handleClick} className="cursor-pointer rounded-lg bg-blue-500 px-4 py-2 text-white shadow hover:bg-blue-600">
+          <span><i className="ri-add-fill pr-1"></i></span>Add New Lab
         </button>
       </div>
 

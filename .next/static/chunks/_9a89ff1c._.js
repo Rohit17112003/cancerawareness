@@ -78,8 +78,23 @@ const HospitalManagement = ()=>{
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         onClick: handleHospitalManagementForm,
                         className: "cursor-pointer rounded-lg bg-blue-500 px-4 py-2 text-white transition hover:bg-blue-600",
-                        children: "Add New Hospital"
-                    }, void 0, false, {
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                    className: "ri-add-fill pr-1"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/pages/HospitalManagement/index.jsx",
+                                    lineNumber: 54,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/components/pages/HospitalManagement/index.jsx",
+                                lineNumber: 54,
+                                columnNumber: 9
+                            }, this),
+                            "Add New Hospital"
+                        ]
+                    }, void 0, true, {
                         fileName: "[project]/components/pages/HospitalManagement/index.jsx",
                         lineNumber: 50,
                         columnNumber: 9
@@ -104,7 +119,7 @@ const HospitalManagement = ()=>{
                                         children: "Name"
                                     }, void 0, false, {
                                         fileName: "[project]/components/pages/HospitalManagement/index.jsx",
-                                        lineNumber: 62,
+                                        lineNumber: 63,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -112,7 +127,7 @@ const HospitalManagement = ()=>{
                                         children: "Address"
                                     }, void 0, false, {
                                         fileName: "[project]/components/pages/HospitalManagement/index.jsx",
-                                        lineNumber: 63,
+                                        lineNumber: 64,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -120,7 +135,7 @@ const HospitalManagement = ()=>{
                                         children: "Rating"
                                     }, void 0, false, {
                                         fileName: "[project]/components/pages/HospitalManagement/index.jsx",
-                                        lineNumber: 64,
+                                        lineNumber: 65,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -128,7 +143,7 @@ const HospitalManagement = ()=>{
                                         children: "Review"
                                     }, void 0, false, {
                                         fileName: "[project]/components/pages/HospitalManagement/index.jsx",
-                                        lineNumber: 65,
+                                        lineNumber: 66,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -136,18 +151,18 @@ const HospitalManagement = ()=>{
                                         children: "Actions"
                                     }, void 0, false, {
                                         fileName: "[project]/components/pages/HospitalManagement/index.jsx",
-                                        lineNumber: 66,
+                                        lineNumber: 67,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/pages/HospitalManagement/index.jsx",
-                                lineNumber: 61,
+                                lineNumber: 62,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/pages/HospitalManagement/index.jsx",
-                            lineNumber: 60,
+                            lineNumber: 61,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
@@ -159,7 +174,7 @@ const HospitalManagement = ()=>{
                                             children: item.name
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/HospitalManagement/index.jsx",
-                                            lineNumber: 72,
+                                            lineNumber: 73,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -167,7 +182,7 @@ const HospitalManagement = ()=>{
                                             children: item.address
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/HospitalManagement/index.jsx",
-                                            lineNumber: 73,
+                                            lineNumber: 74,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -175,7 +190,7 @@ const HospitalManagement = ()=>{
                                             children: renderStars(item.rating)
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/HospitalManagement/index.jsx",
-                                            lineNumber: 74,
+                                            lineNumber: 75,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -183,7 +198,7 @@ const HospitalManagement = ()=>{
                                             children: item.review
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/HospitalManagement/index.jsx",
-                                            lineNumber: 75,
+                                            lineNumber: 76,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -195,47 +210,47 @@ const HospitalManagement = ()=>{
                                                         className: "ri-edit-box-line cursor-pointer text-black"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/pages/HospitalManagement/index.jsx",
-                                                        lineNumber: 78,
+                                                        lineNumber: 79,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
                                                         className: "ri-delete-bin-5-line cursor-pointer text-red-500"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/pages/HospitalManagement/index.jsx",
-                                                        lineNumber: 79,
+                                                        lineNumber: 80,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/pages/HospitalManagement/index.jsx",
-                                                lineNumber: 77,
+                                                lineNumber: 78,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/HospitalManagement/index.jsx",
-                                            lineNumber: 76,
+                                            lineNumber: 77,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, idx, true, {
                                     fileName: "[project]/components/pages/HospitalManagement/index.jsx",
-                                    lineNumber: 71,
+                                    lineNumber: 72,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/components/pages/HospitalManagement/index.jsx",
-                            lineNumber: 69,
+                            lineNumber: 70,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/pages/HospitalManagement/index.jsx",
-                    lineNumber: 59,
+                    lineNumber: 60,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/pages/HospitalManagement/index.jsx",
-                lineNumber: 58,
+                lineNumber: 59,
                 columnNumber: 7
             }, this)
         ]

@@ -9,8 +9,11 @@ __turbopack_context__.s({
     "default": (()=>__TURBOPACK__default__export__)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$ri$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-icons/ri/index.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$ai$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-icons/ai/index.mjs [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
 "use client";
 ;
 ;
@@ -36,11 +39,16 @@ const renderStars = (count)=>{
             className: "text-yellow-400 inline"
         }, idx, false, {
             fileName: "[project]/components/pages/LabManagement/index.jsx",
-            lineNumber: 26,
+            lineNumber: 24,
             columnNumber: 5
         }, this));
 };
 const LabManagement = ()=>{
+    _s();
+    const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
+    const handleClick = ()=>{
+        router.push("/lab-management-form");
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -53,7 +61,7 @@ const LabManagement = ()=>{
                                 className: "text-pink-400"
                             }, void 0, false, {
                                 fileName: "[project]/components/pages/LabManagement/index.jsx",
-                                lineNumber: 35,
+                                lineNumber: 37,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -62,27 +70,43 @@ const LabManagement = ()=>{
                                 className: "w-[150px] rounded-lg px-1 py-2 focus:outline-none md:w-[250px]"
                             }, void 0, false, {
                                 fileName: "[project]/components/pages/LabManagement/index.jsx",
-                                lineNumber: 36,
+                                lineNumber: 38,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/pages/LabManagement/index.jsx",
-                        lineNumber: 34,
+                        lineNumber: 36,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        onClick: handleClick,
                         className: "cursor-pointer rounded-lg bg-blue-500 px-4 py-2 text-white shadow hover:bg-blue-600",
-                        children: "Add New Lab"
-                    }, void 0, false, {
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                    className: "ri-add-fill pr-1"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/pages/LabManagement/index.jsx",
+                                    lineNumber: 46,
+                                    columnNumber: 17
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/components/pages/LabManagement/index.jsx",
+                                lineNumber: 46,
+                                columnNumber: 11
+                            }, this),
+                            "Add New Lab"
+                        ]
+                    }, void 0, true, {
                         fileName: "[project]/components/pages/LabManagement/index.jsx",
-                        lineNumber: 43,
+                        lineNumber: 45,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/pages/LabManagement/index.jsx",
-                lineNumber: 33,
+                lineNumber: 35,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -99,7 +123,7 @@ const LabManagement = ()=>{
                                         children: "Name"
                                     }, void 0, false, {
                                         fileName: "[project]/components/pages/LabManagement/index.jsx",
-                                        lineNumber: 52,
+                                        lineNumber: 54,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -107,7 +131,7 @@ const LabManagement = ()=>{
                                         children: "Address"
                                     }, void 0, false, {
                                         fileName: "[project]/components/pages/LabManagement/index.jsx",
-                                        lineNumber: 53,
+                                        lineNumber: 55,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -115,7 +139,7 @@ const LabManagement = ()=>{
                                         children: "Rating"
                                     }, void 0, false, {
                                         fileName: "[project]/components/pages/LabManagement/index.jsx",
-                                        lineNumber: 54,
+                                        lineNumber: 56,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -123,7 +147,7 @@ const LabManagement = ()=>{
                                         children: "Review"
                                     }, void 0, false, {
                                         fileName: "[project]/components/pages/LabManagement/index.jsx",
-                                        lineNumber: 55,
+                                        lineNumber: 57,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -131,18 +155,18 @@ const LabManagement = ()=>{
                                         children: "Actions"
                                     }, void 0, false, {
                                         fileName: "[project]/components/pages/LabManagement/index.jsx",
-                                        lineNumber: 56,
+                                        lineNumber: 58,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/pages/LabManagement/index.jsx",
-                                lineNumber: 51,
+                                lineNumber: 53,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/pages/LabManagement/index.jsx",
-                            lineNumber: 50,
+                            lineNumber: 52,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
@@ -154,7 +178,7 @@ const LabManagement = ()=>{
                                             children: lab.name
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/LabManagement/index.jsx",
-                                            lineNumber: 62,
+                                            lineNumber: 64,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -162,7 +186,7 @@ const LabManagement = ()=>{
                                             children: lab.address
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/LabManagement/index.jsx",
-                                            lineNumber: 63,
+                                            lineNumber: 65,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -170,7 +194,7 @@ const LabManagement = ()=>{
                                             children: renderStars(lab.rating)
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/LabManagement/index.jsx",
-                                            lineNumber: 64,
+                                            lineNumber: 66,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -178,7 +202,7 @@ const LabManagement = ()=>{
                                             children: lab.review
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/LabManagement/index.jsx",
-                                            lineNumber: 65,
+                                            lineNumber: 67,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -190,14 +214,14 @@ const LabManagement = ()=>{
                                                         className: "cursor-pointer text-black text-xl"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/pages/LabManagement/index.jsx",
-                                                        lineNumber: 68,
+                                                        lineNumber: 70,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$ri$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["RiDeleteBin5Line"], {
                                                         className: "cursor-pointer text-red-500 text-xl"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/pages/LabManagement/index.jsx",
-                                                        lineNumber: 69,
+                                                        lineNumber: 71,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -205,45 +229,50 @@ const LabManagement = ()=>{
                                                         children: "Add"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/pages/LabManagement/index.jsx",
-                                                        lineNumber: 70,
+                                                        lineNumber: 72,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/pages/LabManagement/index.jsx",
-                                                lineNumber: 67,
+                                                lineNumber: 69,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/LabManagement/index.jsx",
-                                            lineNumber: 66,
+                                            lineNumber: 68,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, idx, true, {
                                     fileName: "[project]/components/pages/LabManagement/index.jsx",
-                                    lineNumber: 61,
+                                    lineNumber: 63,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/components/pages/LabManagement/index.jsx",
-                            lineNumber: 59,
+                            lineNumber: 61,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/pages/LabManagement/index.jsx",
-                    lineNumber: 49,
+                    lineNumber: 51,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/pages/LabManagement/index.jsx",
-                lineNumber: 48,
+                lineNumber: 50,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true);
 };
+_s(LabManagement, "fN7XvhJ+p5oE6+Xlo0NJmXpxjC8=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]
+    ];
+});
 _c = LabManagement;
 const __TURBOPACK__default__export__ = LabManagement;
 var _c;

@@ -82,8 +82,23 @@ const DoctorManagement = ()=>{
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         onClick: handleAddDoctorClick,
                         className: "cursor-pointer rounded-lg bg-blue-500 px-4 py-2 text-white transition hover:bg-blue-600",
-                        children: "Add New Doctor"
-                    }, void 0, false, {
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                    className: "ri-add-fill pr-1"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/pages/DoctorManagement/index.jsx",
+                                    lineNumber: 59,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/components/pages/DoctorManagement/index.jsx",
+                                lineNumber: 59,
+                                columnNumber: 9
+                            }, this),
+                            "Add New Doctor"
+                        ]
+                    }, void 0, true, {
                         fileName: "[project]/components/pages/DoctorManagement/index.jsx",
                         lineNumber: 55,
                         columnNumber: 9
@@ -108,7 +123,7 @@ const DoctorManagement = ()=>{
                                         children: "Avatar"
                                     }, void 0, false, {
                                         fileName: "[project]/components/pages/DoctorManagement/index.jsx",
-                                        lineNumber: 67,
+                                        lineNumber: 68,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -116,7 +131,7 @@ const DoctorManagement = ()=>{
                                         children: "Name"
                                     }, void 0, false, {
                                         fileName: "[project]/components/pages/DoctorManagement/index.jsx",
-                                        lineNumber: 68,
+                                        lineNumber: 69,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -124,7 +139,7 @@ const DoctorManagement = ()=>{
                                         children: "Speciality"
                                     }, void 0, false, {
                                         fileName: "[project]/components/pages/DoctorManagement/index.jsx",
-                                        lineNumber: 69,
+                                        lineNumber: 70,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -132,7 +147,7 @@ const DoctorManagement = ()=>{
                                         children: "Experience"
                                     }, void 0, false, {
                                         fileName: "[project]/components/pages/DoctorManagement/index.jsx",
-                                        lineNumber: 70,
+                                        lineNumber: 71,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -140,7 +155,7 @@ const DoctorManagement = ()=>{
                                         children: "Rating"
                                     }, void 0, false, {
                                         fileName: "[project]/components/pages/DoctorManagement/index.jsx",
-                                        lineNumber: 71,
+                                        lineNumber: 72,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -148,7 +163,7 @@ const DoctorManagement = ()=>{
                                         children: "Review"
                                     }, void 0, false, {
                                         fileName: "[project]/components/pages/DoctorManagement/index.jsx",
-                                        lineNumber: 72,
+                                        lineNumber: 73,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -156,18 +171,18 @@ const DoctorManagement = ()=>{
                                         children: "Actions"
                                     }, void 0, false, {
                                         fileName: "[project]/components/pages/DoctorManagement/index.jsx",
-                                        lineNumber: 73,
+                                        lineNumber: 74,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/pages/DoctorManagement/index.jsx",
-                                lineNumber: 66,
+                                lineNumber: 67,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/pages/DoctorManagement/index.jsx",
-                            lineNumber: 65,
+                            lineNumber: 66,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
@@ -182,12 +197,12 @@ const DoctorManagement = ()=>{
                                                 className: "h-12 w-12 rounded-md object-cover"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/pages/DoctorManagement/index.jsx",
-                                                lineNumber: 80,
+                                                lineNumber: 81,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/DoctorManagement/index.jsx",
-                                            lineNumber: 79,
+                                            lineNumber: 80,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -195,7 +210,7 @@ const DoctorManagement = ()=>{
                                             children: doctor.name
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/DoctorManagement/index.jsx",
-                                            lineNumber: 86,
+                                            lineNumber: 87,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -203,7 +218,7 @@ const DoctorManagement = ()=>{
                                             children: doctor.speciality
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/DoctorManagement/index.jsx",
-                                            lineNumber: 87,
+                                            lineNumber: 88,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -211,7 +226,7 @@ const DoctorManagement = ()=>{
                                             children: doctor.experience
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/DoctorManagement/index.jsx",
-                                            lineNumber: 88,
+                                            lineNumber: 89,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -219,7 +234,7 @@ const DoctorManagement = ()=>{
                                             children: renderStars(doctor.rating)
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/DoctorManagement/index.jsx",
-                                            lineNumber: 89,
+                                            lineNumber: 90,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -227,7 +242,7 @@ const DoctorManagement = ()=>{
                                             children: doctor.review
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/DoctorManagement/index.jsx",
-                                            lineNumber: 90,
+                                            lineNumber: 91,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -239,47 +254,47 @@ const DoctorManagement = ()=>{
                                                         className: "ri-edit-box-line cursor-pointer text-black"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/pages/DoctorManagement/index.jsx",
-                                                        lineNumber: 93,
+                                                        lineNumber: 94,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
                                                         className: "ri-delete-bin-5-line cursor-pointer text-red-500"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/pages/DoctorManagement/index.jsx",
-                                                        lineNumber: 94,
+                                                        lineNumber: 95,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/pages/DoctorManagement/index.jsx",
-                                                lineNumber: 92,
+                                                lineNumber: 93,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/DoctorManagement/index.jsx",
-                                            lineNumber: 91,
+                                            lineNumber: 92,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, idx, true, {
                                     fileName: "[project]/components/pages/DoctorManagement/index.jsx",
-                                    lineNumber: 78,
+                                    lineNumber: 79,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/components/pages/DoctorManagement/index.jsx",
-                            lineNumber: 76,
+                            lineNumber: 77,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/pages/DoctorManagement/index.jsx",
-                    lineNumber: 64,
+                    lineNumber: 65,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/pages/DoctorManagement/index.jsx",
-                lineNumber: 63,
+                lineNumber: 64,
                 columnNumber: 7
             }, this)
         ]

@@ -5,118 +5,6 @@
 
 var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
-// "use client";
-// import { useState } from "react";
-// import { useRouter } from "next/navigation";
-// const AddHospitalForm = () => {
-//   const [formData, setFormData] = useState({
-//     name: "",
-//     avatar: "",
-//     designation: "",
-//     speciality: "",
-//     experience: "",
-//     reviews: "",
-//   });
-//   const handleChange = (e) => {
-//     setFormData({ ...formData, [e.target.name]: e.target.value });
-//   };
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//     console.log("Doctor added:", formData);
-//     alert("Doctor added successfully!");
-//   };
-//   const router = useRouter();
-//   const handleHospitalManagement = () => {
-//     router.push("/hospital-management");
-//   };
-//   const design = (
-//     <>
-//       <div className="mx-auto flex max-w-xl items-center rounded-2xl bg-[#fdf8f5] p-5 shadow-sm">
-//         {/* Avatar */}
-//         <div className="mr-5 h-24 w-24 overflow-hidden rounded-full">
-//           <img
-//             src="/doctor.jpg" // put your image in public folder with this name
-//             alt="Dr Rebbeka"
-//             width={96}
-//             height={96}
-//             className="object-cover"
-//           />
-//         </div>
-//         {/* Details */}
-//         <div className="flex flex-col">
-//           <h2 className="text-xl font-semibold text-gray-900">Dr Rebbeka</h2>
-//           <p className="text-gray-600">Reproductive Psychiatry • Psychiatry</p>
-//           <div className="mt-2 flex items-center text-sm text-gray-700">
-//             <span className="ml-2 cursor-pointer text-blue-600 hover:underline">
-//               220 Reviews
-//             </span>
-//             <span className="ml-3">• 6 Years Experience</span>
-//           </div>
-//         </div>
-//       </div>
-//       <form
-//         onSubmit={handleSubmit}
-//         className="mx-auto mt-10 max-w-xl space-y-4 rounded-2xl bg-white p-6 shadow-md"
-//       >
-//         <h2 className="mb-4 text-2xl font-semibold">Add Hospital</h2>
-//         <input
-//           type="text"
-//           name="name"
-//           placeholder="Name"
-//           value={formData.name}
-//           onChange={handleChange}
-//           className="w-full rounded-lg border border-gray-300 px-4 py-2 outline-0"
-//           required
-//         />
-//         <input
-//           type="text"
-//           name="designation"
-//           placeholder="Designation"
-//           value={formData.designation}
-//           onChange={handleChange}
-//           className="w-full rounded-lg border border-gray-300 px-4 py-2 outline-0"
-//           required
-//         />
-//         <input
-//           type="text"
-//           name="speciality"
-//           placeholder="Speciality"
-//           value={formData.speciality}
-//           onChange={handleChange}
-//           className="w-full rounded-lg border border-gray-300 px-4 py-2 outline-0"
-//           required
-//         />
-//         <input
-//           type="number"
-//           name="experience"
-//           placeholder="Experience (Years)"
-//           value={formData.experience}
-//           onChange={handleChange}
-//           className="w-full rounded-lg border border-gray-300 px-4 py-2 outline-0"
-//           required
-//         />
-//         <input
-//           type="number"
-//           name="reviews"
-//           placeholder="Review Count"
-//           value={formData.reviews}
-//           onChange={handleChange}
-//           className="w-full rounded-lg border border-gray-300 px-4 py-2 outline-0"
-//           required
-//         />
-//         <button
-//           type="submit"
-//           onClick={handleHospitalManagement}
-//           className="w-full rounded-lg bg-blue-600 py-2 text-white transition hover:bg-blue-700 cursor-pointer"
-//         >
-//           Add Hospital
-//         </button>
-//       </form>
-//     </>
-//   );
-//   return design;
-// };
-// export default AddHospitalForm;
 __turbopack_context__.s({
     "default": (()=>__TURBOPACK__default__export__)
 });
@@ -138,13 +26,13 @@ const AddHospitalForm = ()=>{
         rating: "",
         review: ""
     });
+    const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
     const handleChange = (e)=>{
         setFormData({
             ...formData,
             [e.target.name]: e.target.value
         });
-    }; // ✅ semicolon added here
-    const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
+    };
     const handleSubmit = (e)=>{
         e.preventDefault();
         const { name, address, rating } = formData;
@@ -164,6 +52,37 @@ const AddHospitalForm = ()=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "mx-auto mt-4 max-w-xl",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                    onClick: ()=>router.back(),
+                    className: "mb-4 rounded-md bg-gray-200 px-4 py-2 text-sm text-gray-800 hover:bg-gray-300 cursor-pointer",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                class: "ri-arrow-left-line"
+                            }, void 0, false, {
+                                fileName: "[project]/components/pages/HospitalManagement/Form.jsx",
+                                lineNumber: 47,
+                                columnNumber: 17
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/components/pages/HospitalManagement/Form.jsx",
+                            lineNumber: 47,
+                            columnNumber: 11
+                        }, this),
+                        " Back"
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/components/pages/HospitalManagement/Form.jsx",
+                    lineNumber: 43,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/components/pages/HospitalManagement/Form.jsx",
+                lineNumber: 42,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "mx-auto flex max-w-xl items-center gap-4 rounded-2xl bg-[#fdf8f5] p-5 shadow-sm",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -172,12 +91,12 @@ const AddHospitalForm = ()=>{
                             className: "text-3xl text-blue-600"
                         }, void 0, false, {
                             fileName: "[project]/components/pages/HospitalManagement/Form.jsx",
-                            lineNumber: 167,
+                            lineNumber: 53,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/pages/HospitalManagement/Form.jsx",
-                        lineNumber: 166,
+                        lineNumber: 52,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -187,7 +106,7 @@ const AddHospitalForm = ()=>{
                                 children: "Add New Hospital"
                             }, void 0, false, {
                                 fileName: "[project]/components/pages/HospitalManagement/Form.jsx",
-                                lineNumber: 170,
+                                lineNumber: 56,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -195,19 +114,19 @@ const AddHospitalForm = ()=>{
                                 children: "Please enter hospital details below"
                             }, void 0, false, {
                                 fileName: "[project]/components/pages/HospitalManagement/Form.jsx",
-                                lineNumber: 171,
+                                lineNumber: 57,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/pages/HospitalManagement/Form.jsx",
-                        lineNumber: 169,
+                        lineNumber: 55,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/pages/HospitalManagement/Form.jsx",
-                lineNumber: 165,
+                lineNumber: 51,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -224,7 +143,7 @@ const AddHospitalForm = ()=>{
                         required: true
                     }, void 0, false, {
                         fileName: "[project]/components/pages/HospitalManagement/Form.jsx",
-                        lineNumber: 179,
+                        lineNumber: 65,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -237,7 +156,7 @@ const AddHospitalForm = ()=>{
                         required: true
                     }, void 0, false, {
                         fileName: "[project]/components/pages/HospitalManagement/Form.jsx",
-                        lineNumber: 189,
+                        lineNumber: 75,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -252,7 +171,7 @@ const AddHospitalForm = ()=>{
                         required: true
                     }, void 0, false, {
                         fileName: "[project]/components/pages/HospitalManagement/Form.jsx",
-                        lineNumber: 199,
+                        lineNumber: 85,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -264,7 +183,7 @@ const AddHospitalForm = ()=>{
                         rows: "4"
                     }, void 0, false, {
                         fileName: "[project]/components/pages/HospitalManagement/Form.jsx",
-                        lineNumber: 211,
+                        lineNumber: 97,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -273,13 +192,13 @@ const AddHospitalForm = ()=>{
                         children: "Add Hospital"
                     }, void 0, false, {
                         fileName: "[project]/components/pages/HospitalManagement/Form.jsx",
-                        lineNumber: 220,
+                        lineNumber: 106,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/pages/HospitalManagement/Form.jsx",
-                lineNumber: 175,
+                lineNumber: 61,
                 columnNumber: 7
             }, this)
         ]
