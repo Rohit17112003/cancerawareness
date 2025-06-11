@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { RiArrowLeftLine } from "react-icons/ri";
+import Input from "@/components/atoms/Input";
+import Button from "@/components/atoms/Button";
 
 const AddServiceForm = () => {
   const router = useRouter();
@@ -26,60 +28,55 @@ const AddServiceForm = () => {
   };
 
   return (
-    <div className="max-w-2xl mx-auto p-6 bg-white shadow-md rounded-xl border border-gray-200 mt-8">
+    <div className="mx-auto mt-8 max-w-2xl rounded-xl border border-gray-200 bg-white p-6 shadow-md">
       <button
         onClick={() => router.back()}
-        className="mb-4 flex items-center text-sm text-black hover:bg-gray-300 bg-gray-200 px-3 py-2 rounded-md cursor-pointer"
+        className="mb-4 flex cursor-pointer items-center rounded-md bg-gray-200 px-3 py-2 text-sm text-black hover:bg-gray-300"
       >
-        <RiArrowLeftLine className="mr-1" /> Back 
+        <RiArrowLeftLine className="mr-1" /> Back
       </button>
 
-      <h2 className="text-2xl font-bold text-pink-700 mb-4">Add New Service</h2>
+      <h2 className="mb-4 text-2xl font-bold text-pink-700">Add New Service</h2>
 
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
-          <label className="block text-sm font-medium mb-1">Service Name</label>
-          <input
+          <Input
+            lable="Service Name"
             type="text"
             name="name"
             required
             value={formData.name}
             onChange={handleChange}
-            className="w-full rounded-md border border-gray-300 px-4 py-2 focus:outline-none focus:ring-pink-400"
+            className="w-full rounded-md border border-gray-300 px-4 py-2 focus:ring-pink-400 focus:outline-none"
           />
         </div>
 
         <div>
-          <label className="block text-sm font-medium mb-1">Description</label>
+          <label className="mb-1 block  font-medium">Description</label>
           <textarea
             name="description"
             required
             value={formData.description}
             onChange={handleChange}
             rows={3}
-            className="w-full rounded-md border border-gray-300 px-4 py-2 focus:outline-none focus:ring-pink-400"
+            className="w-full rounded-md border border-gray-300 px-4 py-2 focus:ring-pink-400 focus:outline-none"
           />
         </div>
 
         <div>
-          <label className="block text-sm font-medium mb-1">Duration</label>
-          <input
+          <Input
+            lable="Duration"
             type="text"
             name="duration"
             required
             value={formData.duration}
             onChange={handleChange}
             placeholder="e.g. 30 mins"
-            className="w-full rounded-md border border-gray-300 px-4 py-2 focus:outline-none focus:ring-pink-400"
+            className="w-full rounded-md border border-gray-300 px-4 py-2 focus:ring-pink-400 focus:outline-none"
           />
         </div>
 
-        <button
-          type="submit"
-          className="w-full bg-pink-600 text-white py-2 rounded-md hover:bg-pink-700 transition cursor-pointer"
-        >
-          Add Service
-        </button>
+        <Button value="Add Service" />
       </form>
     </div>
   );

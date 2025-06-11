@@ -146,6 +146,7 @@
     --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
+    --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
@@ -397,6 +398,22 @@
 
   .top-1\/2 {
     top: 50%;
+  }
+
+  .top-5 {
+    top: calc(var(--spacing) * 5);
+  }
+
+  .top-10 {
+    top: calc(var(--spacing) * 10);
+  }
+
+  .top-11 {
+    top: calc(var(--spacing) * 11);
+  }
+
+  .top-12 {
+    top: calc(var(--spacing) * 12);
   }
 
   .right-0 {
@@ -1251,6 +1268,10 @@
     padding-right: calc(var(--spacing) * 10);
   }
 
+  .pb-1 {
+    padding-bottom: calc(var(--spacing) * 1);
+  }
+
   .pl-5 {
     padding-left: calc(var(--spacing) * 5);
   }
@@ -1329,6 +1350,11 @@
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
+  }
+
+  .font-normal {
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
   }
 
   .font-semibold {
@@ -1653,12 +1679,6 @@
   }
 
   @media (hover: hover) {
-    .hover\:text-pink-800:hover {
-      color: var(--color-pink-800);
-    }
-  }
-
-  @media (hover: hover) {
     .hover\:text-pink-900:hover {
       color: var(--color-pink-900);
     }
@@ -1667,12 +1687,6 @@
   @media (hover: hover) {
     .hover\:text-primary:hover {
       color: var(--color-primary);
-    }
-  }
-
-  @media (hover: hover) {
-    .hover\:text-red-600:hover {
-      color: var(--color-red-600);
     }
   }
 

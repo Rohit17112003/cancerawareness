@@ -1,9 +1,8 @@
-
-
 "use client";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { FaEye, FaEyeSlash } from "react-icons/fa";
+import Input from "@/components/atoms/Input";
+import Button from "@/components/atoms/Button";
 
 const AddUserForm = () => {
   const router = useRouter();
@@ -54,118 +53,116 @@ const AddUserForm = () => {
   };
 
   return (
-
     <>
-       {/* Back Button */}
-      <div className="mx-auto max-w-2xl mt-4">
+      {/* Back Button */}
+      <div className="mx-auto mt-4 max-w-2xl">
         <button
           onClick={() => router.back()}
-          className="mb-4 rounded-md bg-gray-200 px-4 py-2 text-sm text-gray-800 hover:bg-gray-300 cursor-pointer"
+          className="mb-4 cursor-pointer rounded-md bg-gray-200 px-4 py-2 text-sm text-gray-800 hover:bg-gray-300"
         >
-          <span><i class="ri-arrow-left-line"></i></span> Back
+          <span>
+            <i className="ri-arrow-left-line"></i>
+          </span>{" "}
+          Back
         </button>
       </div>
-    <form
-      onSubmit={handleSubmit}
-      className="max-w-2xl mx-auto  p-6 bg-white rounded-xl shadow space-y-6"
-    >
+      <form
+        onSubmit={handleSubmit}
+        className="mx-auto max-w-2xl space-y-6 rounded-xl bg-white p-6 shadow"
+      >
+        <h2 className="text-2xl font-bold text-gray-800">Add New User</h2>
 
-      <h2 className="text-2xl font-bold text-gray-800 ">
-      
-      Add New User</h2>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <input
-          type="text"
-          name="name"
-          placeholder="Full Name"
-          value={formData.name}
-          onChange={handleChange}
-          className="w-full px-4 py-2 border border-gray-300 outline-0 rounded-md"
-        />
-
-        <input
-          type="email"
-          name="email"
-          placeholder="Email Address"
-          value={formData.email}
-          onChange={handleChange}
-          className="w-full px-4 py-2 border border-gray-300 outline-0 rounded-md"
-        />
-
-        <input
-          type="tel"
-          name="phone"
-          placeholder="Phone Number"
-          value={formData.phone}
-          onChange={handleChange}
-          className="w-full px-4 py-2 border border-gray-300 outline-0 rounded-md"
-        />
-
-        <div className="relative">
-          <input
-            type={showPassword ? "text" : "password"}
-            name="password"
-            placeholder="Password"
-            value={formData.password}
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <Input
+            lable="Name"
+            type="text"
+            name="name"
+            placeholder="Full Name"
+            value={formData.name}
             onChange={handleChange}
-            className="w-full px-4 py-2 border border-gray-300 outline-0 rounded-md pr-10"
+            className="w-full rounded-md border border-gray-300 px-4 py-2 outline-0"
           />
-          <span
-            onClick={() => setShowPassword(!showPassword)}
-            className="absolute right-3 top-1/2 -translate-y-1/2 cursor-pointer text-gray-500"
+
+          <Input
+            lable="Email"
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            value={formData.email}
+            onChange={handleChange}
+          />
+
+          <Input
+            lable="Phone No"
+            type="tel"
+            name="phone"
+            placeholder="Phone Number"
+            value={formData.phone}
+            onChange={handleChange}
+            className="w-full rounded-md border border-gray-300 px-4 py-2 outline-0"
+          />
+
+          <div className="relative">
+            <Input
+              lable="Password"
+              type={showPassword ? "text" : "password"}
+              name="password"
+              placeholder="Password"
+              value={formData.password}
+              onChange={handleChange}
+              className="w-full rounded-md border border-gray-300 px-4 py-2 pr-10 outline-0"
+            />
+            <span
+              onClick={() => setShowPassword(!showPassword)}
+              className="absolute top-11 right-3 -translate-y-1/2 cursor-pointer text-gray-500"
+            >
+              {showPassword ? (
+                <i className="ri-eye-off-line"></i>
+              ) : (
+                <i className="ri-eye-line"></i>
+              )}
+            </span>
+          </div>
+        
+          <select
+            name="role"
+            value={formData.role}
+            onChange={handleChange}
+            className="w-full rounded-md border border-gray-300 px-4 py-2 outline-0"
           >
-            {showPassword ? <FaEyeSlash /> : <FaEye />}
-          </span>
+            <option value="Volunteer">Volunteer</option>
+            <option value="Admin">Admin</option>
+            <option value="Oncologist">Oncologist</option>
+            <option value="Donor">Donor</option>
+          </select>
+
+
+          <select
+            name="status"
+            value={formData.status}
+            onChange={handleChange}
+            className="w-full rounded-md border border-gray-300 px-4 py-2 outline-0"
+          >
+            <option value="Active">Active</option>
+            <option value="Inactive">Inactive</option>
+          </select>
         </div>
 
-        <select
-          name="role"
-          value={formData.role}
-          onChange={handleChange}
-          className="w-full px-4 py-2 border border-gray-300 outline-0 rounded-md"
-        >
-          <option value="Volunteer">Volunteer</option>
-          <option value="Admin">Admin</option>
-          <option value="Oncologist">Oncologist</option>
-          <option value="Donor">Donor</option>
-        </select>
+        <div>
+          <Input
+            lable="Upload File"
+            type="file"
+            name="avatar"
+            accept="image/*"
+            onChange={handleChange}
+            className="w-full rounded-md border border-gray-300 px-4 py-2 outline-0"
+          />
+        </div>
 
-        <select
-          name="status"
-          value={formData.status}
-          onChange={handleChange}
-          className="w-full px-4 py-2 border border-gray-300 outline-0 rounded-md"
-        >
-          <option value="Active">Active</option>
-          <option value="Inactive">Inactive</option>
-        </select>
-      </div>
-
-      <div>
-        <label className="block mb-1 font-medium text-gray-700">
-          Profile Image
-        </label>
-        <input
-          type="file"
-          name="avatar"
-          accept="image/*"
-          onChange={handleChange}
-          className="w-full px-4 py-2 border border-gray-300 outline-0 rounded-md"
-        />
-      </div>
-
-      <button
-        type="submit"
-        className="w-full bg-blue-600 text-white font-semibold py-2 rounded-md hover:bg-blue-700 cursor-pointer"
-      >
-        Add User
-      </button>
-    </form>
+        <Button value="Add User" />
+      </form>
     </>
   );
 };
 
 export default AddUserForm;
-
-

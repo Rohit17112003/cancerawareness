@@ -2,6 +2,7 @@
   "/_not-found/page": "app/_not-found/page.js",
   "/blog-management-form/page": "app/blog-management-form/page.js",
   "/blog-management/page": "app/blog-management/page.js",
+  "/doctor-management-form/page": "app/doctor-management-form/page.js",
   "/doctor-management/page": "app/doctor-management/page.js",
   "/hospital-management-form/page": "app/hospital-management-form/page.js",
   "/hospital-management/page": "app/hospital-management/page.js",

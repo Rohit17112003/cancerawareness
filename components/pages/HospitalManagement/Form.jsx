@@ -1,8 +1,9 @@
-
 "use client";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { RiHospitalLine } from "react-icons/ri";
+import Input from "@/components/atoms/Input";
+import Button from "@/components/atoms/Button";
 
 const AddHospitalForm = () => {
   const [formData, setFormData] = useState({
@@ -39,12 +40,15 @@ const AddHospitalForm = () => {
   return (
     <>
       {/* Back Button */}
-      <div className="mx-auto mt-4 max-w-xl">
+      <div className="mx-auto mt-2 max-w-xl">
         <button
           onClick={() => router.back()}
-          className="mb-4 rounded-md bg-gray-200 px-4 py-2 text-sm text-gray-800 hover:bg-gray-300 cursor-pointer"
+          className="mb-4 cursor-pointer rounded-md bg-gray-200 px-4 py-2 text-sm text-gray-800 hover:bg-gray-300"
         >
-          <span><i class="ri-arrow-left-line"></i></span> Back
+          <span>
+            <i className="ri-arrow-left-line"></i>
+          </span>{" "}
+          Back
         </button>
       </div>
 
@@ -53,8 +57,12 @@ const AddHospitalForm = () => {
           <RiHospitalLine className="text-3xl text-blue-600" />
         </div>
         <div>
-          <h2 className="text-xl font-semibold text-gray-900">Add New Hospital</h2>
-          <p className="text-sm text-gray-600">Please enter hospital details below</p>
+          <h2 className="text-xl font-semibold text-gray-900">
+            Add New Hospital
+          </h2>
+          <p className="text-sm text-gray-600">
+            Please enter hospital details below
+          </p>
         </div>
       </div>
 
@@ -62,7 +70,8 @@ const AddHospitalForm = () => {
         onSubmit={handleSubmit}
         className="mx-auto mt-10 max-w-xl space-y-4 rounded-2xl bg-white p-6 shadow-md"
       >
-        <input
+        <Input
+          lable="Hospital Name"
           type="text"
           name="name"
           placeholder="Hospital Name"
@@ -72,7 +81,8 @@ const AddHospitalForm = () => {
           required
         />
 
-        <input
+        <Input
+          lable="Address"
           type="text"
           name="address"
           placeholder="Address"
@@ -82,7 +92,8 @@ const AddHospitalForm = () => {
           required
         />
 
-        <input
+        <Input
+          lable="Rating"
           type="number"
           name="rating"
           placeholder="Rating (1 to 5)"
@@ -93,7 +104,7 @@ const AddHospitalForm = () => {
           max={5}
           required
         />
-
+        <label className="pb-1 font-medium">Review</label>
         <textarea
           name="review"
           placeholder="Review (optional)"
@@ -103,16 +114,10 @@ const AddHospitalForm = () => {
           rows="4"
         ></textarea>
 
-        <button
-          type="submit"
-          className="w-full rounded-lg bg-blue-600 py-2 text-white transition hover:bg-blue-700 cursor-pointer"
-        >
-          Add Hospital
-        </button>
+        <Button value="Add Hospital" />
       </form>
     </>
   );
 };
 
 export default AddHospitalForm;
-

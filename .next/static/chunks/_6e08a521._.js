@@ -117,7 +117,7 @@ const ServiceManagement = ()=>{
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: handleClick,
-                                className: "flex items-center gap-1 rounded-md bg-pink-600 md:px-4 text-sm md:text-md py-2 px-2 text-white transition hover:bg-pink-700 cursor-pointer",
+                                className: "flex items-center gap-1 rounded-md bg-blue-600 md:px-4 text-sm md:text-md py-2 px-2 text-white transition hover:bg-blue-700 cursor-pointer",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$ri$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["RiAddLine"], {
                                         size: 18

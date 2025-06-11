@@ -2,6 +2,8 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { RiTestTubeLine } from "react-icons/ri";
+import Input from "@/components/atoms/Input";
+import Button from "@/components/atoms/Button";
 
 const AddLabForm = () => {
   const [formData, setFormData] = useState({
@@ -27,12 +29,15 @@ const AddLabForm = () => {
 
   return (
     <>
-    <div className="mx-auto mt-4 max-w-xl">
+      <div className="mx-auto mt-4 max-w-xl">
         <button
           onClick={() => router.back()}
-          className="mb-4 rounded-md bg-gray-200 px-4 py-2 text-sm text-gray-800 hover:bg-gray-300 cursor-pointer"
+          className="mb-4 cursor-pointer rounded-md bg-gray-200 px-4 py-2 text-sm text-gray-800 hover:bg-gray-300"
         >
-          <span><i class="ri-arrow-left-line"></i></span> Back
+          <span>
+            <i className="ri-arrow-left-line"></i>
+          </span>{" "}
+          Back
         </button>
       </div>
       {/* Top Header Card */}
@@ -42,7 +47,9 @@ const AddLabForm = () => {
         </div>
         <div>
           <h2 className="text-xl font-semibold text-gray-900">Add New Lab</h2>
-          <p className="text-sm text-gray-600">Please enter lab details below</p>
+          <p className="text-sm text-gray-600">
+            Please enter lab details below
+          </p>
         </div>
       </div>
 
@@ -51,7 +58,8 @@ const AddLabForm = () => {
         onSubmit={handleSubmit}
         className="mx-auto mt-10 max-w-xl space-y-4 rounded-2xl bg-white p-6 shadow-md"
       >
-        <input
+        <Input
+          lable="Lab Name"
           type="text"
           name="name"
           placeholder="Lab Name"
@@ -61,7 +69,8 @@ const AddLabForm = () => {
           required
         />
 
-        <input
+        <Input
+          lable="Address"
           type="text"
           name="address"
           placeholder="Address"
@@ -71,7 +80,8 @@ const AddLabForm = () => {
           required
         />
 
-        <input
+        <Input
+          lable="Rating"
           type="number"
           name="rating"
           placeholder="Rating (1 to 5)"
@@ -83,6 +93,7 @@ const AddLabForm = () => {
           required
         />
 
+        <label className=" font-medium pb-1">Review</label>
         <textarea
           name="review"
           placeholder="Review"
@@ -93,12 +104,7 @@ const AddLabForm = () => {
           required
         ></textarea>
 
-        <button
-          type="submit"
-          className="w-full rounded-lg bg-pink-600 py-2 text-white transition hover:bg-pink-700 cursor-pointer"
-        >
-          Add Lab
-        </button>
+        <Button value="Add Lab" />
       </form>
     </>
   );

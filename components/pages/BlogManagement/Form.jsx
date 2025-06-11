@@ -4,6 +4,8 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import Input from "@/components/atoms/Input";
+import Button from "@/components/atoms/Button";
 
 const AddBlogForm = () => {
   const router = useRouter();
@@ -49,7 +51,7 @@ const AddBlogForm = () => {
           onClick={() => router.back()}
           className="mb-4 rounded-md bg-gray-200 px-4 py-2 text-sm text-gray-800 hover:bg-gray-300 cursor-pointer"
         >
-          <span><i class="ri-arrow-left-line"></i></span> Back
+          <span><i className="ri-arrow-left-line"></i></span> Back
         </button>
       </div>
     <form
@@ -59,7 +61,8 @@ const AddBlogForm = () => {
 
       <h2 className="text-2xl font-bold text-gray-800 mb-2 ">Add New Blog</h2>
 
-      <input
+      <Input 
+        lable="Blog Title"
         type="text"
         name="title"
         value={formData.title}
@@ -68,7 +71,8 @@ const AddBlogForm = () => {
         className="w-full border border-gray-300 px-4 py-2 rounded-md outline-0"
       />
 
-      <input
+      <Input 
+        lable="Description"
         type="text"
         name="description"
         value={formData.description}
@@ -76,7 +80,7 @@ const AddBlogForm = () => {
         placeholder="Short Description"
         className="w-full border border-gray-300 px-4 py-2 rounded-md outline-0"
       />
-
+       <label> Write Content</label>
       <textarea
         name="content"
         value={formData.content}
@@ -86,7 +90,8 @@ const AddBlogForm = () => {
         className="w-full border border-gray-300 px-4 py-2 rounded-md outline-0"
       />
 
-      <input
+      <Input 
+        lable="Author Name"
         type="text"
         name="author"
         value={formData.author}
@@ -95,6 +100,7 @@ const AddBlogForm = () => {
         className="w-full border border-gray-300 px-4 py-2 rounded-md outline-0"
       />
 
+       <label> Awareness</label>
       <select
         name="category"
         value={formData.category}
@@ -107,7 +113,8 @@ const AddBlogForm = () => {
         <option value="Survivor Stories">Survivor Stories</option>
       </select>
 
-      <input
+      <Input 
+        lable="Upload File"
         type="file"
         name="thumbnail"
         accept="image/*"
@@ -115,12 +122,7 @@ const AddBlogForm = () => {
         className="w-full px-4 py-2 border border-gray-300 outline-0 rounded-md"
       />
 
-      <button
-        type="submit"
-        className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 cursor-pointer"
-      >
-        Submit Blog
-      </button>
+     <Button value="Submit Blog"/>
     </form>
    </>
   );

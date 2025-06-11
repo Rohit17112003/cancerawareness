@@ -71,7 +71,7 @@ const ServiceManagement = () => {
 
           <button
           onClick={handleClick}
-            className="flex items-center gap-1 rounded-md bg-pink-600 md:px-4 text-sm md:text-md py-2 px-2 text-white transition hover:bg-pink-700 cursor-pointer"
+            className="flex items-center gap-1 rounded-md bg-blue-600 md:px-4 text-sm md:text-md py-2 px-2 text-white transition hover:bg-blue-700 cursor-pointer"
           >
             <RiAddLine size={18} />
             Add New Service
