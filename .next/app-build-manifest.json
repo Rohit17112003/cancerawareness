@@ -1,101 +1,116 @@
 {
   "pages": {
     "/_not-found/page": [
-      "static/chunks/webpack-4b663cd89b879df2.js",
-      "static/chunks/4bd1b696-18452535c1c4862d.js",
-      "static/chunks/684-ed504c0e1b66e7ac.js",
-      "static/chunks/main-app-1bf72e7bb4922872.js",
-      "static/chunks/app/_not-found/page-65ff5a88eb39ddf0.js"
-    ],
-    "/layout": [
-      "static/chunks/webpack-4b663cd89b879df2.js",
-      "static/chunks/4bd1b696-18452535c1c4862d.js",
-      "static/chunks/684-ed504c0e1b66e7ac.js",
-      "static/chunks/main-app-1bf72e7bb4922872.js",
-      "static/css/c23d7665e86d16fc.css",
-      "static/css/ce178d2b3058a5fe.css",
-      "static/chunks/app/layout-173fe0cc2c06b3c5.js"
-    ],
-    "/doctor-management-form/page": [
-      "static/chunks/webpack-4b663cd89b879df2.js",
-      "static/chunks/4bd1b696-18452535c1c4862d.js",
-      "static/chunks/684-ed504c0e1b66e7ac.js",
-      "static/chunks/main-app-1bf72e7bb4922872.js",
-      "static/chunks/244-6956dd40634dcb2e.js",
-      "static/chunks/app/doctor-management-form/page-52649483973b944c.js"
-    ],
-    "/blog-management/page": [
-      "static/chunks/webpack-4b663cd89b879df2.js",
-      "static/chunks/4bd1b696-18452535c1c4862d.js",
-      "static/chunks/684-ed504c0e1b66e7ac.js",
-      "static/chunks/main-app-1bf72e7bb4922872.js",
-      "static/chunks/244-6956dd40634dcb2e.js",
-      "static/chunks/app/blog-management/page-dbbaaec8f8b48770.js"
-    ],
-    "/doctor-management/page": [
-      "static/chunks/webpack-4b663cd89b879df2.js",
-      "static/chunks/4bd1b696-18452535c1c4862d.js",
-      "static/chunks/684-ed504c0e1b66e7ac.js",
-      "static/chunks/main-app-1bf72e7bb4922872.js",
-      "static/chunks/244-6956dd40634dcb2e.js",
-      "static/chunks/app/doctor-management/page-f38ac92fb42e4ddb.js"
-    ],
-    "/hospital-management-form/page": [
-      "static/chunks/webpack-4b663cd89b879df2.js",
-      "static/chunks/4bd1b696-18452535c1c4862d.js",
-      "static/chunks/684-ed504c0e1b66e7ac.js",
-      "static/chunks/main-app-1bf72e7bb4922872.js",
-      "static/chunks/244-6956dd40634dcb2e.js",
-      "static/chunks/app/hospital-management-form/page-a504208e02d56c2a.js"
-    ],
-    "/lab-management/page": [
-      "static/chunks/webpack-4b663cd89b879df2.js",
-      "static/chunks/4bd1b696-18452535c1c4862d.js",
-      "static/chunks/684-ed504c0e1b66e7ac.js",
-      "static/chunks/main-app-1bf72e7bb4922872.js",
-      "static/chunks/244-6956dd40634dcb2e.js",
-      "static/chunks/app/lab-management/page-12b5a969194c0c4e.js"
-    ],
-    "/page": [
-      "static/chunks/webpack-4b663cd89b879df2.js",
-      "static/chunks/4bd1b696-18452535c1c4862d.js",
-      "static/chunks/684-ed504c0e1b66e7ac.js",
-      "static/chunks/main-app-1bf72e7bb4922872.js",
-      "static/chunks/244-6956dd40634dcb2e.js",
-      "static/chunks/app/page-e04e0e3fc8f47c18.js"
-    ],
-    "/user-management-form/page": [
-      "static/chunks/webpack-4b663cd89b879df2.js",
-      "static/chunks/4bd1b696-18452535c1c4862d.js",
-      "static/chunks/684-ed504c0e1b66e7ac.js",
-      "static/chunks/main-app-1bf72e7bb4922872.js",
-      "static/chunks/8e1d74a4-a1e05770504c2dc6.js",
-      "static/chunks/244-6956dd40634dcb2e.js",
-      "static/chunks/app/user-management-form/page-02c860b38ec8cb68.js"
-    ],
-    "/user-management/page": [
-      "static/chunks/webpack-4b663cd89b879df2.js",
-      "static/chunks/4bd1b696-18452535c1c4862d.js",
-      "static/chunks/684-ed504c0e1b66e7ac.js",
-      "static/chunks/main-app-1bf72e7bb4922872.js",
-      "static/chunks/244-6956dd40634dcb2e.js",
-      "static/chunks/app/user-management/page-2c9fda7267fc4481.js"
-    ],
-    "/service-management/page": [
-      "static/chunks/webpack-4b663cd89b879df2.js",
-      "static/chunks/4bd1b696-18452535c1c4862d.js",
-      "static/chunks/684-ed504c0e1b66e7ac.js",
-      "static/chunks/main-app-1bf72e7bb4922872.js",
-      "static/chunks/244-6956dd40634dcb2e.js",
-      "static/chunks/app/service-management/page-38c7d10031365e52.js"
+      "static/chunks/[root-of-the-server]__3fde16c1._.css",
+      "static/chunks/node_modules_next_dist_1a6ee436._.js",
+      "static/chunks/app_layout_jsx_c0237562._.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_fd44f5a4._.js",
+      "static/chunks/node_modules_next_dist_compiled_2ce9398a._.js",
+      "static/chunks/node_modules_next_dist_client_8f19e6fb._.js",
+      "static/chunks/node_modules_next_dist_2ecbf5fa._.js",
+      "static/chunks/node_modules_@swc_helpers_cjs_00636ac3._.js",
+      "static/chunks/_e69f0d32._.js",
+      "static/chunks/_93808211._.js"
     ],
     "/hospital-management/page": [
-      "static/chunks/webpack-4b663cd89b879df2.js",
-      "static/chunks/4bd1b696-18452535c1c4862d.js",
-      "static/chunks/684-ed504c0e1b66e7ac.js",
-      "static/chunks/main-app-1bf72e7bb4922872.js",
-      "static/chunks/244-6956dd40634dcb2e.js",
-      "static/chunks/app/hospital-management/page-f5407c5c0e547ee6.js"
+      "static/chunks/[root-of-the-server]__3fde16c1._.css",
+      "static/chunks/node_modules_next_dist_1a6ee436._.js",
+      "static/chunks/app_layout_jsx_c0237562._.js",
+      "static/chunks/node_modules_react-icons_ri_index_mjs_0e2ec0a5._.js",
+      "static/chunks/node_modules_react-icons_lib_74ccc930._.js",
+      "static/chunks/node_modules_next_141cf534._.js",
+      "static/chunks/_9a89ff1c._.js",
+      "static/chunks/app_hospital-management_page_5c0ac257.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_fd44f5a4._.js",
+      "static/chunks/node_modules_next_dist_compiled_2ce9398a._.js",
+      "static/chunks/node_modules_next_dist_client_8f19e6fb._.js",
+      "static/chunks/node_modules_next_dist_2ecbf5fa._.js",
+      "static/chunks/node_modules_@swc_helpers_cjs_00636ac3._.js",
+      "static/chunks/_e69f0d32._.js",
+      "static/chunks/_93808211._.js"
+    ],
+    "/lab-management/page": [
+      "static/chunks/[root-of-the-server]__3fde16c1._.css",
+      "static/chunks/node_modules_next_dist_1a6ee436._.js",
+      "static/chunks/app_layout_jsx_c0237562._.js",
+      "static/chunks/node_modules_react-icons_ri_index_mjs_0e2ec0a5._.js",
+      "static/chunks/node_modules_react-icons_ai_index_mjs_b8cfc3ce._.js",
+      "static/chunks/node_modules_react-icons_lib_74ccc930._.js",
+      "static/chunks/node_modules_next_573a9b57._.js",
+      "static/chunks/_4a1c0689._.js",
+      "static/chunks/app_lab-management_page_5c0ac257.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_fd44f5a4._.js",
+      "static/chunks/node_modules_next_dist_compiled_2ce9398a._.js",
+      "static/chunks/node_modules_next_dist_client_8f19e6fb._.js",
+      "static/chunks/node_modules_next_dist_2ecbf5fa._.js",
+      "static/chunks/node_modules_@swc_helpers_cjs_00636ac3._.js",
+      "static/chunks/_e69f0d32._.js",
+      "static/chunks/_93808211._.js"
+    ],
+    "/page": [
+      "static/chunks/[root-of-the-server]__3fde16c1._.css",
+      "static/chunks/node_modules_next_dist_1a6ee436._.js",
+      "static/chunks/app_layout_jsx_c0237562._.js",
+      "static/chunks/node_modules_react-icons_ri_index_mjs_0e2ec0a5._.js",
+      "static/chunks/node_modules_react-icons_lib_74ccc930._.js",
+      "static/chunks/node_modules_next_573a9b57._.js",
+      "static/chunks/_5858ff90._.js",
+      "static/chunks/app_page_5c0ac257.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_fd44f5a4._.js",
+      "static/chunks/node_modules_next_dist_compiled_2ce9398a._.js",
+      "static/chunks/node_modules_next_dist_client_8f19e6fb._.js",
+      "static/chunks/node_modules_next_dist_2ecbf5fa._.js",
+      "static/chunks/node_modules_@swc_helpers_cjs_00636ac3._.js",
+      "static/chunks/_e69f0d32._.js",
+      "static/chunks/_93808211._.js"
+    ],
+    "/service-management-form/page": [
+      "static/chunks/[root-of-the-server]__3fde16c1._.css",
+      "static/chunks/node_modules_next_dist_1a6ee436._.js",
+      "static/chunks/app_layout_jsx_c0237562._.js",
+      "static/chunks/node_modules_react-icons_ri_index_mjs_0e2ec0a5._.js",
+      "static/chunks/node_modules_react-icons_lib_74ccc930._.js",
+      "static/chunks/node_modules_next_141cf534._.js",
+      "static/chunks/_a03c25c8._.js",
+      "static/chunks/app_service-management-form_page_5c0ac257.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_fd44f5a4._.js",
+      "static/chunks/node_modules_next_dist_compiled_2ce9398a._.js",
+      "static/chunks/node_modules_next_dist_client_8f19e6fb._.js",
+      "static/chunks/node_modules_next_dist_2ecbf5fa._.js",
+      "static/chunks/node_modules_@swc_helpers_cjs_00636ac3._.js",
+      "static/chunks/_e69f0d32._.js",
+      "static/chunks/_93808211._.js"
+    ],
+    "/service-management/page": [
+      "static/chunks/[root-of-the-server]__3fde16c1._.css",
+      "static/chunks/node_modules_next_dist_1a6ee436._.js",
+      "static/chunks/app_layout_jsx_c0237562._.js",
+      "static/chunks/node_modules_react-icons_ri_index_mjs_0e2ec0a5._.js",
+      "static/chunks/node_modules_react-icons_lib_74ccc930._.js",
+      "static/chunks/node_modules_next_573a9b57._.js",
+      "static/chunks/_6e08a521._.js",
+      "static/chunks/app_service-management_page_5c0ac257.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_fd44f5a4._.js",
+      "static/chunks/node_modules_next_dist_compiled_2ce9398a._.js",
+      "static/chunks/node_modules_next_dist_client_8f19e6fb._.js",
+      "static/chunks/node_modules_next_dist_2ecbf5fa._.js",
+      "static/chunks/node_modules_@swc_helpers_cjs_00636ac3._.js",
+      "static/chunks/_e69f0d32._.js",
+      "static/chunks/_93808211._.js"
+    ],
+    "/user-management/page": [
+      "static/chunks/[root-of-the-server]__3fde16c1._.css",
+      "static/chunks/node_modules_next_dist_1a6ee436._.js",
+      "static/chunks/app_layout_jsx_c0237562._.js",
+      "static/chunks/_f46c6885._.js",
+      "static/chunks/app_user-management_page_5c0ac257.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_fd44f5a4._.js",
+      "static/chunks/node_modules_next_dist_compiled_2ce9398a._.js",
+      "static/chunks/node_modules_next_dist_client_8f19e6fb._.js",
+      "static/chunks/node_modules_next_dist_2ecbf5fa._.js",
+      "static/chunks/node_modules_@swc_helpers_cjs_00636ac3._.js",
+      "static/chunks/_e69f0d32._.js",
+      "static/chunks/_93808211._.js"
     ]
   }
 }
