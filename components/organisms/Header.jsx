@@ -36,7 +36,7 @@ const Header = ({ isSidebarOpen, setIsSidebarOpen, pageTitle }) => {
             <span>
               <i className="ri-notification-3-fill ri-lg text-primary"></i>
             </span>
-            <Link href="/profile">
+            <Link href="/">
               <div className="bg-primary/10 text-primary flex aspect-square h-12 w-12 items-center justify-center rounded-full text-xl">
                 <i className="ri-user-smile-fill ri-lg"></i>
               </div>
