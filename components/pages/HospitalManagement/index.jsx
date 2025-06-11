@@ -37,7 +37,7 @@ const HospitalManagement = () => {
 
   return (
     <>
-      <div className="mb-6 flex items-center justify-between">
+      <div className="mb-6 flex gap-1.5 items-center justify-between">
         <span className="flex items-center gap-2 rounded-full border border-gray-300 px-4 text-sm">
           <i className="ri-search-line text-pink-400"></i>
           <input
@@ -49,7 +49,7 @@ const HospitalManagement = () => {
 
         <button
           onClick={handleHospitalManagementForm}
-          className="cursor-pointer rounded-lg bg-blue-500 px-4 py-2 text-white transition hover:bg-blue-600"
+          className="cursor-pointer rounded-lg bg-blue-500 md:px-4 px-2 py-2 text-white transition hover:bg-blue-600"
         >
         <span><i className="ri-add-fill pr-1"></i></span>
           Add New Hospital
