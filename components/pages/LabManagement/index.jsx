@@ -30,6 +30,9 @@ const LabManagement = () => {
   const handleClick=() =>{
     router.push("/lab-management-form")
   }
+   const handleClickPackage=() =>{
+    router.push("/lab-management-package")
+  }
   return (
     <>
       <div className="mb-6 flex items-center justify-between">
@@ -69,7 +72,7 @@ const LabManagement = () => {
                   <div className="text-md flex items-center gap-2">
                     <RiEditBoxLine className="cursor-pointer text-black text-xl" />
                     <RiDeleteBin5Line className="cursor-pointer text-red-500 text-xl" />
-                    <button className="cursor-pointer rounded-sm bg-blue-500 px-3 py-1 text-white hover:bg-blue-600">
+                    <button onClick={handleClickPackage} className="cursor-pointer rounded-sm bg-blue-500 px-3 py-1 text-white hover:bg-blue-600">
                       Add
                     </button>
                   </div>
