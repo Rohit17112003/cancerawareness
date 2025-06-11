@@ -1,5 +1,11 @@
 {
   "app": {
+    "[project]/app/_not-found/page": [
+      "static/media/L0x_DF02iFML4hGCyMqlbS1miXK2-s.p.b88a81e7.woff2"
+    ],
+    "[project]/app/lab-management-form/page": [
+      "static/media/L0x_DF02iFML4hGCyMqlbS1miXK2-s.p.b88a81e7.woff2"
+    ],
     "[project]/app/lab-management-package/page": [
       "static/media/L0x_DF02iFML4hGCyMqlbS1miXK2-s.p.b88a81e7.woff2"
     ],

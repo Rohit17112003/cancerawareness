@@ -132,6 +132,7 @@
     --spacing: .25rem;
     --container-xl: 36rem;
     --container-2xl: 42rem;
+    --container-3xl: 48rem;
     --container-5xl: 64rem;
     --container-7xl: 80rem;
     --text-xs: .75rem;
@@ -962,6 +963,10 @@
     overflow-x: auto;
   }
 
+  .overflow-x-scroll {
+    overflow-x: scroll;
+  }
+
   .overflow-y-auto {
     overflow-y: auto;
   }
@@ -1781,6 +1786,18 @@
   }
 
   @media (width >= 48rem) {
+    .md\:max-w-3xl {
+      max-width: var(--container-3xl);
+    }
+  }
+
+  @media (width >= 48rem) {
+    .md\:max-w-xl {
+      max-width: var(--container-xl);
+    }
+  }
+
+  @media (width >= 48rem) {
     .md\:translate-x-0 {
       --tw-translate-x: calc(var(--spacing) * 0);
       translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -1808,6 +1825,20 @@
   @media (width >= 48rem) {
     .md\:px-8 {
       padding-inline: calc(var(--spacing) * 8);
+    }
+  }
+
+  @media (width >= 48rem) {
+    .md\:text-2xl {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
+    }
+  }
+
+  @media (width >= 48rem) {
+    .md\:text-xl {
+      font-size: var(--text-xl);
+      line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
 

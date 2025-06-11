@@ -32,15 +32,18 @@ const AddLabPackageForm = () => {
   };
 
   return (
-    <div className="mx-auto max-w-2xl p-6">
-      <div className="mb-6 flex items-center gap-2">
+    <div className="mx-auto md:max-w-xl py-6">
+      <div className="mb-6 flex items-center justify-between gap-2">
         <button
-          onClick={handleBack}
-          className="text-blue-600 hover:text-blue-800"
+          onClick={() => router.back()}
+          className=" cursor-pointer rounded-md bg-gray-200 px-4 py-2 text-sm text-gray-800 hover:bg-gray-300"
         >
-          <RiArrowGoBackLine className="text-2xl" />
+          <span>
+            <i className="ri-arrow-left-line"></i>
+          </span>{" "}
+          Back
         </button>
-        <h2 className="text-2xl font-semibold text-gray-800">
+        <h2 className="md:text-xl text-lg font-semibold text-gray-800">
           Add Lab Test Package
         </h2>
       </div>
