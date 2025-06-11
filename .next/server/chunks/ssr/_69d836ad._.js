@@ -61,7 +61,7 @@ const ServiceManagement = ()=>{
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                className: "text-3xl font-bold text-pink-700",
+                                className: "md:text-2xl text-xl font-bold text-black",
                                 children: "Manage Services"
                             }, void 0, false, {
                                 fileName: "[project]/components/pages/ServiceManagement/index.jsx",
@@ -233,7 +233,7 @@ const ServiceManagement = ()=>{
                                                         className: "hover:text-pink-900 text-green-800 cursor-pointer",
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$ri$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["RiEdit2Line"], {}, void 0, false, {
                                                             fileName: "[project]/components/pages/ServiceManagement/index.jsx",
-                                                            lineNumber: 109,
+                                                            lineNumber: 108,
                                                             columnNumber: 25
                                                         }, this)
                                                     }, void 0, false, {
@@ -247,12 +247,12 @@ const ServiceManagement = ()=>{
                                                         onClick: ()=>handleDelete(id),
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$ri$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["RiDeleteBinLine"], {}, void 0, false, {
                                                             fileName: "[project]/components/pages/ServiceManagement/index.jsx",
-                                                            lineNumber: 116,
+                                                            lineNumber: 115,
                                                             columnNumber: 25
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/pages/ServiceManagement/index.jsx",
-                                                        lineNumber: 111,
+                                                        lineNumber: 110,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
@@ -278,12 +278,12 @@ const ServiceManagement = ()=>{
                                     children: "No services found."
                                 }, void 0, false, {
                                     fileName: "[project]/components/pages/ServiceManagement/index.jsx",
-                                    lineNumber: 124,
+                                    lineNumber: 123,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/pages/ServiceManagement/index.jsx",
-                                lineNumber: 123,
+                                lineNumber: 122,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {

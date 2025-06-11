@@ -104,7 +104,6 @@ const ServiceManagement = () => {
                       <button
                         title="Edit Service"
                         className="hover:text-pink-900 text-green-800 cursor-pointer"
-                        // onClick={() => open edit modal/page with id}
                       >
                         <RiEdit2Line />
                       </button>

@@ -1,7 +1,7 @@
 
 "use client";
 import { useRouter } from "next/navigation";
-import { RiSearchLine, RiEditBoxLine, RiDeleteBin5Line } from "react-icons/ri";
+import { RiSearchLine, RiEdit2Line, RiDeleteBin5Line } from "react-icons/ri";
 import { AiFillStar } from "react-icons/ai";
 
 const labData = [
@@ -69,10 +69,10 @@ const LabManagement = () => {
                 <td className="px-4 py-3">{renderStars(lab.rating)}</td>
                 <td className="px-4 py-3">{lab.review}</td>
                 <td className="px-4 py-3">
-                  <div className="text-md flex items-center gap-2">
-                    <RiEditBoxLine className="cursor-pointer text-black text-xl" />
-                    <RiDeleteBin5Line className="cursor-pointer text-red-500 text-xl" />
-                    <button onClick={handleClickPackage} className="cursor-pointer rounded-sm bg-blue-500 px-3 py-1 text-white hover:bg-blue-600">
+                  <div className="text-lg flex items-center gap-2">
+                    <RiEdit2Line className="cursor-pointer text-black " />
+                    <RiDeleteBin5Line className="cursor-pointer text-red-500 " />
+                    <button onClick={handleClickPackage} className="cursor-pointer rounded-sm bg-blue-500 px-3 py-1 text-white hover:bg-blue-600 text-sm">
                       Add
                     </button>
                   </div>

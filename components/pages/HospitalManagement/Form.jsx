@@ -57,7 +57,7 @@ const AddHospitalForm = () => {
           <RiHospitalLine className="text-3xl text-blue-600" />
         </div>
         <div>
-          <h2 className="text-xl font-semibold text-gray-900">
+          <h2 className="text-xl md:text-2xl font-bold text-black">
             Add New Hospital
           </h2>
           <p className="text-sm text-gray-600">

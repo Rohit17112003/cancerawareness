@@ -1,5 +1,4 @@
 
-
 "use client";
 
 import { useState } from "react";
@@ -59,7 +58,7 @@ const AddBlogForm = () => {
       className="max-w-2xl mx-auto  bg-white p-6 rounded-lg shadow space-y-5"
     >
 
-      <h2 className="text-2xl font-bold text-gray-800 mb-2 ">Add New Blog</h2>
+      <h2 className="md:text-2xl text-xl font-bold text-black mb-2 ">Add New Blog</h2>
 
       <Input 
         lable="Blog Title"

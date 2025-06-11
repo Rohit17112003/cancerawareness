@@ -47,7 +47,7 @@ const AddDoctorForm = () => {
           Back
         </button>
 
-        <h2 className="mb-4 text-2xl font-semibold text-gray-800">
+        <h2 className="mb-4 md:text-2xl text-xl font-bold text-black">
           Add New Doctor
         </h2>
 

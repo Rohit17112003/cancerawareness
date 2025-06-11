@@ -83,7 +83,7 @@ const handleClick = () => {
                 <td className="px-4 py-2">{item.type}</td>
                 <td className="px-4 py-2">
                   <div className="flex items-center gap-3">
-                    <i className="ri-edit-box-line cursor-pointer text-lg text-blue-600"></i>
+                    <i className="ri-edit-2-line cursor-pointer text-lg text-green-800"></i>
                     <i className="ri-delete-bin-line cursor-pointer text-lg text-red-500"></i>
                   </div>
                 </td>

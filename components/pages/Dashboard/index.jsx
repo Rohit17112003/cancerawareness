@@ -119,7 +119,7 @@ const HomePage = () => {
   return (
     <>
       <div className=" mx-auto py-6">
-        <h1 className="text-3xl font-bold text-pink-700 mb-4">Cancer Awareness</h1>
+        <h1 className="md:text-2xl text-xl font-bold text-black mb-4">Cancer Awareness</h1>
         <p className="text-gray-600 mb-8">
           Monitor your system activities and manage everything in one place.
         </p>

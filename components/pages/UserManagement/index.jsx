@@ -90,7 +90,7 @@ const UserManagement = () => {
                 <td className="px-4 py-2">{user.joined}</td>
                 <td className="px-4 py-2">
                   <div className="flex gap-2 text-lg">
-                    <i className="ri-edit-box-line text-blue-500 cursor-pointer"></i>
+                    <i className="ri-edit-2-line text-green-800 cursor-pointer"></i>
                     <i className="ri-delete-bin-5-line text-red-500 cursor-pointer"></i>
                   </div>
                 </td>

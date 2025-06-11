@@ -90,8 +90,8 @@ const DoctorManagement = () => {
                 <td className="px-4 py-2">{renderStars(doctor.rating)}</td>
                 <td className="px-4 py-2">{doctor.review}</td>
                 <td className="px-4 py-2">
-                  <div className="text-md flex items-center gap-2">
-                    <i className="ri-edit-box-line cursor-pointer text-black"></i>
+                  <div className="text-lg flex items-center gap-2">
+                    <i className="ri-edit-2-line cursor-pointer text-green-800"></i>
                     <i className="ri-delete-bin-5-line cursor-pointer text-red-500"></i>
                   </div>
                 </td>

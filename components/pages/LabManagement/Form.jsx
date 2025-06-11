@@ -46,7 +46,7 @@ const AddLabForm = () => {
           <RiTestTubeLine className="text-3xl text-pink-600" />
         </div>
         <div>
-          <h2 className="text-xl font-semibold text-gray-900">Add New Lab</h2>
+          <h2 className="text-xl md:text-2xl font-bold text-black">Add New Lab</h2>
           <p className="text-sm text-gray-600">
             Please enter lab details below
           </p>

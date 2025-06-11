@@ -70,7 +70,7 @@ const AddUserForm = () => {
         onSubmit={handleSubmit}
         className="mx-auto max-w-2xl space-y-6 rounded-xl bg-white p-6 shadow"
       >
-        <h2 className="text-2xl font-bold text-gray-800">Add New User</h2>
+        <h2 className="md:text-2xl text-xl font-bold text-black">Add New User</h2>
 
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           <Input
