@@ -114,7 +114,7 @@ const AddUserForm = () => {
             />
             <span
               onClick={() => setShowPassword(!showPassword)}
-              className="absolute top-11 right-3 -translate-y-1/2 cursor-pointer text-gray-500"
+              className="absolute md:top-11 top-11.5 right-3 -translate-y-1/2 cursor-pointer text-gray-500"
             >
               {showPassword ? (
                 <i className="ri-eye-off-line"></i>

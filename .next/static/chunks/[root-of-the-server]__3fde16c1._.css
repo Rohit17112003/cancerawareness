@@ -412,6 +412,10 @@
     top: calc(var(--spacing) * 11);
   }
 
+  .top-11\.5 {
+    top: calc(var(--spacing) * 11.5);
+  }
+
   .top-12 {
     top: calc(var(--spacing) * 12);
   }
@@ -1737,6 +1741,12 @@
   @media (width >= 48rem) {
     .md\:relative {
       position: relative;
+    }
+  }
+
+  @media (width >= 48rem) {
+    .md\:top-11 {
+      top: calc(var(--spacing) * 11);
     }
   }
 
