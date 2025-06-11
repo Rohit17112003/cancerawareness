@@ -51,7 +51,7 @@ const ServiceManagement = () => {
     <div className="mx-auto py-6">
       <header className="mb-6 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div>
-          <h1 className="text-3xl font-bold text-pink-700">Manage Services</h1>
+          <h1 className="md:text-2xl text-xl font-bold text-black">Manage Services</h1>
           <p className="text-gray-600 mt-1">
             Add, update, or remove cancer awareness services
           </p>

@@ -43,7 +43,7 @@ const AddLabPackageForm = () => {
           </span>{" "}
           Back
         </button>
-        <h2 className="md:text-xl text-lg font-semibold text-gray-800">
+        <h2 className="md:text-xl text-lg font-bold text-black">
           Add Lab Test Package
         </h2>
       </div>

@@ -36,7 +36,7 @@ const AddServiceForm = () => {
         <RiArrowLeftLine className="mr-1" /> Back
       </button>
 
-      <h2 className="mb-4 text-2xl font-bold text-pink-700">Add New Service</h2>
+      <h2 className="mb-4 md:text-2xl text-xl font-bold text-black">Add New Service</h2>
 
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
