@@ -3,7 +3,7 @@ import React from "react";
 const Input = (props) => {
   return (
     <div>
-      {props.lable && <label className=" font-medium pb-1">{props.lable}</label>}
+      {props.lable && <label className=" font-medium pb-1 text-primary">{props.lable}</label>}
 
       <input
         {...props}

@@ -1,7 +1,5 @@
-
-
-
 "use client";
+import Button from "@/components/atoms/Button";
 
 import { useRouter } from "next/navigation";
 import { RiStarFill } from "react-icons/ri";
@@ -36,14 +34,14 @@ const DoctorManagement = () => {
     return Array(count)
       .fill()
       .map((_, i) => (
-        <RiStarFill key={i} className="text-yellow-400 text-lg inline-block" />
+        <RiStarFill key={i} className="inline-block text-lg text-yellow-400" />
       ));
   };
 
   return (
     <>
-      <div className="mb-6 flex gap-1 items-center justify-between">
-        <span className="rounded-full border border-gray-300 px-4 text-sm flex items-center gap-2">
+      <div className="mb-6 flex items-center justify-between gap-1">
+        <span className="flex items-center gap-2 rounded-full border border-gray-300 px-4 text-sm">
           <i className="ri-search-line text-pink-400"></i>
           <input
             type="text"
@@ -52,18 +50,12 @@ const DoctorManagement = () => {
           />
         </span>
 
-        <button
-          onClick={handleAddDoctorClick}
-          className="cursor-pointer rounded-lg bg-blue-500 md:px-4 px-3 py-2 text-white transition hover:bg-blue-600"
-        >
-        <span><i className="ri-add-fill pr-1"></i></span>
-          Add New Doctor
-        </button>
+        <Button value="Add New Doctor" onClick={handleAddDoctorClick} />
       </div>
 
       <div className="overflow-x-auto rounded-xl shadow-sm">
-        <table className="w-full text-left text-sm bg-white rounded-xl overflow-hidden">
-          <thead className="bg-gray-100 text-gray-800">
+        <table className="w-full overflow-hidden rounded-xl bg-white text-left text-sm">
+          <thead className="text-primary bg-gray-100">
             <tr>
               <th className="px-4 py-3">Avatar</th>
               <th className="px-4 py-3">Name</th>
@@ -76,7 +68,10 @@ const DoctorManagement = () => {
           </thead>
           <tbody>
             {doctorData.map((doctor, idx) => (
-              <tr key={idx} className="border-b border-gray-200 hover:bg-gray-50">
+              <tr
+                key={idx}
+                className="text-peracolor border-b border-gray-200 hover:bg-gray-50"
+              >
                 <td className="px-4 py-2">
                   <img
                     src={doctor.avatar}
@@ -90,7 +85,7 @@ const DoctorManagement = () => {
                 <td className="px-4 py-2">{renderStars(doctor.rating)}</td>
                 <td className="px-4 py-2">{doctor.review}</td>
                 <td className="px-4 py-2">
-                  <div className="text-lg flex items-center gap-2">
+                  <div className="flex items-center gap-2 text-lg">
                     <i className="ri-edit-2-line cursor-pointer text-green-800"></i>
                     <i className="ri-delete-bin-5-line cursor-pointer text-red-500"></i>
                   </div>

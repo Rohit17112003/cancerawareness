@@ -1,7 +1,6 @@
-
-
 "use client";
 import { useRouter } from "next/navigation";
+import Button from "@/components/atoms/Button";
 
 const users = [
   {
@@ -32,27 +31,21 @@ const UserManagement = () => {
   return (
     <>
       <div className="mb-6 flex items-center justify-between">
-        <span className="rounded-full border border-gray-300 px-4 text-sm flex items-center gap-2">
+        <span className="flex items-center gap-2 rounded-full border border-pink-300 px-4 text-sm">
           <i className="ri-search-line text-pink-400"></i>
           <input
             type="text"
             placeholder="Search here..."
-            className="w-[150px] md:w-[250px] rounded-lg px-1 py-2 focus:outline-none"
+            className="w-[150px] rounded-lg px-1 py-2 focus:outline-none md:w-[250px]"
           />
         </span>
-
-        <button
-          className="cursor-pointer rounded-lg bg-blue-500 px-4 py-2 text-white transition hover:bg-blue-600"
-          onClick={handleAddUserClick}
-        >
-        <span><i className="ri-add-line pr-1"></i></span>
-          Add New User
-        </button>
+        <Button value=" Add New User"  onClick={handleAddUserClick} />
+      
       </div>
 
       <div className="overflow-x-auto rounded-lg shadow-md">
         <table className="w-full bg-white text-left text-sm">
-          <thead className="bg-gray-200 text-gray-800">
+          <thead className="bg-gray-200 text-primary">
             <tr>
               <th className="px-4 py-3">Avatar</th>
               <th className="px-4 py-3">Name</th>
@@ -65,7 +58,7 @@ const UserManagement = () => {
           </thead>
           <tbody>
             {users.map((user, idx) => (
-              <tr key={idx} className="hover:bg-gray-50 border border-gray-200">
+              <tr key={idx} className="border border-gray-200 text-peracolor hover:bg-gray-50">
                 <td className="px-4 py-2">
                   <img
                     src={user.avatar}
@@ -90,8 +83,8 @@ const UserManagement = () => {
                 <td className="px-4 py-2">{user.joined}</td>
                 <td className="px-4 py-2">
                   <div className="flex gap-2 text-lg">
-                    <i className="ri-edit-2-line text-green-800 cursor-pointer"></i>
-                    <i className="ri-delete-bin-5-line text-red-500 cursor-pointer"></i>
+                    <i className="ri-edit-2-line cursor-pointer text-green-800"></i>
+                    <i className="ri-delete-bin-5-line cursor-pointer text-red-500"></i>
                   </div>
                 </td>
               </tr>

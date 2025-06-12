@@ -32,25 +32,25 @@ const LoginPage = () => {
           <h2 className="mb-6 text-3xl font-bold text-pink-600">
             Welcome Back
           </h2>
-          <p className="mb-6 text-sm text-gray-500">
+          <p className="mb-6 text-sm font-medium text-[#808080]">
             Empowering Hope. Join our fight against cancer.
           </p>
 
-         <div  className="relative mb-6 font-medium text-gray-700">
-           <Input
-          lable="Email"
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-            placeholder="Enter your email"
-            className="mb-4 w-full rounded border border-gray-300 p-3 focus:ring-2 focus:ring-pink-400 focus:outline-none"
-          />
-         </div>
+          <div className="relative mb-6 font-medium text-gray-700">
+            <Input
+              lable="Email"
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+              placeholder="Enter your email"
+              className="mb-4 w-full rounded border border-gray-300 p-3 focus:ring-2 focus:ring-pink-400 focus:outline-none"
+            />
+          </div>
 
           <div className="relative mb-6 font-medium text-gray-700">
             <Input
-            lable=" Password"
+              lable=" Password"
               type={showPassword ? "text" : "password"}
               value={password}
               onChange={(e) => setPassword(e.target.value)}

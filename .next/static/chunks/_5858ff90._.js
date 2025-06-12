@@ -5,77 +5,6 @@
 
 var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
-// "use client";
-// import {
-//   RiStethoscopeLine,
-//   RiHospitalLine,
-//   RiHeartPulseLine,
-//   RiTestTubeLine,
-// } from "react-icons/ri";
-// const stats = [
-//   {
-//     title: "Total Patients",
-//     count: 324,
-//     icon: <RiHeartPulseLine size={28} />,
-//     color: "bg-pink-100 text-pink-700",
-//   },
-//   {
-//     title: "Doctors",
-//     count: 25,
-//     icon: <RiStethoscopeLine size={28} />,
-//     color: "bg-blue-100 text-blue-700",
-//   },
-//   {
-//     title: "Labs",
-//     count: 12,
-//     icon: <RiTestTubeLine size={28} />,
-//     color: "bg-green-100 text-green-700",
-//   },
-//   {
-//     title: "Services",
-//     count: 18,
-//     icon: <RiHospitalLine size={28} />,
-//     color: "bg-yellow-100 text-yellow-700",
-//   },
-// ];
-// const HomePage = () => {
-//   const { stats } = data;
-//   return (
-//   <>
-//      <div className="max-w-7xl mx-auto p-6">
-//       <h1 className="text-3xl font-bold text-pink-700 mb-4">Dashboard Overview</h1>
-//       <p className="text-gray-600 mb-8">Monitor your system activities and manage everything in one place.</p>
-//       {/* Cards Section */}
-//       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-10">
-//         {stats.map((item, idx) => (
-//           <div
-//             key={idx}
-//             className={`flex items-center justify-between p-4 rounded-xl shadow-md border border-gray-200 ${item.color}`}
-//           >
-//             <div>
-//               <h2 className="text-sm font-medium">{item.title}</h2>
-//               <p className="text-xl font-bold">{item.count}</p>
-//             </div>
-//             <div>{item.icon}</div>
-//           </div>
-//         ))}
-//       </div>
-//       {/* Recent Activity */}
-//       <div className="bg-white border border-gray-200 rounded-xl shadow-md p-6">
-//         <h2 className="text-lg font-semibold mb-4 text-pink-700">Recent Activity</h2>
-//         <ul className="space-y-3 text-sm text-gray-700">
-//           <li>✅ New patient registered at 10:45 AM</li>
-//           <li>🩺 Dr. Meena updated her schedule</li>
-//           <li>🧪 Lab results uploaded for ID#1021</li>
-//           <li>📢 Awareness campaign event scheduled for July 5</li>
-//         </ul>
-//       </div>
-//     </div>
-//   );
-//   </>
-//   );
-// };
-// export default HomePage;
 __turbopack_context__.s({
     "default": (()=>__TURBOPACK__default__export__)
 });
@@ -92,7 +21,7 @@ const stats = [
             size: 28
         }, void 0, false, {
             fileName: "[project]/components/pages/Dashboard/index.jsx",
-            lineNumber: 95,
+            lineNumber: 16,
             columnNumber: 11
         }, this),
         color: "bg-pink-100 text-pink-700"
@@ -104,7 +33,7 @@ const stats = [
             size: 28
         }, void 0, false, {
             fileName: "[project]/components/pages/Dashboard/index.jsx",
-            lineNumber: 101,
+            lineNumber: 22,
             columnNumber: 11
         }, this),
         color: "bg-blue-100 text-blue-700"
@@ -116,7 +45,7 @@ const stats = [
             size: 28
         }, void 0, false, {
             fileName: "[project]/components/pages/Dashboard/index.jsx",
-            lineNumber: 107,
+            lineNumber: 28,
             columnNumber: 11
         }, this),
         color: "bg-green-100 text-green-700"
@@ -128,7 +57,7 @@ const stats = [
             size: 28
         }, void 0, false, {
             fileName: "[project]/components/pages/Dashboard/index.jsx",
-            lineNumber: 113,
+            lineNumber: 34,
             columnNumber: 11
         }, this),
         color: "bg-yellow-100 text-yellow-700"
@@ -140,19 +69,19 @@ const HomePage = ()=>{
             className: " mx-auto py-6",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                    className: "md:text-2xl text-xl font-bold text-black mb-4",
+                    className: "md:text-2xl text-xl font-bold text-primary mb-4",
                     children: "Cancer Awareness"
                 }, void 0, false, {
                     fileName: "[project]/components/pages/Dashboard/index.jsx",
-                    lineNumber: 122,
+                    lineNumber: 43,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                    className: "text-gray-600 mb-8",
+                    className: " text-peracolor font-medium mb-8",
                     children: "Monitor your system activities and manage everything in one place."
                 }, void 0, false, {
                     fileName: "[project]/components/pages/Dashboard/index.jsx",
-                    lineNumber: 123,
+                    lineNumber: 44,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -167,7 +96,7 @@ const HomePage = ()=>{
                                             children: item.title
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/Dashboard/index.jsx",
-                                            lineNumber: 135,
+                                            lineNumber: 56,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -175,91 +104,91 @@ const HomePage = ()=>{
                                             children: item.count
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/Dashboard/index.jsx",
-                                            lineNumber: 136,
+                                            lineNumber: 57,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/pages/Dashboard/index.jsx",
-                                    lineNumber: 134,
+                                    lineNumber: 55,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     children: item.icon
                                 }, void 0, false, {
                                     fileName: "[project]/components/pages/Dashboard/index.jsx",
-                                    lineNumber: 138,
+                                    lineNumber: 59,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, idx, true, {
                             fileName: "[project]/components/pages/Dashboard/index.jsx",
-                            lineNumber: 130,
+                            lineNumber: 51,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/pages/Dashboard/index.jsx",
-                    lineNumber: 128,
+                    lineNumber: 49,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "bg-white border border-gray-200 rounded-xl shadow-md p-6",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                            className: "text-lg font-semibold mb-4 text-pink-700",
+                            className: "text-lg font-semibold mb-4 text-primary",
                             children: "Recent Activity"
                         }, void 0, false, {
                             fileName: "[project]/components/pages/Dashboard/index.jsx",
-                            lineNumber: 145,
+                            lineNumber: 66,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                            className: "space-y-3 text-sm text-gray-700",
+                            className: "space-y-3 text-sm text-peracolor font-medium",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                     children: "✅ New patient registered at 10:45 AM"
                                 }, void 0, false, {
                                     fileName: "[project]/components/pages/Dashboard/index.jsx",
-                                    lineNumber: 147,
+                                    lineNumber: 68,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                     children: "🩺 Dr. Meena updated her schedule"
                                 }, void 0, false, {
                                     fileName: "[project]/components/pages/Dashboard/index.jsx",
-                                    lineNumber: 148,
+                                    lineNumber: 69,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                     children: "🧪 Lab results uploaded for ID#1021"
                                 }, void 0, false, {
                                     fileName: "[project]/components/pages/Dashboard/index.jsx",
-                                    lineNumber: 149,
+                                    lineNumber: 70,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                     children: "📢 Awareness campaign event scheduled for July 5"
                                 }, void 0, false, {
                                     fileName: "[project]/components/pages/Dashboard/index.jsx",
-                                    lineNumber: 150,
+                                    lineNumber: 71,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/pages/Dashboard/index.jsx",
-                            lineNumber: 146,
+                            lineNumber: 67,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/pages/Dashboard/index.jsx",
-                    lineNumber: 144,
+                    lineNumber: 65,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/pages/Dashboard/index.jsx",
-            lineNumber: 121,
+            lineNumber: 42,
             columnNumber: 7
         }, this)
     }, void 0, false);
@@ -308,7 +237,7 @@ const DashboardLink = ({ active = false, label = "Label", heroIcon, subMenu = []
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                     href: route,
                     onClick: toggleSubMenu,
-                    className: `${active ? "bg-primary/14 text-black shadow shadow-gray-300" : "bg-transparent text-black"} flex w-full flex-row  items-center justify-between rounded-md px-3 py-2.5 transition-all duration-200 hover:bg-primary/5 hover:text-primary`,
+                    className: `${active ? "bg-primary/70 text-textwhite" : "bg-transparent text-primary"} flex w-full flex-row  items-center justify-between rounded-md px-3 py-2.5 transition-all duration-200 hover:bg-primary/10 hover:text-textwhite`,
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                             className: "text-md flex items-center gap-1.5",
@@ -321,7 +250,7 @@ const DashboardLink = ({ active = false, label = "Label", heroIcon, subMenu = []
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: " font-medium capitalize",
+                                    className: "text-sm font-semibold capitalize",
                                     children: label
                                 }, void 0, false, {
                                     fileName: "[project]/components/atoms/DashboardLink.jsx",
@@ -442,7 +371,7 @@ const SideBar = ({ isSidebarOpen, setIsSidebarOpen })=>{
         router.replace("/auth/signin");
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: `fixed inset-y-0 left-0 z-30 transform bg-white shadow transition-transform duration-300 md:relative md:translate-x-0 ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"} w-64 md:w-64 xl:w-64`,
+        className: `fixed inset-y-0 left-0 z-30 transform bg-[#00000011] shadow transition-transform duration-300 md:relative md:translate-x-0 ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"} w-64 md:w-64 xl:w-64`,
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
             className: "flex h-full flex-col gap-7 py-4",
             children: [
@@ -451,7 +380,7 @@ const SideBar = ({ isSidebarOpen, setIsSidebarOpen })=>{
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                         href: "/",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                            className: "text-2xl font-bold",
+                            className: "text-2xl font-bold  text-primary",
                             children: "CANCER"
                         }, void 0, false, {
                             fileName: "[project]/components/organisms/SideBar.jsx",
@@ -549,7 +478,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 const Header = ({ isSidebarOpen, setIsSidebarOpen, pageTitle })=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
-        className: "sticky top-0 z-10 flex items-center justify-between bg-white px-5 py-3 shadow-sm md:px-8",
+        className: "sticky top-0 z-10 flex items-center justify-between bg-[#00000011] px-5 py-3 shadow-sm md:px-8",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "flex items-center gap-4 sm:gap-0",
@@ -585,7 +514,7 @@ const Header = ({ isSidebarOpen, setIsSidebarOpen, pageTitle })=>{
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                         href: "#",
-                        className: "text-gray-800",
+                        className: "text-primary",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                             className: "text-xl font-bold text-nowrap capitalize",
                             children: pageTitle

@@ -36,9 +36,9 @@ const AddServiceForm = () => {
         <RiArrowLeftLine className="mr-1" /> Back
       </button>
 
-      <h2 className="mb-4 md:text-2xl text-xl font-bold text-black">Add New Service</h2>
+      <h2 className="mb-4 md:text-2xl text-xl font-bold text-primary">Add New Service</h2>
 
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <form onSubmit={handleSubmit} className="space-y-4 text-peracolor">
         <div>
           <Input
             lable="Service Name"
@@ -52,7 +52,7 @@ const AddServiceForm = () => {
         </div>
 
         <div>
-          <label className="mb-1 block  font-medium">Description</label>
+          <label className="mb-1 block text-primary font-medium">Description</label>
           <textarea
             name="description"
             required

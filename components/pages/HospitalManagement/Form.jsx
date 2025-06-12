@@ -57,7 +57,7 @@ const AddHospitalForm = () => {
           <RiHospitalLine className="text-3xl text-blue-600" />
         </div>
         <div>
-          <h2 className="text-xl md:text-2xl font-bold text-black">
+          <h2 className="text-xl md:text-2xl font-bold text-primary">
             Add New Hospital
           </h2>
           <p className="text-sm text-gray-600">
@@ -68,7 +68,7 @@ const AddHospitalForm = () => {
 
       <form
         onSubmit={handleSubmit}
-        className="mx-auto mt-10 max-w-xl space-y-4 rounded-2xl bg-white p-6 shadow-md"
+        className="mx-auto mt-10 max-w-xl space-y-4 rounded-2xl bg-white p-6 shadow-md text-peracolor"
       >
         <Input
           lable="Hospital Name"

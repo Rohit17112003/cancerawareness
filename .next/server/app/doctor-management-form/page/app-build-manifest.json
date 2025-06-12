@@ -2,10 +2,10 @@
   "pages": {
     "/doctor-management-form/page": [
       "static/chunks/[root-of-the-server]__3fde16c1._.css",
-      "static/chunks/node_modules_next_dist_1a6ee436._.js",
+      "static/chunks/node_modules_bbab1a93._.js",
       "static/chunks/app_layout_jsx_c0237562._.js",
       "static/chunks/_c1bef29b._.js",
-      "static/chunks/app_doctor-management-form_page_jsx_5c0ac257._.js",
+      "static/chunks/app_doctor-management-form_page_jsx_688bc6cd._.js",
       "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_fd44f5a4._.js",
       "static/chunks/node_modules_next_dist_compiled_2ce9398a._.js",
       "static/chunks/node_modules_next_dist_client_8f19e6fb._.js",

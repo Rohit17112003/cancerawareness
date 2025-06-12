@@ -47,11 +47,11 @@ const AddDoctorForm = () => {
           Back
         </button>
 
-        <h2 className="mb-4 md:text-2xl text-xl font-bold text-black">
+        <h2 className="mb-4 md:text-2xl text-xl font-bold text-primary">
           Add New Doctor
         </h2>
 
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form onSubmit={handleSubmit} className="space-y-4 text-peracolor">
           <Input
             lable="Doctor Nane"
             type="text"

@@ -75,10 +75,10 @@ const AddBlogForm = () => {
       </div>
     <form
       onSubmit={handleSubmit}
-      className="max-w-2xl mx-auto  bg-white p-6 rounded-lg shadow space-y-5"
+      className="max-w-2xl mx-auto text-peracolor  bg-white p-6 rounded-lg shadow space-y-5"
     >
 
-      <h2 className="md:text-2xl text-xl font-bold text-black mb-2 ">Add New Blog</h2>
+      <h2 className="md:text-2xl text-xl font-bold text-primary mb-2 ">Add New Blog</h2>
 
       <Input 
         lable="Blog Title"
@@ -99,7 +99,7 @@ const AddBlogForm = () => {
         placeholder="Short Description"
         className="w-full border border-gray-300 px-4 py-2 rounded-md outline-0"
       />
-       <label> Write Content</label>
+       <label className="font-medium text-primary pb-1"> Write Content</label>
       <textarea
         name="content"
         value={formData.content}
@@ -119,7 +119,7 @@ const AddBlogForm = () => {
         className="w-full border border-gray-300 px-4 py-2 rounded-md outline-0"
       />
 
-       <label>Category</label>
+       <label className="text-primary font-medium pb-1">Category</label>
       <select
         name="category"
         value={formData.category}

@@ -46,7 +46,7 @@ const AddLabForm = () => {
           <RiTestTubeLine className="text-3xl text-pink-600" />
         </div>
         <div>
-          <h2 className="text-xl md:text-2xl font-bold text-black">Add New Lab</h2>
+          <h2 className="text-xl md:text-2xl font-bold text-primary">Add New Lab</h2>
           <p className="text-sm text-gray-600">
             Please enter lab details below
           </p>
@@ -56,7 +56,7 @@ const AddLabForm = () => {
       {/* Form */}
       <form
         onSubmit={handleSubmit}
-        className="mx-auto mt-10 max-w-xl space-y-4 rounded-2xl bg-white p-6 shadow-md"
+        className="mx-auto mt-10 max-w-xl space-y-4 rounded-2xl bg-white p-6 shadow-md text-peracolor"
       >
         <Input
           lable="Lab Name"
@@ -93,7 +93,7 @@ const AddLabForm = () => {
           required
         />
 
-        <label className=" font-medium pb-1">Review</label>
+        <label className="text-primary font-medium pb-1">Review</label>
         <textarea
           name="review"
           placeholder="Review"

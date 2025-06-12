@@ -1,5 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
+import Button from "@/components/atoms/Button";
 
 const seriesData = [
   {
@@ -20,13 +21,11 @@ const seriesData = [
   },
 ];
 
-
-
 const BlogManagement = () => {
   const router = useRouter();
-const handleClick = () => {
-  router.push("/blog-management-form");
-};  
+  const handleClick = () => {
+    router.push("/blog-management-form");
+  };
 
   return (
     <>
@@ -39,18 +38,12 @@ const handleClick = () => {
             className="w-[150px] rounded-lg px-1 py-1 focus:outline-none md:w-[250px]"
           />
         </div>
-
-        <button onClick={handleClick} className="cursor-pointer rounded-lg bg-blue-600 px-4 py-2 font-medium text-white hover:bg-blue-700">
-          <span>
-            <i className="ri-add-line pr-1"></i>
-          </span>
-          Add New Blog
-        </button>
+        <Button value="Add New Blog" onClick={handleClick} />
       </div>
 
       <div className="overflow-x-auto rounded-lg shadow">
         <table className="w-full min-w-[700px] bg-white text-left text-sm">
-          <thead className="bg-gray-200 text-gray-800">
+          <thead className="bg-gray-200 text-primary">
             <tr>
               <th className="px-4 py-3">Thumbnail</th>
               <th className="px-4 py-3">Title</th>
@@ -65,7 +58,7 @@ const handleClick = () => {
             {seriesData.map((item, idx) => (
               <tr
                 key={idx}
-                className="border-b border-gray-200 hover:bg-gray-50"
+                className="border-b border-gray-200 hover:bg-gray-50 text-peracolor"
               >
                 <td className="px-4 py-2">
                   <img
@@ -74,7 +67,7 @@ const handleClick = () => {
                     className="h-14 w-14 rounded object-cover"
                   />
                 </td>
-                <td className="px-4 py-2 font-medium text-gray-900">
+                <td className="px-4 py-2 font-medium ">
                   {item.title}
                 </td>
                 <td className="px-4 py-2">{item.description}</td>

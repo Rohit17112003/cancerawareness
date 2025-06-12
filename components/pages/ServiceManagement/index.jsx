@@ -1,9 +1,14 @@
-
 "use client";
 import { useRouter } from "next/navigation";
+import Button from "@/components/atoms/Button";
 
 import { useState } from "react";
-import { RiEdit2Line, RiDeleteBinLine, RiAddLine, RiSearchLine } from "react-icons/ri";
+import {
+  RiEdit2Line,
+  RiDeleteBinLine,
+  RiAddLine,
+  RiSearchLine,
+} from "react-icons/ri";
 
 const initialServices = [
   {
@@ -32,7 +37,7 @@ const ServiceManagement = () => {
 
   // Filter services based on search term
   const filteredServices = services.filter((service) =>
-    service.name.toLowerCase().includes(searchTerm.toLowerCase())
+    service.name.toLowerCase().includes(searchTerm.toLowerCase()),
   );
 
   // Delete service handler
@@ -42,51 +47,50 @@ const ServiceManagement = () => {
     }
   };
 
-  const router=useRouter();
-  const handleClick= () =>{
+  const router = useRouter();
+  const handleClick = () => {
     router.push("/service-management-form");
-  }
+  };
 
   return (
     <div className="mx-auto py-6">
-      <header className="mb-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <header className="mb-6 flex flex-col items-center justify-between gap-4 sm:flex-row">
         <div>
-          <h1 className="md:text-2xl text-xl font-bold text-black">Manage Services</h1>
-          <p className="text-gray-600 mt-1">
+          <h1 className="text-primary text-xl font-bold md:text-2xl">
+            Manage Services
+          </h1>
+          <p className="text-peracolor mt-1">
             Add, update, or remove cancer awareness services
           </p>
         </div>
 
-        <div className="flex gap-4 items-center">
+        <div className="flex items-center gap-4">
           <div className="relative">
-            <RiSearchLine className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={16} />
+            <RiSearchLine
+              className="absolute top-1/2 left-3 -translate-y-1/2 text-gray-400"
+              size={16}
+            />
             <input
               type="text"
               placeholder="Search services..."
-              className="rounded-full border border-gray-300 pl-9 pr-4 text-sm md:text-md py-2 focus:outline-none focus:ring-2 focus:ring-pink-400"
+              className="md:text-md rounded-full border border-gray-300 py-2 pr-4 pl-9 text-sm focus:ring-2 focus:ring-pink-400 focus:outline-none"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
           </div>
 
-          <button
-          onClick={handleClick}
-            className="flex items-center gap-1 rounded-md bg-blue-600 md:px-4 text-sm md:text-md py-2 px-2 text-white transition hover:bg-blue-700 cursor-pointer"
-          >
-            <RiAddLine size={18} />
-            Add New Service
-          </button>
+          <Button value="Add New Service" onClick={handleClick} />
         </div>
       </header>
 
-      <div className="overflow-x-auto rounded-lg shadow-sm border border-gray-200">
-        <table className="w-full text-left text-sm bg-white">
-          <thead className="bg-pink-100 text-pink-700">
+      <div className="overflow-x-auto rounded-lg border border-gray-200 shadow-sm">
+        <table className="w-full bg-white text-left text-sm">
+          <thead className="text-primary bg-pink-100">
             <tr>
-              <th className="px-5 py-3 rounded-tl-lg">Service Name</th>
+              <th className="rounded-tl-lg px-5 py-3">Service Name</th>
               <th className="px-5 py-3">Description</th>
               <th className="px-5 py-3">Duration</th>
-              <th className="px-5 py-3 rounded-tr-lg">Actions</th>
+              <th className="rounded-tr-lg px-5 py-3">Actions</th>
             </tr>
           </thead>
           <tbody>
@@ -94,7 +98,7 @@ const ServiceManagement = () => {
               filteredServices.map(({ id, name, description, duration }) => (
                 <tr
                   key={id}
-                  className="border-b border-gray-200 hover:bg-pink-50 transition"
+                  className="text-peracolor border-b border-gray-200 transition hover:bg-pink-50"
                 >
                   <td className="px-5 py-3 font-medium">{name}</td>
                   <td className="px-5 py-3">{description}</td>
@@ -103,13 +107,13 @@ const ServiceManagement = () => {
                     <div className="flex gap-3 text-lg text-pink-600">
                       <button
                         title="Edit Service"
-                        className="hover:text-pink-900 text-green-800 cursor-pointer"
+                        className="cursor-pointer text-green-800 hover:text-pink-900"
                       >
                         <RiEdit2Line />
                       </button>
                       <button
                         title="Delete Service"
-                        className="hover:text-red-700 text-red-500 cursor-pointer"
+                        className="cursor-pointer text-red-500 hover:text-red-700"
                         onClick={() => handleDelete(id)}
                       >
                         <RiDeleteBinLine />
@@ -122,7 +126,7 @@ const ServiceManagement = () => {
               <tr>
                 <td
                   colSpan="4"
-                  className="text-center py-8 text-gray-500 italic"
+                  className="py-8 text-center text-gray-500 italic"
                 >
                   No services found.
                 </td>

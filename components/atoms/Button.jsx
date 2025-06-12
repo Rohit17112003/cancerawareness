@@ -1,17 +1,17 @@
-import React from 'react'
+import React from "react";
 
 const Button = (props) => {
   return (
     <div>
-       <button
-          {...props}
-          type="submit"
-          className="w-full cursor-pointer rounded-md bg-blue-600 py-2 font-semibold text-white hover:bg-blue-700"
-        >
+      <button
+        {...props}
+        type="submit"
+        className={`w-full cursor-pointer rounded-md bg-pink-600 px-4 py-2 font-semibold text-white hover:bg-pink-700`}
+      >
         {props.value}
-        </button>
+      </button>
     </div>
-  )
-}
+  );
+};
 
 export default Button;

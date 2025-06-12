@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Header = ({ isSidebarOpen, setIsSidebarOpen, pageTitle }) => {
   return (
-    <header className="sticky top-0 z-10 flex items-center justify-between bg-white px-5 py-3 shadow-sm md:px-8">
+    <header className="sticky top-0 z-10 flex items-center justify-between bg-[#00000011] px-5 py-3 shadow-sm md:px-8">
       <div className="flex items-center gap-4 sm:gap-0">
         <button
           onClick={() => setIsSidebarOpen(!isSidebarOpen)}
@@ -23,7 +23,7 @@ const Header = ({ isSidebarOpen, setIsSidebarOpen, pageTitle }) => {
             />
           </svg>
         </button>
-        <Link href="#" className="text-gray-800">
+        <Link href="#" className="text-primary">
           <h1 className="text-xl font-bold text-nowrap capitalize">
             {pageTitle}
           </h1>

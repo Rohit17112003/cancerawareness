@@ -1,6 +1,6 @@
 
-
 "use client";
+import Button from "@/components/atoms/Button";
 
 import { useRouter } from "next/navigation";
 import { RiStarFill } from "react-icons/ri";
@@ -46,19 +46,13 @@ const HospitalManagement = () => {
             className="w-[150px] rounded-lg px-1 py-2 focus:outline-none md:w-[250px]"
           />
         </span>
-
-        <button
-          onClick={handleHospitalManagementForm}
-          className="cursor-pointer rounded-lg bg-blue-500 md:px-4 px-2 py-2 text-white transition hover:bg-blue-600"
-        >
-        <span><i className="ri-add-fill pr-1"></i></span>
-          Add New Hospital
-        </button>
+<Button value="Add New Hospital"  onClick={handleHospitalManagementForm}/>
+      
       </div>
 
       <div className="overflow-x-auto rounded-xl  shadow-md">
         <table className="w-full bg-white text-left text-sm">
-          <thead className="bg-gray-200 text-gray-800">
+          <thead className="bg-gray-200 text-primary">
             <tr>
               <th className="px-4 py-3">Name</th>
               <th className="px-4 py-3">Address</th>
@@ -69,7 +63,7 @@ const HospitalManagement = () => {
           </thead>
           <tbody>
             {seriesData.map((item, idx) => (
-              <tr key={idx} className="hover:bg-gray-50 border-b border-gray-200">
+              <tr key={idx} className="hover:bg-gray-50 border-b border-gray-200 text-peracolor">
                 <td className="px-4 py-3">{item.name}</td>
                 <td className="px-4 py-3">{item.address}</td>
                 <td className="px-4 py-3">{renderStars(item.rating)}</td>

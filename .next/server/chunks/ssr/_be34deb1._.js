@@ -16,7 +16,7 @@ const Input = (props)=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         children: [
             props.lable && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                className: " font-medium pb-1",
+                className: " font-medium pb-1 text-primary",
                 children: props.lable
             }, void 0, false, {
                 fileName: "[project]/components/atoms/Input.jsx",
@@ -97,7 +97,7 @@ const LoginPage = ()=>{
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "mb-6 text-sm text-gray-500",
+                            className: "mb-6 text-sm font-medium text-[#808080]",
                             children: "Empowering Hope. Join our fight against cancer."
                         }, void 0, false, {
                             fileName: "[project]/components/pages/Auth/Login.jsx",
@@ -117,12 +117,12 @@ const LoginPage = ()=>{
                             }, void 0, false, {
                                 fileName: "[project]/components/pages/Auth/Login.jsx",
                                 lineNumber: 40,
-                                columnNumber: 12
+                                columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/pages/Auth/Login.jsx",
                             lineNumber: 39,
-                            columnNumber: 10
+                            columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "relative mb-6 font-medium text-gray-700",

@@ -68,9 +68,9 @@ const AddUserForm = () => {
       </div>
       <form
         onSubmit={handleSubmit}
-        className="mx-auto max-w-2xl space-y-6 rounded-xl bg-white p-6 shadow"
+        className="mx-auto max-w-2xl space-y-6 rounded-xl bg-white p-6 shadow text-peracolor"
       >
-        <h2 className="md:text-2xl text-xl font-bold text-black">Add New User</h2>
+        <h2 className="md:text-2xl text-xl font-bold text-primary">Add New User</h2>
 
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           <Input
@@ -125,7 +125,7 @@ const AddUserForm = () => {
           </div>
 
           <div>
-            <label className="font-medium pb-1">Role</label>
+            <label className="font-medium pb-1 text-primary">Role</label>
             <select
               name="role"
               value={formData.role}
@@ -140,7 +140,7 @@ const AddUserForm = () => {
           </div>
 
           <div>
-            <label className="font-medium pb-1">Status</label>
+            <label className="font-medium pb-1 text-primary">Status</label>
             <select
               name="status"
               value={formData.status}

@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #0078d4;
-  --color-secondary: #4d525f;
+  --color-primary: #d81b60;
+  --color-textwhite: #ffffff;
+  --color-peracolor: #808080;
   --color-tertiary: #3d48b7;
 }
 
@@ -14,5 +15,4 @@
   .scrollbar-hidden::-webkit-scrollbar {
     display: none;
   }
-
 }

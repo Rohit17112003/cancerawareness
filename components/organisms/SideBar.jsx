@@ -15,7 +15,7 @@ const SideBar = ({ isSidebarOpen, setIsSidebarOpen }) => {
 
   return (
     <div
-      className={`fixed inset-y-0 left-0 z-30 transform bg-white shadow transition-transform duration-300 md:relative md:translate-x-0 ${
+      className={`fixed inset-y-0 left-0 z-30 transform bg-[#00000011] shadow transition-transform duration-300 md:relative md:translate-x-0 ${
         isSidebarOpen ? "translate-x-0" : "-translate-x-full"
       } w-64 md:w-64 xl:w-64`}
     >
@@ -23,7 +23,7 @@ const SideBar = ({ isSidebarOpen, setIsSidebarOpen }) => {
         <div className="flex px-4">
           {
             <Link href="/">
-              <h1 className="text-2xl font-bold">CANCER</h1>
+              <h1 className="text-2xl font-bold  text-primary">CANCER</h1>
             </Link>
           }
         </div>

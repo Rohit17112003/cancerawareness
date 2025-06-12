@@ -43,14 +43,14 @@ const AddLabPackageForm = () => {
           </span>{" "}
           Back
         </button>
-        <h2 className="md:text-xl text-lg font-bold text-black">
+        <h2 className="md:text-xl text-lg font-bold text-primary">
           Add Lab Test Package
         </h2>
       </div>
 
       <form
         onSubmit={handleSubmit}
-        className="space-y-4 rounded-xl border border-gray-200 bg-white p-6 shadow-md"
+        className="space-y-4 rounded-xl border border-gray-200 bg-white p-6 shadow-md text-peracolor"
       >
         <Input
           lable="Package Name"
@@ -62,7 +62,7 @@ const AddLabPackageForm = () => {
           required
           className="w-full rounded-md border border-gray-300 px-4 py-2 outline-none"
         />
-        <label className="pb-1 font-medium">Test Included</label>
+        <label className=" text-primary pb-1 font-medium">Test Included</label>
         <textarea
           name="testsIncluded"
           placeholder="Tests Included (comma separated)"
@@ -83,7 +83,7 @@ const AddLabPackageForm = () => {
           required
           className="w-full rounded-md border border-gray-300 px-4 py-2 outline-none"
         />
-        <label className="pb-1 font-medium">Description</label>
+        <label className=" text-primary pb-1 font-medium">Description</label>
         <textarea
           name="description"
           placeholder="Description (optional)"
