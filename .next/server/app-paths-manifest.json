@@ -1,7 +1,11 @@
 {
-  "/blog-management-form/page": "app/blog-management-form/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/auth/login/page": "app/auth/login/page.js",
   "/blog-management/page": "app/blog-management/page.js",
+  "/doctor-management/page": "app/doctor-management/page.js",
+  "/hospital-management/page": "app/hospital-management/page.js",
+  "/lab-management/page": "app/lab-management/page.js",
   "/page": "app/page.js",
-  "/user-management-form/page": "app/user-management-form/page.js",
+  "/service-management/page": "app/service-management/page.js",
   "/user-management/page": "app/user-management/page.js"
 }
