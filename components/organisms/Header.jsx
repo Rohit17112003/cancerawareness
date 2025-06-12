@@ -3,7 +3,7 @@ import Link from "next/link";
 const Header = ({ isSidebarOpen, setIsSidebarOpen, pageTitle }) => {
   return (
     <header className="sticky top-0 z-10 flex items-center justify-between bg-[#00000011] px-5 py-3 shadow-sm md:px-8">
-      <div className="flex items-center gap-4 sm:gap-0">
+      <div className="flex items-center gap-4 sm:gap-0 text-primary">
         <button
           onClick={() => setIsSidebarOpen(!isSidebarOpen)}
           className="outline-none md:hidden"

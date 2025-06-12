@@ -1671,6 +1671,10 @@
     color: var(--color-pink-700);
   }
 
+  .text-pink-900 {
+    color: var(--color-pink-900);
+  }
+
   .text-primary {
     color: var(--color-primary);
   }
@@ -1879,20 +1883,8 @@
   }
 
   @media (hover: hover) {
-    .hover\:bg-gray-700:hover {
-      background-color: var(--color-gray-700);
-    }
-  }
-
-  @media (hover: hover) {
     .hover\:bg-pink-50:hover {
       background-color: var(--color-pink-50);
-    }
-  }
-
-  @media (hover: hover) {
-    .hover\:bg-pink-500:hover {
-      background-color: var(--color-pink-500);
     }
   }
 
@@ -2098,12 +2090,6 @@
   }
 
   @media (width >= 48rem) {
-    .md\:flex-col {
-      flex-direction: column;
-    }
-  }
-
-  @media (width >= 48rem) {
     .md\:flex-row {
       flex-direction: row;
     }
@@ -2119,6 +2105,12 @@
     .md\:rounded-l-md {
       border-top-left-radius: var(--radius-md);
       border-bottom-left-radius: var(--radius-md);
+    }
+  }
+
+  @media (width >= 48rem) {
+    .md\:bg-\[\#00000011\] {
+      background-color: #0001;
     }
   }
 
@@ -2143,12 +2135,6 @@
   @media (width >= 48rem) {
     .md\:px-50 {
       padding-inline: calc(var(--spacing) * 50);
-    }
-  }
-
-  @media (width >= 48rem) {
-    .md\:py-10 {
-      padding-block: calc(var(--spacing) * 10);
     }
   }
 
