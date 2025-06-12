@@ -85,7 +85,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$atoms$2f$Input$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/atoms/Input.jsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$atoms$2f$Button$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/atoms/Button.jsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-hot-toast/dist/index.mjs [app-ssr] (ecmascript)");
 "use client";
+;
 ;
 ;
 ;
@@ -93,6 +95,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$atoms$2f$Butto
 ;
 const AddBlogForm = ()=>{
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRouter"])();
+    const [error, setError] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])();
     const [formData, setFormData] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])({
         title: "",
         description: "",
@@ -117,12 +120,31 @@ const AddBlogForm = ()=>{
     };
     const handleSubmit = (e)=>{
         e.preventDefault();
-        const { title, description, content, author, category, thumbnail } = formData;
-        if (!title || !description || !content || !author || !category || !thumbnail) {
-            alert("Please fill all fields.");
+        if (!formData.title) {
+            setError("Title is required ");
             return;
         }
-        // You can upload thumbnail via API here
+        if (!formData.description) {
+            setError("description is required ");
+            return;
+        }
+        if (!formData.content) {
+            setError("content is required ");
+            return;
+        }
+        if (!formData.author) {
+            setError("author is required ");
+            return;
+        }
+        if (!formData.category) {
+            setError("category is required ");
+            return;
+        }
+        if (!formData.thumbnail) {
+            setError("thumbnail is required ");
+            return;
+        }
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"].success("form submited successfully");
         router.push("/blog-management");
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -138,24 +160,24 @@ const AddBlogForm = ()=>{
                                 className: "ri-arrow-left-line"
                             }, void 0, false, {
                                 fileName: "[project]/components/pages/BlogManagement/Form.jsx",
-                                lineNumber: 53,
+                                lineNumber: 73,
                                 columnNumber: 17
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/pages/BlogManagement/Form.jsx",
-                            lineNumber: 53,
+                            lineNumber: 73,
                             columnNumber: 11
                         }, this),
                         " Back"
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/pages/BlogManagement/Form.jsx",
-                    lineNumber: 49,
+                    lineNumber: 69,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/pages/BlogManagement/Form.jsx",
-                lineNumber: 48,
+                lineNumber: 68,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -167,7 +189,7 @@ const AddBlogForm = ()=>{
                         children: "Add New Blog"
                     }, void 0, false, {
                         fileName: "[project]/components/pages/BlogManagement/Form.jsx",
-                        lineNumber: 61,
+                        lineNumber: 81,
                         columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$atoms$2f$Input$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -180,7 +202,7 @@ const AddBlogForm = ()=>{
                         className: "w-full border border-gray-300 px-4 py-2 rounded-md outline-0"
                     }, void 0, false, {
                         fileName: "[project]/components/pages/BlogManagement/Form.jsx",
-                        lineNumber: 63,
+                        lineNumber: 83,
                         columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$atoms$2f$Input$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -193,14 +215,14 @@ const AddBlogForm = ()=>{
                         className: "w-full border border-gray-300 px-4 py-2 rounded-md outline-0"
                     }, void 0, false, {
                         fileName: "[project]/components/pages/BlogManagement/Form.jsx",
-                        lineNumber: 73,
+                        lineNumber: 93,
                         columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                         children: " Write Content"
                     }, void 0, false, {
                         fileName: "[project]/components/pages/BlogManagement/Form.jsx",
-                        lineNumber: 82,
+                        lineNumber: 102,
                         columnNumber: 8
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -212,7 +234,7 @@ const AddBlogForm = ()=>{
                         className: "w-full border border-gray-300 px-4 py-2 rounded-md outline-0"
                     }, void 0, false, {
                         fileName: "[project]/components/pages/BlogManagement/Form.jsx",
-                        lineNumber: 83,
+                        lineNumber: 103,
                         columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$atoms$2f$Input$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -225,14 +247,14 @@ const AddBlogForm = ()=>{
                         className: "w-full border border-gray-300 px-4 py-2 rounded-md outline-0"
                     }, void 0, false, {
                         fileName: "[project]/components/pages/BlogManagement/Form.jsx",
-                        lineNumber: 92,
+                        lineNumber: 112,
                         columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                        children: " Awareness"
+                        children: "Category"
                     }, void 0, false, {
                         fileName: "[project]/components/pages/BlogManagement/Form.jsx",
-                        lineNumber: 102,
+                        lineNumber: 122,
                         columnNumber: 8
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -246,7 +268,7 @@ const AddBlogForm = ()=>{
                                 children: "Awareness"
                             }, void 0, false, {
                                 fileName: "[project]/components/pages/BlogManagement/Form.jsx",
-                                lineNumber: 109,
+                                lineNumber: 129,
                                 columnNumber: 9
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -254,7 +276,7 @@ const AddBlogForm = ()=>{
                                 children: "Treatment"
                             }, void 0, false, {
                                 fileName: "[project]/components/pages/BlogManagement/Form.jsx",
-                                lineNumber: 110,
+                                lineNumber: 130,
                                 columnNumber: 9
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -262,7 +284,7 @@ const AddBlogForm = ()=>{
                                 children: "Health Tips"
                             }, void 0, false, {
                                 fileName: "[project]/components/pages/BlogManagement/Form.jsx",
-                                lineNumber: 111,
+                                lineNumber: 131,
                                 columnNumber: 9
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -270,13 +292,13 @@ const AddBlogForm = ()=>{
                                 children: "Survivor Stories"
                             }, void 0, false, {
                                 fileName: "[project]/components/pages/BlogManagement/Form.jsx",
-                                lineNumber: 112,
+                                lineNumber: 132,
                                 columnNumber: 9
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/pages/BlogManagement/Form.jsx",
-                        lineNumber: 103,
+                        lineNumber: 123,
                         columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$atoms$2f$Input$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -288,20 +310,28 @@ const AddBlogForm = ()=>{
                         className: "w-full px-4 py-2 border border-gray-300 outline-0 rounded-md"
                     }, void 0, false, {
                         fileName: "[project]/components/pages/BlogManagement/Form.jsx",
-                        lineNumber: 115,
+                        lineNumber: 135,
+                        columnNumber: 7
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        className: "text-red-500",
+                        children: error
+                    }, void 0, false, {
+                        fileName: "[project]/components/pages/BlogManagement/Form.jsx",
+                        lineNumber: 143,
                         columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$atoms$2f$Button$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                         value: "Submit Blog"
                     }, void 0, false, {
                         fileName: "[project]/components/pages/BlogManagement/Form.jsx",
-                        lineNumber: 124,
+                        lineNumber: 145,
                         columnNumber: 6
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/pages/BlogManagement/Form.jsx",
-                lineNumber: 56,
+                lineNumber: 76,
                 columnNumber: 5
             }, this)
         ]

@@ -5,9 +5,11 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Input from "@/components/atoms/Input";
 import Button from "@/components/atoms/Button";
+import toast from "react-hot-toast";
 
 const AddBlogForm = () => {
   const router = useRouter();
+  const [error,setError] = useState();
 
   const [formData, setFormData] = useState({
     title: "",
@@ -30,15 +32,33 @@ const AddBlogForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const { title, description, content, author, category, thumbnail } = formData;
+   
+ if(!formData.title){
+  setError("Title is required ")
+  return ;
+ }
+ if(!formData.description){
+  setError("description is required ")
+  return ;
+ }
+ if(!formData.content){
+  setError("content is required ")
+  return ;
+ }
+ if(!formData.author){
+  setError("author is required ")
+  return ;
+ }
+ if(!formData.category){
+  setError("category is required ")
+  return ;
+ }
+ if(!formData.thumbnail){
+  setError("thumbnail is required ")
+  return ;
+ }
 
-    if (!title || !description || !content || !author || !category || !thumbnail) {
-      alert("Please fill all fields.");
-      return;
-    }
-
-    // You can upload thumbnail via API here
-
+  toast.success("form submited successfully")
     router.push("/blog-management");
   };
 
@@ -99,7 +119,7 @@ const AddBlogForm = () => {
         className="w-full border border-gray-300 px-4 py-2 rounded-md outline-0"
       />
 
-       <label> Awareness</label>
+       <label>Category</label>
       <select
         name="category"
         value={formData.category}
@@ -120,6 +140,7 @@ const AddBlogForm = () => {
         onChange={handleChange}
         className="w-full px-4 py-2 border border-gray-300 outline-0 rounded-md"
       />
+      <span className="text-red-500" >{error}</span>
 
      <Button value="Submit Blog"/>
     </form>
