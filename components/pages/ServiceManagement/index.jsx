@@ -64,7 +64,7 @@ const ServiceManagement = () => {
           </p>
         </div>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center justify-between gap-4">
           <div className="relative">
             <RiSearchLine
               className="absolute top-1/2 left-3 -translate-y-1/2 text-gray-400"
