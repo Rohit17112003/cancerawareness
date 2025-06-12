@@ -6,7 +6,7 @@ const Button = (props) => {
       <button
         {...props}
         type="submit"
-        className={`w-full cursor-pointer rounded-md bg-pink-600 px-4 py-2 font-semibold text-white hover:bg-pink-700`}
+        className={`w-full cursor-pointer rounded-md bg-pink-600 md:px-4  px-2 py-2 font-semibold text-white hover:bg-pink-700`}
       >
         <span>
           <i className="ri-add-fill"></i>
