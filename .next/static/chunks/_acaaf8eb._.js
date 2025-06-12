@@ -16,19 +16,19 @@ const Input = (props)=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         children: [
             props.lable && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                className: " font-medium pb-1 text-primary",
+                className: "text-primary pb-1 font-medium",
                 children: props.lable
             }, void 0, false, {
                 fileName: "[project]/components/atoms/Input.jsx",
-                lineNumber: 6,
-                columnNumber: 23
+                lineNumber: 7,
+                columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                 ...props,
                 className: "w-full rounded-md border border-gray-300 px-4 py-2 outline-0"
             }, void 0, false, {
                 fileName: "[project]/components/atoms/Input.jsx",
-                lineNumber: 8,
+                lineNumber: 10,
                 columnNumber: 7
             }, this)
         ]
@@ -72,14 +72,14 @@ const LoginPage = ()=>{
         alert(`Logging in with Email: ${email} and Password: ${password}`);
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "flex min-h-screen flex-col rounded-lg px-4 py-10 md:flex-row md:px-50 md:py-10",
+        className: "flex min-h-screen  flex-col-reverse rounded-lg px-4 md:flex-row md:px-50 ",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "w-full md:w-1/2",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                     src: "/image/login.png",
                     alt: "Cancer Awareness",
-                    className: "rounded-md object-cover md:rounded-none md:rounded-l-md"
+                    className: "rounded-md object-cover md:rounded-none md:rounded-l-md mt-10 md:mt-0"
                 }, void 0, false, {
                     fileName: "[project]/components/pages/Auth/Login.jsx",
                     lineNumber: 19,
@@ -91,7 +91,7 @@ const LoginPage = ()=>{
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex flex-1 items-center justify-center rounded-md bg-gradient-to-br from-white to-pink-100 pt-5 md:p-8 md:pt-0",
+                className: "flex flex-1 items-center justify-center rounded-md bg-gradient-to-br from-white to-pink-100 p-0 pt-0 md:p-8 md:pt-0",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
                     onSubmit: handleSubmit,
                     className: "w-full max-w-md rounded-lg bg-white p-8 shadow-2xl",

@@ -39,13 +39,12 @@ const UserManagement = () => {
             className="w-[150px] rounded-lg px-1 py-2 focus:outline-none md:w-[250px]"
           />
         </span>
-        <Button value=" Add New User"  onClick={handleAddUserClick} />
-      
+        <Button value=" Add New User" onClick={handleAddUserClick} />
       </div>
 
       <div className="overflow-x-auto rounded-lg shadow-md">
         <table className="w-full bg-white text-left text-sm">
-          <thead className="bg-gray-200 text-primary">
+          <thead className="text-primary bg-gray-200">
             <tr>
               <th className="px-4 py-3">Avatar</th>
               <th className="px-4 py-3">Name</th>
@@ -58,7 +57,10 @@ const UserManagement = () => {
           </thead>
           <tbody>
             {users.map((user, idx) => (
-              <tr key={idx} className="border border-gray-200 text-peracolor hover:bg-gray-50">
+              <tr
+                key={idx}
+                className="text-peracolor border border-gray-200 hover:bg-gray-50"
+              >
                 <td className="px-4 py-2">
                   <img
                     src={user.avatar}

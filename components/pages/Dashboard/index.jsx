@@ -1,5 +1,3 @@
-
-
 "use client";
 
 import {
@@ -39,18 +37,20 @@ const stats = [
 const HomePage = () => {
   return (
     <>
-      <div className=" mx-auto py-6">
-        <h1 className="md:text-2xl text-xl font-bold text-primary mb-4">Cancer Awareness</h1>
-        <p className=" text-peracolor font-medium mb-8">
+      <div className="mx-auto py-6">
+        <h1 className="text-primary mb-4 text-xl font-bold md:text-2xl">
+          Cancer Awareness
+        </h1>
+        <p className="text-peracolor mb-8 font-medium">
           Monitor your system activities and manage everything in one place.
         </p>
 
         {/* Cards Section */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-10">
+        <div className="mb-10 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4">
           {stats.map((item, idx) => (
             <div
               key={idx}
-              className={`flex items-center justify-between p-4 rounded-xl shadow-md border border-gray-200 ${item.color}`}
+              className={`flex items-center justify-between rounded-xl border border-gray-200 p-4 shadow-md ${item.color}`}
             >
               <div>
                 <h2 className="text-sm font-medium">{item.title}</h2>
@@ -62,9 +62,11 @@ const HomePage = () => {
         </div>
 
         {/* Recent Activity */}
-        <div className="bg-white border border-gray-200 rounded-xl shadow-md p-6">
-          <h2 className="text-lg font-semibold mb-4 text-primary">Recent Activity</h2>
-          <ul className="space-y-3 text-sm text-peracolor font-medium">
+        <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-md">
+          <h2 className="text-primary mb-4 text-lg font-semibold">
+            Recent Activity
+          </h2>
+          <ul className="text-peracolor space-y-3 text-sm font-medium">
             <li>✅ New patient registered at 10:45 AM</li>
             <li>🩺 Dr. Meena updated her schedule</li>
             <li>🧪 Lab results uploaded for ID#1021</li>
@@ -77,4 +79,3 @@ const HomePage = () => {
 };
 
 export default HomePage;
-

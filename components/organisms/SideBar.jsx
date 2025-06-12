@@ -23,7 +23,7 @@ const SideBar = ({ isSidebarOpen, setIsSidebarOpen }) => {
         <div className="flex px-4">
           {
             <Link href="/">
-              <h1 className="text-2xl font-bold  text-primary">CANCER</h1>
+              <h1 className="text-primary text-2xl font-bold">CANCER</h1>
             </Link>
           }
         </div>

@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Input from "@/components/atoms/Input";
 import Button from "@/components/atoms/Button";
+import BackButton from "@/components/atoms/BackButton";
 
 const AddDoctorForm = () => {
   const [formData, setFormData] = useState({
@@ -37,21 +38,13 @@ const AddDoctorForm = () => {
     <div className="mx-auto py-6 md:max-w-2xl">
       <div className="mb-6 rounded-xl border border-gray-200 bg-white p-6 shadow-md">
         {/* Back Button */}
-        <button
-          onClick={() => router.back()}
-          className="mb-4 cursor-pointer rounded-md bg-gray-200 px-4 py-2 text-sm font-semibold text-gray-800 hover:bg-gray-300"
-        >
-          <span>
-            <i className="ri-arrow-left-line"></i>
-          </span>{" "}
-          Back
-        </button>
+        <BackButton value="Back" onClick={() => router.back()} />
 
-        <h2 className="mb-4 md:text-2xl text-xl font-bold text-primary">
+        <h2 className="text-primary mb-4 text-xl font-bold md:text-2xl">
           Add New Doctor
         </h2>
 
-        <form onSubmit={handleSubmit} className="space-y-4 text-peracolor">
+        <form onSubmit={handleSubmit} className="text-peracolor space-y-4">
           <Input
             lable="Doctor Nane"
             type="text"

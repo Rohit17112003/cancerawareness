@@ -115,6 +115,7 @@
     --color-pink-200: oklch(89.9% .061 343.231);
     --color-pink-300: oklch(82.3% .12 346.018);
     --color-pink-400: oklch(71.8% .202 349.761);
+    --color-pink-500: oklch(65.6% .241 354.308);
     --color-pink-600: oklch(59.2% .249 .584);
     --color-pink-700: oklch(52.5% .223 3.958);
     --color-pink-800: oklch(45.9% .187 3.815);
@@ -573,6 +574,10 @@
     margin-inline-start: calc(var(--spacing) * 4);
   }
 
+  .mt-0 {
+    margin-top: calc(var(--spacing) * 0);
+  }
+
   .mt-1 {
     margin-top: calc(var(--spacing) * 1);
   }
@@ -911,6 +916,10 @@
     flex-direction: column;
   }
 
+  .flex-col-reverse {
+    flex-direction: column-reverse;
+  }
+
   .flex-row {
     flex-direction: row;
   }
@@ -1223,6 +1232,14 @@
     background-color: var(--color-pink-100);
   }
 
+  .bg-pink-400 {
+    background-color: var(--color-pink-400);
+  }
+
+  .bg-pink-500 {
+    background-color: var(--color-pink-500);
+  }
+
   .bg-pink-600 {
     background-color: var(--color-pink-600);
   }
@@ -1336,6 +1353,10 @@
     object-fit: cover;
   }
 
+  .p-0 {
+    padding: calc(var(--spacing) * 0);
+  }
+
   .p-3 {
     padding: calc(var(--spacing) * 3);
   }
@@ -1428,8 +1449,20 @@
     padding-block: calc(var(--spacing) * 10);
   }
 
+  .py-14 {
+    padding-block: calc(var(--spacing) * 14);
+  }
+
+  .pt-0 {
+    padding-top: calc(var(--spacing) * 0);
+  }
+
   .pt-5 {
     padding-top: calc(var(--spacing) * 5);
+  }
+
+  .pt-10 {
+    padding-top: calc(var(--spacing) * 10);
   }
 
   .pr-1 {
@@ -1858,6 +1891,18 @@
   }
 
   @media (hover: hover) {
+    .hover\:bg-pink-500:hover {
+      background-color: var(--color-pink-500);
+    }
+  }
+
+  @media (hover: hover) {
+    .hover\:bg-pink-600:hover {
+      background-color: var(--color-pink-600);
+    }
+  }
+
+  @media (hover: hover) {
     .hover\:bg-pink-700:hover {
       background-color: var(--color-pink-700);
     }
@@ -1986,6 +2031,12 @@
   }
 
   @media (width >= 48rem) {
+    .md\:mt-0 {
+      margin-top: calc(var(--spacing) * 0);
+    }
+  }
+
+  @media (width >= 48rem) {
     .md\:flex {
       display: flex;
     }
@@ -2043,6 +2094,12 @@
   @media (width >= 48rem) {
     .md\:grid-cols-4 {
       grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+
+  @media (width >= 48rem) {
+    .md\:flex-col {
+      flex-direction: column;
     }
   }
 

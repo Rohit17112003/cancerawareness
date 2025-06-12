@@ -18,8 +18,23 @@ const Button = (props)=>{
             ...props,
             type: "submit",
             className: `w-full cursor-pointer rounded-md bg-pink-600 px-4 py-2 font-semibold text-white hover:bg-pink-700`,
-            children: props.value
-        }, void 0, false, {
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                        className: "ri-add-fill"
+                    }, void 0, false, {
+                        fileName: "[project]/components/atoms/Button.jsx",
+                        lineNumber: 12,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/components/atoms/Button.jsx",
+                    lineNumber: 11,
+                    columnNumber: 9
+                }, this),
+                props.value
+            ]
+        }, void 0, true, {
             fileName: "[project]/components/atoms/Button.jsx",
             lineNumber: 6,
             columnNumber: 7
@@ -373,7 +388,7 @@ const DashboardLink = ({ active = false, label = "Label", heroIcon, subMenu = []
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                     href: route,
                     onClick: toggleSubMenu,
-                    className: `${active ? "bg-primary/70 text-textwhite" : "bg-transparent text-primary"} flex w-full flex-row  items-center justify-between rounded-md px-3 py-2.5 transition-all duration-200 hover:bg-primary/10 hover:text-textwhite`,
+                    className: `${active ? "bg-primary/70 text-textwhite" : "text-primary bg-transparent"} hover:bg-primary/10 hover:text-textwhite flex w-full flex-row items-center justify-between rounded-md px-3 py-2.5 transition-all duration-200`,
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                             className: "text-md flex items-center gap-1.5",
@@ -400,7 +415,7 @@ const DashboardLink = ({ active = false, label = "Label", heroIcon, subMenu = []
                             columnNumber: 11
                         }, this),
                         subMenu.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: " text-sm font-medium capitalize",
+                            className: "text-sm font-medium capitalize",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
                                 className: ` ${active ? "text-gray-600" : "text-gray-400"} ${isSubMenOpen ? "ri-arrow-down-s-line" : "ri-arrow-right-s-line"} ri-lg`
                             }, void 0, false, {
@@ -516,7 +531,7 @@ const SideBar = ({ isSidebarOpen, setIsSidebarOpen })=>{
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                         href: "/",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                            className: "text-2xl font-bold  text-primary",
+                            className: "text-primary text-2xl font-bold",
                             children: "CANCER"
                         }, void 0, false, {
                             fileName: "[project]/components/organisms/SideBar.jsx",

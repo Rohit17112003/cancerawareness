@@ -18,8 +18,23 @@ const Button = (props)=>{
             ...props,
             type: "submit",
             className: `w-full cursor-pointer rounded-md bg-pink-600 px-4 py-2 font-semibold text-white hover:bg-pink-700`,
-            children: props.value
-        }, void 0, false, {
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                        className: "ri-add-fill"
+                    }, void 0, false, {
+                        fileName: "[project]/components/atoms/Button.jsx",
+                        lineNumber: 12,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/components/atoms/Button.jsx",
+                    lineNumber: 11,
+                    columnNumber: 9
+                }, this),
+                props.value
+            ]
+        }, void 0, true, {
             fileName: "[project]/components/atoms/Button.jsx",
             lineNumber: 6,
             columnNumber: 7
@@ -120,7 +135,7 @@ const UserManagement = ()=>{
                     className: "w-full bg-white text-left text-sm",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("thead", {
-                            className: "bg-gray-200 text-primary",
+                            className: "text-primary bg-gray-200",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -128,7 +143,7 @@ const UserManagement = ()=>{
                                         children: "Avatar"
                                     }, void 0, false, {
                                         fileName: "[project]/components/pages/UserManagement/index.jsx",
-                                        lineNumber: 50,
+                                        lineNumber: 49,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -136,7 +151,7 @@ const UserManagement = ()=>{
                                         children: "Name"
                                     }, void 0, false, {
                                         fileName: "[project]/components/pages/UserManagement/index.jsx",
-                                        lineNumber: 51,
+                                        lineNumber: 50,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -144,7 +159,7 @@ const UserManagement = ()=>{
                                         children: "Email"
                                     }, void 0, false, {
                                         fileName: "[project]/components/pages/UserManagement/index.jsx",
-                                        lineNumber: 52,
+                                        lineNumber: 51,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -152,7 +167,7 @@ const UserManagement = ()=>{
                                         children: "Role"
                                     }, void 0, false, {
                                         fileName: "[project]/components/pages/UserManagement/index.jsx",
-                                        lineNumber: 53,
+                                        lineNumber: 52,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -160,7 +175,7 @@ const UserManagement = ()=>{
                                         children: "Status"
                                     }, void 0, false, {
                                         fileName: "[project]/components/pages/UserManagement/index.jsx",
-                                        lineNumber: 54,
+                                        lineNumber: 53,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -168,7 +183,7 @@ const UserManagement = ()=>{
                                         children: "Joined"
                                     }, void 0, false, {
                                         fileName: "[project]/components/pages/UserManagement/index.jsx",
-                                        lineNumber: 55,
+                                        lineNumber: 54,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
@@ -176,23 +191,23 @@ const UserManagement = ()=>{
                                         children: "Actions"
                                     }, void 0, false, {
                                         fileName: "[project]/components/pages/UserManagement/index.jsx",
-                                        lineNumber: 56,
+                                        lineNumber: 55,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/pages/UserManagement/index.jsx",
-                                lineNumber: 49,
+                                lineNumber: 48,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/pages/UserManagement/index.jsx",
-                            lineNumber: 48,
+                            lineNumber: 47,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
                             children: users.map((user, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
-                                    className: "border border-gray-200 text-peracolor hover:bg-gray-50",
+                                    className: "text-peracolor border border-gray-200 hover:bg-gray-50",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
                                             className: "px-4 py-2",
@@ -202,12 +217,12 @@ const UserManagement = ()=>{
                                                 className: "h-12 w-12 rounded-md object-cover"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/pages/UserManagement/index.jsx",
-                                                lineNumber: 63,
+                                                lineNumber: 65,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/UserManagement/index.jsx",
-                                            lineNumber: 62,
+                                            lineNumber: 64,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -215,7 +230,7 @@ const UserManagement = ()=>{
                                             children: user.name
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/UserManagement/index.jsx",
-                                            lineNumber: 69,
+                                            lineNumber: 71,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -223,7 +238,7 @@ const UserManagement = ()=>{
                                             children: user.email
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/UserManagement/index.jsx",
-                                            lineNumber: 70,
+                                            lineNumber: 72,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -231,7 +246,7 @@ const UserManagement = ()=>{
                                             children: user.role
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/UserManagement/index.jsx",
-                                            lineNumber: 71,
+                                            lineNumber: 73,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -241,12 +256,12 @@ const UserManagement = ()=>{
                                                 children: user.status
                                             }, void 0, false, {
                                                 fileName: "[project]/components/pages/UserManagement/index.jsx",
-                                                lineNumber: 73,
+                                                lineNumber: 75,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/UserManagement/index.jsx",
-                                            lineNumber: 72,
+                                            lineNumber: 74,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -254,7 +269,7 @@ const UserManagement = ()=>{
                                             children: user.joined
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/UserManagement/index.jsx",
-                                            lineNumber: 83,
+                                            lineNumber: 85,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
@@ -266,47 +281,47 @@ const UserManagement = ()=>{
                                                         className: "ri-edit-2-line cursor-pointer text-green-800"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/pages/UserManagement/index.jsx",
-                                                        lineNumber: 86,
+                                                        lineNumber: 88,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
                                                         className: "ri-delete-bin-5-line cursor-pointer text-red-500"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/pages/UserManagement/index.jsx",
-                                                        lineNumber: 87,
+                                                        lineNumber: 89,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/pages/UserManagement/index.jsx",
-                                                lineNumber: 85,
+                                                lineNumber: 87,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/pages/UserManagement/index.jsx",
-                                            lineNumber: 84,
+                                            lineNumber: 86,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, idx, true, {
                                     fileName: "[project]/components/pages/UserManagement/index.jsx",
-                                    lineNumber: 61,
+                                    lineNumber: 60,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/components/pages/UserManagement/index.jsx",
-                            lineNumber: 59,
+                            lineNumber: 58,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/pages/UserManagement/index.jsx",
-                    lineNumber: 47,
+                    lineNumber: 46,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/pages/UserManagement/index.jsx",
-                lineNumber: 46,
+                lineNumber: 45,
                 columnNumber: 7
             }, this)
         ]
@@ -348,7 +363,7 @@ const DashboardLink = ({ active = false, label = "Label", heroIcon, subMenu = []
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                     href: route,
                     onClick: toggleSubMenu,
-                    className: `${active ? "bg-primary/70 text-textwhite" : "bg-transparent text-primary"} flex w-full flex-row  items-center justify-between rounded-md px-3 py-2.5 transition-all duration-200 hover:bg-primary/10 hover:text-textwhite`,
+                    className: `${active ? "bg-primary/70 text-textwhite" : "text-primary bg-transparent"} hover:bg-primary/10 hover:text-textwhite flex w-full flex-row items-center justify-between rounded-md px-3 py-2.5 transition-all duration-200`,
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                             className: "text-md flex items-center gap-1.5",
@@ -375,7 +390,7 @@ const DashboardLink = ({ active = false, label = "Label", heroIcon, subMenu = []
                             columnNumber: 11
                         }, this),
                         subMenu.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: " text-sm font-medium capitalize",
+                            className: "text-sm font-medium capitalize",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
                                 className: ` ${active ? "text-gray-600" : "text-gray-400"} ${isSubMenOpen ? "ri-arrow-down-s-line" : "ri-arrow-right-s-line"} ri-lg`
                             }, void 0, false, {
@@ -482,7 +497,7 @@ const SideBar = ({ isSidebarOpen, setIsSidebarOpen })=>{
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                         href: "/",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                            className: "text-2xl font-bold  text-primary",
+                            className: "text-primary text-2xl font-bold",
                             children: "CANCER"
                         }, void 0, false, {
                             fileName: "[project]/components/organisms/SideBar.jsx",

@@ -43,7 +43,7 @@ const BlogManagement = () => {
 
       <div className="overflow-x-auto rounded-lg shadow">
         <table className="w-full min-w-[700px] bg-white text-left text-sm">
-          <thead className="bg-gray-200 text-primary">
+          <thead className="text-primary bg-gray-200">
             <tr>
               <th className="px-4 py-3">Thumbnail</th>
               <th className="px-4 py-3">Title</th>
@@ -58,7 +58,7 @@ const BlogManagement = () => {
             {seriesData.map((item, idx) => (
               <tr
                 key={idx}
-                className="border-b border-gray-200 hover:bg-gray-50 text-peracolor"
+                className="text-peracolor border-b border-gray-200 hover:bg-gray-50"
               >
                 <td className="px-4 py-2">
                   <img
@@ -67,9 +67,7 @@ const BlogManagement = () => {
                     className="h-14 w-14 rounded object-cover"
                   />
                 </td>
-                <td className="px-4 py-2 font-medium ">
-                  {item.title}
-                </td>
+                <td className="px-4 py-2 font-medium">{item.title}</td>
                 <td className="px-4 py-2">{item.description}</td>
                 <td className="px-4 py-2">{item.content}</td>
                 <td className="px-4 py-2">{item.author}</td>

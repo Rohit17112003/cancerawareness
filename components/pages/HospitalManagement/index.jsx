@@ -1,4 +1,3 @@
-
 "use client";
 import Button from "@/components/atoms/Button";
 
@@ -31,13 +30,13 @@ const HospitalManagement = () => {
     return Array(count)
       .fill()
       .map((_, i) => (
-        <RiStarFill key={i} className="text-yellow-400 text-lg inline-block" />
+        <RiStarFill key={i} className="inline-block text-lg text-yellow-400" />
       ));
   };
 
   return (
     <>
-      <div className="mb-6 flex gap-1.5 items-center justify-between">
+      <div className="mb-6 flex items-center justify-between gap-1.5">
         <span className="flex items-center gap-2 rounded-full border border-gray-300 px-4 text-sm">
           <i className="ri-search-line text-pink-400"></i>
           <input
@@ -46,13 +45,15 @@ const HospitalManagement = () => {
             className="w-[150px] rounded-lg px-1 py-2 focus:outline-none md:w-[250px]"
           />
         </span>
-<Button value="Add New Hospital"  onClick={handleHospitalManagementForm}/>
-      
+        <Button
+          value="Add New Hospital"
+          onClick={handleHospitalManagementForm}
+        />
       </div>
 
-      <div className="overflow-x-auto rounded-xl  shadow-md">
+      <div className="overflow-x-auto rounded-xl shadow-md">
         <table className="w-full bg-white text-left text-sm">
-          <thead className="bg-gray-200 text-primary">
+          <thead className="text-primary bg-gray-200">
             <tr>
               <th className="px-4 py-3">Name</th>
               <th className="px-4 py-3">Address</th>
@@ -63,13 +64,16 @@ const HospitalManagement = () => {
           </thead>
           <tbody>
             {seriesData.map((item, idx) => (
-              <tr key={idx} className="hover:bg-gray-50 border-b border-gray-200 text-peracolor">
+              <tr
+                key={idx}
+                className="text-peracolor border-b border-gray-200 hover:bg-gray-50"
+              >
                 <td className="px-4 py-3">{item.name}</td>
                 <td className="px-4 py-3">{item.address}</td>
                 <td className="px-4 py-3">{renderStars(item.rating)}</td>
                 <td className="px-4 py-3">{item.review}</td>
                 <td className="px-4 py-3">
-                  <div className="text-lg flex items-center gap-2">
+                  <div className="flex items-center gap-2 text-lg">
                     <i className="ri-edit-2-line cursor-pointer text-green-800"></i>
                     <i className="ri-delete-bin-5-line cursor-pointer text-red-500"></i>
                   </div>
@@ -84,4 +88,3 @@ const HospitalManagement = () => {
 };
 
 export default HospitalManagement;
-

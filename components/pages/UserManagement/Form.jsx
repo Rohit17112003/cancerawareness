@@ -3,6 +3,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import Input from "@/components/atoms/Input";
 import Button from "@/components/atoms/Button";
+import BackButton from "@/components/atoms/BackButton";
 
 const AddUserForm = () => {
   const router = useRouter();
@@ -56,21 +57,15 @@ const AddUserForm = () => {
     <>
       {/* Back Button */}
       <div className="mx-auto mt-4 max-w-2xl">
-        <button
-          onClick={() => router.back()}
-          className="mb-4 cursor-pointer rounded-md bg-gray-200 px-4 py-2 text-sm text-gray-800 hover:bg-gray-300"
-        >
-          <span>
-            <i className="ri-arrow-left-line"></i>
-          </span>{" "}
-          Back
-        </button>
+        <BackButton value="Back" onClick={() => router.back()} />
       </div>
       <form
         onSubmit={handleSubmit}
-        className="mx-auto max-w-2xl space-y-6 rounded-xl bg-white p-6 shadow text-peracolor"
+        className="text-peracolor mx-auto max-w-2xl space-y-6 rounded-xl bg-white p-6 shadow"
       >
-        <h2 className="md:text-2xl text-xl font-bold text-primary">Add New User</h2>
+        <h2 className="text-primary text-xl font-bold md:text-2xl">
+          Add New User
+        </h2>
 
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           <Input
@@ -114,7 +109,7 @@ const AddUserForm = () => {
             />
             <span
               onClick={() => setShowPassword(!showPassword)}
-              className="absolute md:top-11 top-11.5 right-3 -translate-y-1/2 cursor-pointer text-gray-500"
+              className="absolute top-11.5 right-3 -translate-y-1/2 cursor-pointer text-gray-500 md:top-11"
             >
               {showPassword ? (
                 <i className="ri-eye-off-line"></i>
@@ -125,7 +120,7 @@ const AddUserForm = () => {
           </div>
 
           <div>
-            <label className="font-medium pb-1 text-primary">Role</label>
+            <label className="text-primary pb-1 font-medium">Role</label>
             <select
               name="role"
               value={formData.role}
@@ -140,7 +135,7 @@ const AddUserForm = () => {
           </div>
 
           <div>
-            <label className="font-medium pb-1 text-primary">Status</label>
+            <label className="text-primary pb-1 font-medium">Status</label>
             <select
               name="status"
               value={formData.status}

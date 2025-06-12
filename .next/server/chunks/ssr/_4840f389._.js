@@ -21,7 +21,7 @@ const stats = [
             size: 28
         }, void 0, false, {
             fileName: "[project]/components/pages/Dashboard/index.jsx",
-            lineNumber: 16,
+            lineNumber: 14,
             columnNumber: 11
         }, this),
         color: "bg-pink-100 text-pink-700"
@@ -33,7 +33,7 @@ const stats = [
             size: 28
         }, void 0, false, {
             fileName: "[project]/components/pages/Dashboard/index.jsx",
-            lineNumber: 22,
+            lineNumber: 20,
             columnNumber: 11
         }, this),
         color: "bg-blue-100 text-blue-700"
@@ -45,7 +45,7 @@ const stats = [
             size: 28
         }, void 0, false, {
             fileName: "[project]/components/pages/Dashboard/index.jsx",
-            lineNumber: 28,
+            lineNumber: 26,
             columnNumber: 11
         }, this),
         color: "bg-green-100 text-green-700"
@@ -57,7 +57,7 @@ const stats = [
             size: 28
         }, void 0, false, {
             fileName: "[project]/components/pages/Dashboard/index.jsx",
-            lineNumber: 34,
+            lineNumber: 32,
             columnNumber: 11
         }, this),
         color: "bg-yellow-100 text-yellow-700"
@@ -66,18 +66,18 @@ const stats = [
 const HomePage = ()=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: " mx-auto py-6",
+            className: "mx-auto py-6",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                    className: "md:text-2xl text-xl font-bold text-primary mb-4",
+                    className: "text-primary mb-4 text-xl font-bold md:text-2xl",
                     children: "Cancer Awareness"
                 }, void 0, false, {
                     fileName: "[project]/components/pages/Dashboard/index.jsx",
-                    lineNumber: 43,
+                    lineNumber: 41,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                    className: " text-peracolor font-medium mb-8",
+                    className: "text-peracolor mb-8 font-medium",
                     children: "Monitor your system activities and manage everything in one place."
                 }, void 0, false, {
                     fileName: "[project]/components/pages/Dashboard/index.jsx",
@@ -85,9 +85,9 @@ const HomePage = ()=>{
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-10",
+                    className: "mb-10 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4",
                     children: stats.map((item, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: `flex items-center justify-between p-4 rounded-xl shadow-md border border-gray-200 ${item.color}`,
+                            className: `flex items-center justify-between rounded-xl border border-gray-200 p-4 shadow-md ${item.color}`,
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     children: [
@@ -132,10 +132,10 @@ const HomePage = ()=>{
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "bg-white border border-gray-200 rounded-xl shadow-md p-6",
+                    className: "rounded-xl border border-gray-200 bg-white p-6 shadow-md",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                            className: "text-lg font-semibold mb-4 text-primary",
+                            className: "text-primary mb-4 text-lg font-semibold",
                             children: "Recent Activity"
                         }, void 0, false, {
                             fileName: "[project]/components/pages/Dashboard/index.jsx",
@@ -143,40 +143,40 @@ const HomePage = ()=>{
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                            className: "space-y-3 text-sm text-peracolor font-medium",
+                            className: "text-peracolor space-y-3 text-sm font-medium",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                     children: "✅ New patient registered at 10:45 AM"
-                                }, void 0, false, {
-                                    fileName: "[project]/components/pages/Dashboard/index.jsx",
-                                    lineNumber: 68,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                    children: "🩺 Dr. Meena updated her schedule"
-                                }, void 0, false, {
-                                    fileName: "[project]/components/pages/Dashboard/index.jsx",
-                                    lineNumber: 69,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                    children: "🧪 Lab results uploaded for ID#1021"
                                 }, void 0, false, {
                                     fileName: "[project]/components/pages/Dashboard/index.jsx",
                                     lineNumber: 70,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                    children: "📢 Awareness campaign event scheduled for July 5"
+                                    children: "🩺 Dr. Meena updated her schedule"
                                 }, void 0, false, {
                                     fileName: "[project]/components/pages/Dashboard/index.jsx",
                                     lineNumber: 71,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                    children: "🧪 Lab results uploaded for ID#1021"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/pages/Dashboard/index.jsx",
+                                    lineNumber: 72,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                    children: "📢 Awareness campaign event scheduled for July 5"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/pages/Dashboard/index.jsx",
+                                    lineNumber: 73,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/pages/Dashboard/index.jsx",
-                            lineNumber: 67,
+                            lineNumber: 69,
                             columnNumber: 11
                         }, this)
                     ]
@@ -188,7 +188,7 @@ const HomePage = ()=>{
             ]
         }, void 0, true, {
             fileName: "[project]/components/pages/Dashboard/index.jsx",
-            lineNumber: 42,
+            lineNumber: 40,
             columnNumber: 7
         }, this)
     }, void 0, false);
@@ -229,7 +229,7 @@ const DashboardLink = ({ active = false, label = "Label", heroIcon, subMenu = []
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                     href: route,
                     onClick: toggleSubMenu,
-                    className: `${active ? "bg-primary/70 text-textwhite" : "bg-transparent text-primary"} flex w-full flex-row  items-center justify-between rounded-md px-3 py-2.5 transition-all duration-200 hover:bg-primary/10 hover:text-textwhite`,
+                    className: `${active ? "bg-primary/70 text-textwhite" : "text-primary bg-transparent"} hover:bg-primary/10 hover:text-textwhite flex w-full flex-row items-center justify-between rounded-md px-3 py-2.5 transition-all duration-200`,
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                             className: "text-md flex items-center gap-1.5",
@@ -256,7 +256,7 @@ const DashboardLink = ({ active = false, label = "Label", heroIcon, subMenu = []
                             columnNumber: 11
                         }, this),
                         subMenu.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: " text-sm font-medium capitalize",
+                            className: "text-sm font-medium capitalize",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
                                 className: ` ${active ? "text-gray-600" : "text-gray-400"} ${isSubMenOpen ? "ri-arrow-down-s-line" : "ri-arrow-right-s-line"} ri-lg`
                             }, void 0, false, {
@@ -363,7 +363,7 @@ const SideBar = ({ isSidebarOpen, setIsSidebarOpen })=>{
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                         href: "/",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                            className: "text-2xl font-bold  text-primary",
+                            className: "text-primary text-2xl font-bold",
                             children: "CANCER"
                         }, void 0, false, {
                             fileName: "[project]/components/organisms/SideBar.jsx",

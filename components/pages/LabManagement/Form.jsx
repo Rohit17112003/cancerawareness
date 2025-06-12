@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { RiTestTubeLine } from "react-icons/ri";
 import Input from "@/components/atoms/Input";
 import Button from "@/components/atoms/Button";
+import BackButton from "@/components/atoms/BackButton";
 
 const AddLabForm = () => {
   const [formData, setFormData] = useState({
@@ -30,15 +31,7 @@ const AddLabForm = () => {
   return (
     <>
       <div className="mx-auto mt-4 max-w-xl">
-        <button
-          onClick={() => router.back()}
-          className="mb-4 cursor-pointer rounded-md bg-gray-200 px-4 py-2 text-sm text-gray-800 hover:bg-gray-300"
-        >
-          <span>
-            <i className="ri-arrow-left-line"></i>
-          </span>{" "}
-          Back
-        </button>
+        <BackButton value="Back" onClick={() => router.back()} />
       </div>
       {/* Top Header Card */}
       <div className="mx-auto flex max-w-xl items-center gap-4 rounded-2xl bg-[#fdf8f5] p-5 shadow-md">
@@ -46,7 +39,9 @@ const AddLabForm = () => {
           <RiTestTubeLine className="text-3xl text-pink-600" />
         </div>
         <div>
-          <h2 className="text-xl md:text-2xl font-bold text-primary">Add New Lab</h2>
+          <h2 className="text-primary text-xl font-bold md:text-2xl">
+            Add New Lab
+          </h2>
           <p className="text-sm text-gray-600">
             Please enter lab details below
           </p>
@@ -56,7 +51,7 @@ const AddLabForm = () => {
       {/* Form */}
       <form
         onSubmit={handleSubmit}
-        className="mx-auto mt-10 max-w-xl space-y-4 rounded-2xl bg-white p-6 shadow-md text-peracolor"
+        className="text-peracolor mx-auto mt-10 max-w-xl space-y-4 rounded-2xl bg-white p-6 shadow-md"
       >
         <Input
           lable="Lab Name"
@@ -93,7 +88,7 @@ const AddLabForm = () => {
           required
         />
 
-        <label className="text-primary font-medium pb-1">Review</label>
+        <label className="text-primary pb-1 font-medium">Review</label>
         <textarea
           name="review"
           placeholder="Review"

@@ -13,18 +13,18 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="flex min-h-screen flex-col rounded-lg px-4 py-10 md:flex-row md:px-50 md:py-10">
+    <div className="flex min-h-screen  flex-col-reverse rounded-lg px-4 md:flex-row md:px-50 ">
       {/* Left side image with themed background */}
       <div className="w-full md:w-1/2">
         <img
           src="/image/login.png"
           alt="Cancer Awareness"
-          className="rounded-md object-cover md:rounded-none md:rounded-l-md"
+          className="rounded-md object-cover md:rounded-none md:rounded-l-md mt-10 md:mt-0"
         />
       </div>
 
       {/* Right side form with gradient and highlight */}
-      <div className="flex flex-1 items-center justify-center rounded-md bg-gradient-to-br from-white to-pink-100 pt-5 md:p-8 md:pt-0">
+      <div className="flex flex-1 items-center justify-center rounded-md bg-gradient-to-br from-white to-pink-100 p-0 pt-0 md:p-8 md:pt-0">
         <form
           onSubmit={handleSubmit}
           className="w-full max-w-md rounded-lg bg-white p-8 shadow-2xl"
