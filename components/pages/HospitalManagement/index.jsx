@@ -41,7 +41,7 @@ const HospitalManagement = () => {
           <i className="ri-search-line text-pink-400"></i>
           <input
             type="text"
-            placeholder="Search here..."
+            placeholder="Search hospital..."
             className="w-[150px] rounded-lg px-1 py-2 focus:outline-none md:w-[250px]"
           />
         </span>

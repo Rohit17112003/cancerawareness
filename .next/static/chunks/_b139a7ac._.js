@@ -155,7 +155,7 @@ const ServiceManagement = ()=>{
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                         type: "text",
-                                        placeholder: "Search services...",
+                                        placeholder: "Search service...",
                                         className: "md:text-md rounded-full border border-gray-300 py-2 pr-4 pl-9 text-sm focus:ring-2 focus:ring-pink-400 focus:outline-none",
                                         value: searchTerm,
                                         onChange: (e)=>setSearchTerm(e.target.value)

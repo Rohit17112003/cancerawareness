@@ -35,7 +35,7 @@ const BlogManagement = () => {
           <input
             type="text"
             placeholder="Search blog..."
-            className="w-[150px] rounded-lg px-1 py-1 focus:outline-none md:w-[250px]"
+            className="w-[150px] rounded-lg px-1 py-1 focus:outline-none md:w-[250px] text-sm"
           />
         </div>
         <Button value="Add New Blog" onClick={handleClick} />

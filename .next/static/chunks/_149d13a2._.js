@@ -117,7 +117,7 @@ const HospitalManagement = ()=>{
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                 type: "text",
-                                placeholder: "Search here...",
+                                placeholder: "Search hospital...",
                                 className: "w-[150px] rounded-lg px-1 py-2 focus:outline-none md:w-[250px]"
                             }, void 0, false, {
                                 fileName: "[project]/components/pages/HospitalManagement/index.jsx",
