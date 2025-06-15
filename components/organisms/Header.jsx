@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Header = ({ isSidebarOpen, setIsSidebarOpen, pageTitle }) => {
   return (
-    <header className="sticky top-0 z-20 flex items-center justify-between bg-[#00000011] px-5 py-3 shadow-sm md:px-8 ">
+    <header className="sticky top-0 z-50 flex items-center justify-between bg-[#00000011] px-5 py-3 shadow-sm md:px-8">
       <div className="flex items-center gap-4 sm:gap-0 text-primary font-medium">
         <button
           onClick={() => setIsSidebarOpen(!isSidebarOpen)}
@@ -31,18 +31,16 @@ const Header = ({ isSidebarOpen, setIsSidebarOpen, pageTitle }) => {
       </div>
 
       <div className="flex w-2/3 flex-row items-center justify-end gap-2">
-        {
-          <div className="flex items-center gap-3">
-            <span>
-              <i className="ri-notification-3-fill ri-lg text-primary"></i>
-            </span>
-            <Link href="/">
-              <div className="bg-primary/10 text-primary flex aspect-square h-12 w-12 items-center justify-center rounded-full text-xl">
-                <i className="ri-user-smile-fill ri-lg"></i>
-              </div>
-            </Link>
-          </div>
-        }
+        <div className="flex items-center gap-3">
+          <span>
+            <i className="ri-notification-3-fill ri-lg text-primary"></i>
+          </span>
+          <Link href="/">
+            <div className="bg-primary/10 text-primary flex aspect-square h-12 w-12 items-center justify-center rounded-full text-xl">
+              <i className="ri-user-smile-fill ri-lg"></i>
+            </div>
+          </Link>
+        </div>
       </div>
     </header>
   );
