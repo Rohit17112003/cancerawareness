@@ -475,6 +475,10 @@
     z-index: 30;
   }
 
+  .z-40 {
+    z-index: 40;
+  }
+
   .z-50 {
     z-index: 50;
   }
@@ -2051,6 +2055,12 @@
   @media (width >= 48rem) {
     .md\:top-11 {
       top: calc(var(--spacing) * 11);
+    }
+  }
+
+  @media (width >= 48rem) {
+    .md\:z-30 {
+      z-index: 30;
     }
   }
 
